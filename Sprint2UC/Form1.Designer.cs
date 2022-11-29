@@ -72,18 +72,82 @@
             this.RegisterLabel = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.bbqGB = new System.Windows.Forms.GroupBox();
+            this.crustGBbbq = new System.Windows.Forms.GroupBox();
+            this.stuffedBBQ = new System.Windows.Forms.RadioButton();
+            this.thinBBQ = new System.Windows.Forms.RadioButton();
+            this.regBBQ = new System.Windows.Forms.RadioButton();
+            this.sizeGBbbq = new System.Windows.Forms.GroupBox();
+            this.largeBBQ = new System.Windows.Forms.RadioButton();
+            this.mediumBBQ = new System.Windows.Forms.RadioButton();
+            this.smallBBQ = new System.Windows.Forms.RadioButton();
+            this.bbqCheck = new System.Windows.Forms.CheckBox();
+            this.hawaiianGB = new System.Windows.Forms.GroupBox();
+            this.crustGBHawaiian = new System.Windows.Forms.GroupBox();
+            this.stuffedHawaiian = new System.Windows.Forms.RadioButton();
+            this.thinHawaiian = new System.Windows.Forms.RadioButton();
+            this.regHawaiian = new System.Windows.Forms.RadioButton();
+            this.sizeGBHawaiian = new System.Windows.Forms.GroupBox();
+            this.largeHawaiian = new System.Windows.Forms.RadioButton();
+            this.mediumHawaiian = new System.Windows.Forms.RadioButton();
+            this.smallHawaiian = new System.Windows.Forms.RadioButton();
+            this.hawaiianCheck = new System.Windows.Forms.CheckBox();
+            this.sausageGB = new System.Windows.Forms.GroupBox();
+            this.crustGBSausage = new System.Windows.Forms.GroupBox();
+            this.stuffedSausage = new System.Windows.Forms.RadioButton();
+            this.thinSausage = new System.Windows.Forms.RadioButton();
+            this.regSausage = new System.Windows.Forms.RadioButton();
+            this.sizeGBSausage = new System.Windows.Forms.GroupBox();
+            this.largeSausage = new System.Windows.Forms.RadioButton();
+            this.mediumSausage = new System.Windows.Forms.RadioButton();
+            this.smallSausage = new System.Windows.Forms.RadioButton();
+            this.sausageCheck = new System.Windows.Forms.CheckBox();
+            this.peppGB = new System.Windows.Forms.GroupBox();
+            this.pepCrustGB = new System.Windows.Forms.GroupBox();
+            this.stuffedPep = new System.Windows.Forms.RadioButton();
+            this.thinPep = new System.Windows.Forms.RadioButton();
+            this.regPep = new System.Windows.Forms.RadioButton();
+            this.pepSizeGB = new System.Windows.Forms.GroupBox();
+            this.largePep = new System.Windows.Forms.RadioButton();
+            this.mediumPep = new System.Windows.Forms.RadioButton();
+            this.smallPep = new System.Windows.Forms.RadioButton();
+            this.pepCheck = new System.Windows.Forms.CheckBox();
+            this.clearChoicesButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.crustGBcheese = new System.Windows.Forms.GroupBox();
+            this.stuffedCheese = new System.Windows.Forms.RadioButton();
+            this.thinCheese = new System.Windows.Forms.RadioButton();
+            this.regCheese = new System.Windows.Forms.RadioButton();
+            this.sizeGBcheese = new System.Windows.Forms.GroupBox();
+            this.largeCheese = new System.Windows.Forms.RadioButton();
+            this.mediumCheese = new System.Windows.Forms.RadioButton();
+            this.smallCheese = new System.Windows.Forms.RadioButton();
+            this.cheeseCheck = new System.Windows.Forms.CheckBox();
             this.stPizzaLabel = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.bbqGB.SuspendLayout();
+            this.crustGBbbq.SuspendLayout();
+            this.sizeGBbbq.SuspendLayout();
+            this.hawaiianGB.SuspendLayout();
+            this.crustGBHawaiian.SuspendLayout();
+            this.sizeGBHawaiian.SuspendLayout();
+            this.sausageGB.SuspendLayout();
+            this.crustGBSausage.SuspendLayout();
+            this.sizeGBSausage.SuspendLayout();
+            this.peppGB.SuspendLayout();
+            this.pepCrustGB.SuspendLayout();
+            this.pepSizeGB.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.crustGBcheese.SuspendLayout();
+            this.sizeGBcheese.SuspendLayout();
             this.SuspendLayout();
             // 
             // loginLogoText
@@ -537,7 +601,7 @@
             this.RegisterLabel.AutoSize = true;
             this.RegisterLabel.BackColor = System.Drawing.Color.Orange;
             this.RegisterLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RegisterLabel.Location = new System.Drawing.Point(560, 3);
+            this.RegisterLabel.Location = new System.Drawing.Point(560, 12);
             this.RegisterLabel.Name = "RegisterLabel";
             this.RegisterLabel.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
             this.RegisterLabel.Size = new System.Drawing.Size(195, 53);
@@ -557,7 +621,11 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.tabPage4.Controls.Add(this.button1);
+            this.tabPage4.Controls.Add(this.bbqGB);
+            this.tabPage4.Controls.Add(this.hawaiianGB);
+            this.tabPage4.Controls.Add(this.sausageGB);
+            this.tabPage4.Controls.Add(this.peppGB);
+            this.tabPage4.Controls.Add(this.clearChoicesButton);
             this.tabPage4.Controls.Add(this.groupBox1);
             this.tabPage4.Controls.Add(this.stPizzaLabel);
             this.tabPage4.Location = new System.Drawing.Point(4, 41);
@@ -567,9 +635,515 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Standard Pizzas";
             // 
+            // bbqGB
+            // 
+            this.bbqGB.BackColor = System.Drawing.Color.Orange;
+            this.bbqGB.Controls.Add(this.crustGBbbq);
+            this.bbqGB.Controls.Add(this.sizeGBbbq);
+            this.bbqGB.Controls.Add(this.bbqCheck);
+            this.bbqGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bbqGB.Location = new System.Drawing.Point(1103, 82);
+            this.bbqGB.Name = "bbqGB";
+            this.bbqGB.Size = new System.Drawing.Size(197, 491);
+            this.bbqGB.TabIndex = 39;
+            this.bbqGB.TabStop = false;
+            this.bbqGB.Text = "BBQ Chicken";
+            // 
+            // crustGBbbq
+            // 
+            this.crustGBbbq.Controls.Add(this.stuffedBBQ);
+            this.crustGBbbq.Controls.Add(this.thinBBQ);
+            this.crustGBbbq.Controls.Add(this.regBBQ);
+            this.crustGBbbq.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crustGBbbq.Location = new System.Drawing.Point(18, 273);
+            this.crustGBbbq.Name = "crustGBbbq";
+            this.crustGBbbq.Size = new System.Drawing.Size(159, 205);
+            this.crustGBbbq.TabIndex = 38;
+            this.crustGBbbq.TabStop = false;
+            this.crustGBbbq.Text = "Crust";
+            // 
+            // stuffedBBQ
+            // 
+            this.stuffedBBQ.AutoSize = true;
+            this.stuffedBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.stuffedBBQ.Location = new System.Drawing.Point(10, 141);
+            this.stuffedBBQ.Name = "stuffedBBQ";
+            this.stuffedBBQ.Size = new System.Drawing.Size(94, 26);
+            this.stuffedBBQ.TabIndex = 40;
+            this.stuffedBBQ.TabStop = true;
+            this.stuffedBBQ.Text = "Stuffed";
+            this.stuffedBBQ.UseVisualStyleBackColor = true;
+            // 
+            // thinBBQ
+            // 
+            this.thinBBQ.AutoSize = true;
+            this.thinBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.thinBBQ.Location = new System.Drawing.Point(8, 88);
+            this.thinBBQ.Name = "thinBBQ";
+            this.thinBBQ.Size = new System.Drawing.Size(67, 26);
+            this.thinBBQ.TabIndex = 39;
+            this.thinBBQ.TabStop = true;
+            this.thinBBQ.Text = "Thin";
+            this.thinBBQ.UseVisualStyleBackColor = true;
+            // 
+            // regBBQ
+            // 
+            this.regBBQ.AutoSize = true;
+            this.regBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.regBBQ.Location = new System.Drawing.Point(10, 31);
+            this.regBBQ.Name = "regBBQ";
+            this.regBBQ.Size = new System.Drawing.Size(100, 26);
+            this.regBBQ.TabIndex = 38;
+            this.regBBQ.TabStop = true;
+            this.regBBQ.Text = "Regular";
+            this.regBBQ.UseVisualStyleBackColor = true;
+            // 
+            // sizeGBbbq
+            // 
+            this.sizeGBbbq.Controls.Add(this.largeBBQ);
+            this.sizeGBbbq.Controls.Add(this.mediumBBQ);
+            this.sizeGBbbq.Controls.Add(this.smallBBQ);
+            this.sizeGBbbq.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sizeGBbbq.Location = new System.Drawing.Point(18, 68);
+            this.sizeGBbbq.Name = "sizeGBbbq";
+            this.sizeGBbbq.Size = new System.Drawing.Size(159, 199);
+            this.sizeGBbbq.TabIndex = 37;
+            this.sizeGBbbq.TabStop = false;
+            this.sizeGBbbq.Text = "Size";
+            // 
+            // largeBBQ
+            // 
+            this.largeBBQ.AutoSize = true;
+            this.largeBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.largeBBQ.Location = new System.Drawing.Point(8, 134);
+            this.largeBBQ.Name = "largeBBQ";
+            this.largeBBQ.Size = new System.Drawing.Size(81, 26);
+            this.largeBBQ.TabIndex = 39;
+            this.largeBBQ.TabStop = true;
+            this.largeBBQ.Text = "Large";
+            this.largeBBQ.UseVisualStyleBackColor = true;
+            // 
+            // mediumBBQ
+            // 
+            this.mediumBBQ.AutoSize = true;
+            this.mediumBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mediumBBQ.Location = new System.Drawing.Point(8, 82);
+            this.mediumBBQ.Name = "mediumBBQ";
+            this.mediumBBQ.Size = new System.Drawing.Size(100, 26);
+            this.mediumBBQ.TabIndex = 38;
+            this.mediumBBQ.TabStop = true;
+            this.mediumBBQ.Text = "Medium";
+            this.mediumBBQ.UseVisualStyleBackColor = true;
+            // 
+            // smallBBQ
+            // 
+            this.smallBBQ.AutoSize = true;
+            this.smallBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.smallBBQ.Location = new System.Drawing.Point(8, 31);
+            this.smallBBQ.Name = "smallBBQ";
+            this.smallBBQ.Size = new System.Drawing.Size(79, 26);
+            this.smallBBQ.TabIndex = 37;
+            this.smallBBQ.TabStop = true;
+            this.smallBBQ.Text = "Small";
+            this.smallBBQ.UseVisualStyleBackColor = true;
+            // 
+            // bbqCheck
+            // 
+            this.bbqCheck.AutoSize = true;
+            this.bbqCheck.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bbqCheck.Location = new System.Drawing.Point(6, 34);
+            this.bbqCheck.Name = "bbqCheck";
+            this.bbqCheck.Size = new System.Drawing.Size(178, 26);
+            this.bbqCheck.TabIndex = 37;
+            this.bbqCheck.Text = "BBQ Chk Pizza?";
+            this.bbqCheck.UseVisualStyleBackColor = true;
+            // 
+            // hawaiianGB
+            // 
+            this.hawaiianGB.BackColor = System.Drawing.Color.Orange;
+            this.hawaiianGB.Controls.Add(this.crustGBHawaiian);
+            this.hawaiianGB.Controls.Add(this.sizeGBHawaiian);
+            this.hawaiianGB.Controls.Add(this.hawaiianCheck);
+            this.hawaiianGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.hawaiianGB.Location = new System.Drawing.Point(833, 82);
+            this.hawaiianGB.Name = "hawaiianGB";
+            this.hawaiianGB.Size = new System.Drawing.Size(197, 491);
+            this.hawaiianGB.TabIndex = 41;
+            this.hawaiianGB.TabStop = false;
+            this.hawaiianGB.Text = "Hawaiian";
+            // 
+            // crustGBHawaiian
+            // 
+            this.crustGBHawaiian.Controls.Add(this.stuffedHawaiian);
+            this.crustGBHawaiian.Controls.Add(this.thinHawaiian);
+            this.crustGBHawaiian.Controls.Add(this.regHawaiian);
+            this.crustGBHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crustGBHawaiian.Location = new System.Drawing.Point(18, 273);
+            this.crustGBHawaiian.Name = "crustGBHawaiian";
+            this.crustGBHawaiian.Size = new System.Drawing.Size(159, 205);
+            this.crustGBHawaiian.TabIndex = 38;
+            this.crustGBHawaiian.TabStop = false;
+            this.crustGBHawaiian.Text = "Crust";
+            // 
+            // stuffedHawaiian
+            // 
+            this.stuffedHawaiian.AutoSize = true;
+            this.stuffedHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.stuffedHawaiian.Location = new System.Drawing.Point(10, 141);
+            this.stuffedHawaiian.Name = "stuffedHawaiian";
+            this.stuffedHawaiian.Size = new System.Drawing.Size(94, 26);
+            this.stuffedHawaiian.TabIndex = 40;
+            this.stuffedHawaiian.TabStop = true;
+            this.stuffedHawaiian.Text = "Stuffed";
+            this.stuffedHawaiian.UseVisualStyleBackColor = true;
+            // 
+            // thinHawaiian
+            // 
+            this.thinHawaiian.AutoSize = true;
+            this.thinHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.thinHawaiian.Location = new System.Drawing.Point(8, 88);
+            this.thinHawaiian.Name = "thinHawaiian";
+            this.thinHawaiian.Size = new System.Drawing.Size(67, 26);
+            this.thinHawaiian.TabIndex = 39;
+            this.thinHawaiian.TabStop = true;
+            this.thinHawaiian.Text = "Thin";
+            this.thinHawaiian.UseVisualStyleBackColor = true;
+            // 
+            // regHawaiian
+            // 
+            this.regHawaiian.AutoSize = true;
+            this.regHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.regHawaiian.Location = new System.Drawing.Point(10, 31);
+            this.regHawaiian.Name = "regHawaiian";
+            this.regHawaiian.Size = new System.Drawing.Size(100, 26);
+            this.regHawaiian.TabIndex = 38;
+            this.regHawaiian.TabStop = true;
+            this.regHawaiian.Text = "Regular";
+            this.regHawaiian.UseVisualStyleBackColor = true;
+            // 
+            // sizeGBHawaiian
+            // 
+            this.sizeGBHawaiian.Controls.Add(this.largeHawaiian);
+            this.sizeGBHawaiian.Controls.Add(this.mediumHawaiian);
+            this.sizeGBHawaiian.Controls.Add(this.smallHawaiian);
+            this.sizeGBHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sizeGBHawaiian.Location = new System.Drawing.Point(18, 68);
+            this.sizeGBHawaiian.Name = "sizeGBHawaiian";
+            this.sizeGBHawaiian.Size = new System.Drawing.Size(159, 199);
+            this.sizeGBHawaiian.TabIndex = 37;
+            this.sizeGBHawaiian.TabStop = false;
+            this.sizeGBHawaiian.Text = "Size";
+            // 
+            // largeHawaiian
+            // 
+            this.largeHawaiian.AutoSize = true;
+            this.largeHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.largeHawaiian.Location = new System.Drawing.Point(8, 134);
+            this.largeHawaiian.Name = "largeHawaiian";
+            this.largeHawaiian.Size = new System.Drawing.Size(81, 26);
+            this.largeHawaiian.TabIndex = 39;
+            this.largeHawaiian.TabStop = true;
+            this.largeHawaiian.Text = "Large";
+            this.largeHawaiian.UseVisualStyleBackColor = true;
+            // 
+            // mediumHawaiian
+            // 
+            this.mediumHawaiian.AutoSize = true;
+            this.mediumHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mediumHawaiian.Location = new System.Drawing.Point(8, 82);
+            this.mediumHawaiian.Name = "mediumHawaiian";
+            this.mediumHawaiian.Size = new System.Drawing.Size(100, 26);
+            this.mediumHawaiian.TabIndex = 38;
+            this.mediumHawaiian.TabStop = true;
+            this.mediumHawaiian.Text = "Medium";
+            this.mediumHawaiian.UseVisualStyleBackColor = true;
+            // 
+            // smallHawaiian
+            // 
+            this.smallHawaiian.AutoSize = true;
+            this.smallHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.smallHawaiian.Location = new System.Drawing.Point(8, 31);
+            this.smallHawaiian.Name = "smallHawaiian";
+            this.smallHawaiian.Size = new System.Drawing.Size(79, 26);
+            this.smallHawaiian.TabIndex = 37;
+            this.smallHawaiian.TabStop = true;
+            this.smallHawaiian.Text = "Small";
+            this.smallHawaiian.UseVisualStyleBackColor = true;
+            // 
+            // hawaiianCheck
+            // 
+            this.hawaiianCheck.AutoSize = true;
+            this.hawaiianCheck.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.hawaiianCheck.Location = new System.Drawing.Point(6, 34);
+            this.hawaiianCheck.Name = "hawaiianCheck";
+            this.hawaiianCheck.Size = new System.Drawing.Size(177, 26);
+            this.hawaiianCheck.TabIndex = 37;
+            this.hawaiianCheck.Text = "Hawaiian Pizza?";
+            this.hawaiianCheck.UseVisualStyleBackColor = true;
+            // 
+            // sausageGB
+            // 
+            this.sausageGB.BackColor = System.Drawing.Color.Orange;
+            this.sausageGB.Controls.Add(this.crustGBSausage);
+            this.sausageGB.Controls.Add(this.sizeGBSausage);
+            this.sausageGB.Controls.Add(this.sausageCheck);
+            this.sausageGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sausageGB.Location = new System.Drawing.Point(562, 82);
+            this.sausageGB.Name = "sausageGB";
+            this.sausageGB.Size = new System.Drawing.Size(197, 491);
+            this.sausageGB.TabIndex = 40;
+            this.sausageGB.TabStop = false;
+            this.sausageGB.Text = "Sausage";
+            // 
+            // crustGBSausage
+            // 
+            this.crustGBSausage.Controls.Add(this.stuffedSausage);
+            this.crustGBSausage.Controls.Add(this.thinSausage);
+            this.crustGBSausage.Controls.Add(this.regSausage);
+            this.crustGBSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crustGBSausage.Location = new System.Drawing.Point(18, 273);
+            this.crustGBSausage.Name = "crustGBSausage";
+            this.crustGBSausage.Size = new System.Drawing.Size(159, 205);
+            this.crustGBSausage.TabIndex = 38;
+            this.crustGBSausage.TabStop = false;
+            this.crustGBSausage.Text = "Crust";
+            // 
+            // stuffedSausage
+            // 
+            this.stuffedSausage.AutoSize = true;
+            this.stuffedSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.stuffedSausage.Location = new System.Drawing.Point(10, 141);
+            this.stuffedSausage.Name = "stuffedSausage";
+            this.stuffedSausage.Size = new System.Drawing.Size(94, 26);
+            this.stuffedSausage.TabIndex = 40;
+            this.stuffedSausage.TabStop = true;
+            this.stuffedSausage.Text = "Stuffed";
+            this.stuffedSausage.UseVisualStyleBackColor = true;
+            // 
+            // thinSausage
+            // 
+            this.thinSausage.AutoSize = true;
+            this.thinSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.thinSausage.Location = new System.Drawing.Point(8, 88);
+            this.thinSausage.Name = "thinSausage";
+            this.thinSausage.Size = new System.Drawing.Size(67, 26);
+            this.thinSausage.TabIndex = 39;
+            this.thinSausage.TabStop = true;
+            this.thinSausage.Text = "Thin";
+            this.thinSausage.UseVisualStyleBackColor = true;
+            // 
+            // regSausage
+            // 
+            this.regSausage.AutoSize = true;
+            this.regSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.regSausage.Location = new System.Drawing.Point(10, 31);
+            this.regSausage.Name = "regSausage";
+            this.regSausage.Size = new System.Drawing.Size(100, 26);
+            this.regSausage.TabIndex = 38;
+            this.regSausage.TabStop = true;
+            this.regSausage.Text = "Regular";
+            this.regSausage.UseVisualStyleBackColor = true;
+            // 
+            // sizeGBSausage
+            // 
+            this.sizeGBSausage.Controls.Add(this.largeSausage);
+            this.sizeGBSausage.Controls.Add(this.mediumSausage);
+            this.sizeGBSausage.Controls.Add(this.smallSausage);
+            this.sizeGBSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sizeGBSausage.Location = new System.Drawing.Point(18, 68);
+            this.sizeGBSausage.Name = "sizeGBSausage";
+            this.sizeGBSausage.Size = new System.Drawing.Size(159, 199);
+            this.sizeGBSausage.TabIndex = 37;
+            this.sizeGBSausage.TabStop = false;
+            this.sizeGBSausage.Text = "Size";
+            // 
+            // largeSausage
+            // 
+            this.largeSausage.AutoSize = true;
+            this.largeSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.largeSausage.Location = new System.Drawing.Point(8, 134);
+            this.largeSausage.Name = "largeSausage";
+            this.largeSausage.Size = new System.Drawing.Size(81, 26);
+            this.largeSausage.TabIndex = 39;
+            this.largeSausage.TabStop = true;
+            this.largeSausage.Text = "Large";
+            this.largeSausage.UseVisualStyleBackColor = true;
+            // 
+            // mediumSausage
+            // 
+            this.mediumSausage.AutoSize = true;
+            this.mediumSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mediumSausage.Location = new System.Drawing.Point(8, 82);
+            this.mediumSausage.Name = "mediumSausage";
+            this.mediumSausage.Size = new System.Drawing.Size(100, 26);
+            this.mediumSausage.TabIndex = 38;
+            this.mediumSausage.TabStop = true;
+            this.mediumSausage.Text = "Medium";
+            this.mediumSausage.UseVisualStyleBackColor = true;
+            // 
+            // smallSausage
+            // 
+            this.smallSausage.AutoSize = true;
+            this.smallSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.smallSausage.Location = new System.Drawing.Point(8, 31);
+            this.smallSausage.Name = "smallSausage";
+            this.smallSausage.Size = new System.Drawing.Size(79, 26);
+            this.smallSausage.TabIndex = 37;
+            this.smallSausage.TabStop = true;
+            this.smallSausage.Text = "Small";
+            this.smallSausage.UseVisualStyleBackColor = true;
+            // 
+            // sausageCheck
+            // 
+            this.sausageCheck.AutoSize = true;
+            this.sausageCheck.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sausageCheck.Location = new System.Drawing.Point(6, 34);
+            this.sausageCheck.Name = "sausageCheck";
+            this.sausageCheck.Size = new System.Drawing.Size(187, 28);
+            this.sausageCheck.TabIndex = 37;
+            this.sausageCheck.Text = "Sausage Pizza?";
+            this.sausageCheck.UseVisualStyleBackColor = true;
+            // 
+            // peppGB
+            // 
+            this.peppGB.BackColor = System.Drawing.Color.Orange;
+            this.peppGB.Controls.Add(this.pepCrustGB);
+            this.peppGB.Controls.Add(this.pepSizeGB);
+            this.peppGB.Controls.Add(this.pepCheck);
+            this.peppGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.peppGB.Location = new System.Drawing.Point(289, 82);
+            this.peppGB.Name = "peppGB";
+            this.peppGB.Size = new System.Drawing.Size(197, 491);
+            this.peppGB.TabIndex = 39;
+            this.peppGB.TabStop = false;
+            this.peppGB.Text = "Pepperoni";
+            // 
+            // pepCrustGB
+            // 
+            this.pepCrustGB.Controls.Add(this.stuffedPep);
+            this.pepCrustGB.Controls.Add(this.thinPep);
+            this.pepCrustGB.Controls.Add(this.regPep);
+            this.pepCrustGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pepCrustGB.Location = new System.Drawing.Point(18, 273);
+            this.pepCrustGB.Name = "pepCrustGB";
+            this.pepCrustGB.Size = new System.Drawing.Size(159, 205);
+            this.pepCrustGB.TabIndex = 38;
+            this.pepCrustGB.TabStop = false;
+            this.pepCrustGB.Text = "Crust";
+            // 
+            // stuffedPep
+            // 
+            this.stuffedPep.AutoSize = true;
+            this.stuffedPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.stuffedPep.Location = new System.Drawing.Point(10, 141);
+            this.stuffedPep.Name = "stuffedPep";
+            this.stuffedPep.Size = new System.Drawing.Size(94, 26);
+            this.stuffedPep.TabIndex = 40;
+            this.stuffedPep.TabStop = true;
+            this.stuffedPep.Text = "Stuffed";
+            this.stuffedPep.UseVisualStyleBackColor = true;
+            // 
+            // thinPep
+            // 
+            this.thinPep.AutoSize = true;
+            this.thinPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.thinPep.Location = new System.Drawing.Point(8, 88);
+            this.thinPep.Name = "thinPep";
+            this.thinPep.Size = new System.Drawing.Size(67, 26);
+            this.thinPep.TabIndex = 39;
+            this.thinPep.TabStop = true;
+            this.thinPep.Text = "Thin";
+            this.thinPep.UseVisualStyleBackColor = true;
+            // 
+            // regPep
+            // 
+            this.regPep.AutoSize = true;
+            this.regPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.regPep.Location = new System.Drawing.Point(10, 31);
+            this.regPep.Name = "regPep";
+            this.regPep.Size = new System.Drawing.Size(100, 26);
+            this.regPep.TabIndex = 38;
+            this.regPep.TabStop = true;
+            this.regPep.Text = "Regular";
+            this.regPep.UseVisualStyleBackColor = true;
+            // 
+            // pepSizeGB
+            // 
+            this.pepSizeGB.Controls.Add(this.largePep);
+            this.pepSizeGB.Controls.Add(this.mediumPep);
+            this.pepSizeGB.Controls.Add(this.smallPep);
+            this.pepSizeGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pepSizeGB.Location = new System.Drawing.Point(18, 68);
+            this.pepSizeGB.Name = "pepSizeGB";
+            this.pepSizeGB.Size = new System.Drawing.Size(159, 199);
+            this.pepSizeGB.TabIndex = 37;
+            this.pepSizeGB.TabStop = false;
+            this.pepSizeGB.Text = "Size";
+            // 
+            // largePep
+            // 
+            this.largePep.AutoSize = true;
+            this.largePep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.largePep.Location = new System.Drawing.Point(8, 134);
+            this.largePep.Name = "largePep";
+            this.largePep.Size = new System.Drawing.Size(81, 26);
+            this.largePep.TabIndex = 39;
+            this.largePep.TabStop = true;
+            this.largePep.Text = "Large";
+            this.largePep.UseVisualStyleBackColor = true;
+            // 
+            // mediumPep
+            // 
+            this.mediumPep.AutoSize = true;
+            this.mediumPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mediumPep.Location = new System.Drawing.Point(8, 82);
+            this.mediumPep.Name = "mediumPep";
+            this.mediumPep.Size = new System.Drawing.Size(100, 26);
+            this.mediumPep.TabIndex = 38;
+            this.mediumPep.TabStop = true;
+            this.mediumPep.Text = "Medium";
+            this.mediumPep.UseVisualStyleBackColor = true;
+            // 
+            // smallPep
+            // 
+            this.smallPep.AutoSize = true;
+            this.smallPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.smallPep.Location = new System.Drawing.Point(8, 31);
+            this.smallPep.Name = "smallPep";
+            this.smallPep.Size = new System.Drawing.Size(79, 26);
+            this.smallPep.TabIndex = 37;
+            this.smallPep.TabStop = true;
+            this.smallPep.Text = "Small";
+            this.smallPep.UseVisualStyleBackColor = true;
+            // 
+            // pepCheck
+            // 
+            this.pepCheck.AutoSize = true;
+            this.pepCheck.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pepCheck.Location = new System.Drawing.Point(9, 34);
+            this.pepCheck.Name = "pepCheck";
+            this.pepCheck.Size = new System.Drawing.Size(188, 26);
+            this.pepCheck.TabIndex = 37;
+            this.pepCheck.Text = "Pepperoni Pizza?";
+            this.pepCheck.UseVisualStyleBackColor = true;
+            // 
+            // clearChoicesButton
+            // 
+            this.clearChoicesButton.BackColor = System.Drawing.Color.Red;
+            this.clearChoicesButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.clearChoicesButton.Location = new System.Drawing.Point(595, 604);
+            this.clearChoicesButton.Name = "clearChoicesButton";
+            this.clearChoicesButton.Size = new System.Drawing.Size(189, 39);
+            this.clearChoicesButton.TabIndex = 36;
+            this.clearChoicesButton.Text = "Clear Choices";
+            this.clearChoicesButton.UseVisualStyleBackColor = false;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Orange;
+            this.groupBox1.Controls.Add(this.crustGBcheese);
+            this.groupBox1.Controls.Add(this.sizeGBcheese);
+            this.groupBox1.Controls.Add(this.cheeseCheck);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(21, 82);
             this.groupBox1.Name = "groupBox1";
@@ -577,6 +1151,115 @@
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cheese";
+            // 
+            // crustGBcheese
+            // 
+            this.crustGBcheese.Controls.Add(this.stuffedCheese);
+            this.crustGBcheese.Controls.Add(this.thinCheese);
+            this.crustGBcheese.Controls.Add(this.regCheese);
+            this.crustGBcheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crustGBcheese.Location = new System.Drawing.Point(18, 273);
+            this.crustGBcheese.Name = "crustGBcheese";
+            this.crustGBcheese.Size = new System.Drawing.Size(159, 205);
+            this.crustGBcheese.TabIndex = 38;
+            this.crustGBcheese.TabStop = false;
+            this.crustGBcheese.Text = "Crust";
+            // 
+            // stuffedCheese
+            // 
+            this.stuffedCheese.AutoSize = true;
+            this.stuffedCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.stuffedCheese.Location = new System.Drawing.Point(10, 141);
+            this.stuffedCheese.Name = "stuffedCheese";
+            this.stuffedCheese.Size = new System.Drawing.Size(94, 26);
+            this.stuffedCheese.TabIndex = 40;
+            this.stuffedCheese.TabStop = true;
+            this.stuffedCheese.Text = "Stuffed";
+            this.stuffedCheese.UseVisualStyleBackColor = true;
+            // 
+            // thinCheese
+            // 
+            this.thinCheese.AutoSize = true;
+            this.thinCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.thinCheese.Location = new System.Drawing.Point(8, 88);
+            this.thinCheese.Name = "thinCheese";
+            this.thinCheese.Size = new System.Drawing.Size(67, 26);
+            this.thinCheese.TabIndex = 39;
+            this.thinCheese.TabStop = true;
+            this.thinCheese.Text = "Thin";
+            this.thinCheese.UseVisualStyleBackColor = true;
+            // 
+            // regCheese
+            // 
+            this.regCheese.AutoSize = true;
+            this.regCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.regCheese.Location = new System.Drawing.Point(10, 31);
+            this.regCheese.Name = "regCheese";
+            this.regCheese.Size = new System.Drawing.Size(100, 26);
+            this.regCheese.TabIndex = 38;
+            this.regCheese.TabStop = true;
+            this.regCheese.Text = "Regular";
+            this.regCheese.UseVisualStyleBackColor = true;
+            // 
+            // sizeGBcheese
+            // 
+            this.sizeGBcheese.Controls.Add(this.largeCheese);
+            this.sizeGBcheese.Controls.Add(this.mediumCheese);
+            this.sizeGBcheese.Controls.Add(this.smallCheese);
+            this.sizeGBcheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sizeGBcheese.Location = new System.Drawing.Point(18, 68);
+            this.sizeGBcheese.Name = "sizeGBcheese";
+            this.sizeGBcheese.Size = new System.Drawing.Size(159, 199);
+            this.sizeGBcheese.TabIndex = 37;
+            this.sizeGBcheese.TabStop = false;
+            this.sizeGBcheese.Text = "Size";
+            // 
+            // largeCheese
+            // 
+            this.largeCheese.AutoSize = true;
+            this.largeCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.largeCheese.Location = new System.Drawing.Point(8, 134);
+            this.largeCheese.Name = "largeCheese";
+            this.largeCheese.Size = new System.Drawing.Size(81, 26);
+            this.largeCheese.TabIndex = 39;
+            this.largeCheese.TabStop = true;
+            this.largeCheese.Text = "Large";
+            this.largeCheese.UseVisualStyleBackColor = true;
+            // 
+            // mediumCheese
+            // 
+            this.mediumCheese.AutoSize = true;
+            this.mediumCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mediumCheese.Location = new System.Drawing.Point(8, 82);
+            this.mediumCheese.Name = "mediumCheese";
+            this.mediumCheese.Size = new System.Drawing.Size(100, 26);
+            this.mediumCheese.TabIndex = 38;
+            this.mediumCheese.TabStop = true;
+            this.mediumCheese.Text = "Medium";
+            this.mediumCheese.UseVisualStyleBackColor = true;
+            // 
+            // smallCheese
+            // 
+            this.smallCheese.AutoSize = true;
+            this.smallCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.smallCheese.Location = new System.Drawing.Point(8, 31);
+            this.smallCheese.Name = "smallCheese";
+            this.smallCheese.Size = new System.Drawing.Size(79, 26);
+            this.smallCheese.TabIndex = 37;
+            this.smallCheese.TabStop = true;
+            this.smallCheese.Text = "Small";
+            this.smallCheese.UseVisualStyleBackColor = true;
+            // 
+            // cheeseCheck
+            // 
+            this.cheeseCheck.AutoSize = true;
+            this.cheeseCheck.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cheeseCheck.Location = new System.Drawing.Point(18, 34);
+            this.cheeseCheck.Name = "cheeseCheck";
+            this.cheeseCheck.Size = new System.Drawing.Size(176, 28);
+            this.cheeseCheck.TabIndex = 37;
+            this.cheeseCheck.Text = "Cheese Pizza?";
+            this.cheeseCheck.UseVisualStyleBackColor = true;
             // 
             // stPizzaLabel
             // 
@@ -640,17 +1323,6 @@
             this.tabPage9.Text = "Help";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(595, 604);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 39);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Clear Choices";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -668,6 +1340,36 @@
             this.tabPage2.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.bbqGB.ResumeLayout(false);
+            this.bbqGB.PerformLayout();
+            this.crustGBbbq.ResumeLayout(false);
+            this.crustGBbbq.PerformLayout();
+            this.sizeGBbbq.ResumeLayout(false);
+            this.sizeGBbbq.PerformLayout();
+            this.hawaiianGB.ResumeLayout(false);
+            this.hawaiianGB.PerformLayout();
+            this.crustGBHawaiian.ResumeLayout(false);
+            this.crustGBHawaiian.PerformLayout();
+            this.sizeGBHawaiian.ResumeLayout(false);
+            this.sizeGBHawaiian.PerformLayout();
+            this.sausageGB.ResumeLayout(false);
+            this.sausageGB.PerformLayout();
+            this.crustGBSausage.ResumeLayout(false);
+            this.crustGBSausage.PerformLayout();
+            this.sizeGBSausage.ResumeLayout(false);
+            this.sizeGBSausage.PerformLayout();
+            this.peppGB.ResumeLayout(false);
+            this.peppGB.PerformLayout();
+            this.pepCrustGB.ResumeLayout(false);
+            this.pepCrustGB.PerformLayout();
+            this.pepSizeGB.ResumeLayout(false);
+            this.pepSizeGB.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.crustGBcheese.ResumeLayout(false);
+            this.crustGBcheese.PerformLayout();
+            this.sizeGBcheese.ResumeLayout(false);
+            this.sizeGBcheese.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -725,6 +1427,55 @@
         private Label loginLabel;
         private GroupBox groupBox1;
         private Label stPizzaLabel;
-        private Button button1;
+        private Button clearChoicesButton;
+        private GroupBox crustGBcheese;
+        private RadioButton stuffedCheese;
+        private RadioButton thinCheese;
+        private RadioButton regCheese;
+        private GroupBox sizeGBcheese;
+        private RadioButton largeCheese;
+        private RadioButton mediumCheese;
+        private RadioButton smallCheese;
+        private CheckBox cheeseCheck;
+        private GroupBox bbqGB;
+        private GroupBox crustGBbbq;
+        private RadioButton stuffedBBQ;
+        private RadioButton thinBBQ;
+        private RadioButton regBBQ;
+        private GroupBox sizeGBbbq;
+        private RadioButton largeBBQ;
+        private RadioButton mediumBBQ;
+        private RadioButton smallBBQ;
+        private CheckBox bbqCheck;
+        private GroupBox hawaiianGB;
+        private GroupBox crustGBHawaiian;
+        private RadioButton stuffedHawaiian;
+        private RadioButton thinHawaiian;
+        private RadioButton regHawaiian;
+        private GroupBox sizeGBHawaiian;
+        private RadioButton largeHawaiian;
+        private RadioButton mediumHawaiian;
+        private RadioButton smallHawaiian;
+        private CheckBox hawaiianCheck;
+        private GroupBox sausageGB;
+        private GroupBox crustGBSausage;
+        private RadioButton stuffedSausage;
+        private RadioButton thinSausage;
+        private RadioButton regSausage;
+        private GroupBox sizeGBSausage;
+        private RadioButton largeSausage;
+        private RadioButton mediumSausage;
+        private RadioButton smallSausage;
+        private CheckBox sausageCheck;
+        private GroupBox peppGB;
+        private GroupBox pepCrustGB;
+        private RadioButton stuffedPep;
+        private RadioButton thinPep;
+        private RadioButton regPep;
+        private GroupBox pepSizeGB;
+        private RadioButton largePep;
+        private RadioButton mediumPep;
+        private RadioButton smallPep;
+        private CheckBox pepCheck;
     }
 }
