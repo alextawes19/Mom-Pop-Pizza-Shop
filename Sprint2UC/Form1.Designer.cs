@@ -125,44 +125,77 @@
             this.cheeseCheck = new System.Windows.Forms.CheckBox();
             this.stPizzaLabel = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.byoClearButton = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.byoPineapple = new System.Windows.Forms.CheckBox();
+            this.byoOnions = new System.Windows.Forms.CheckBox();
+            this.byoPeppers = new System.Windows.Forms.CheckBox();
+            this.byoMeatGB = new System.Windows.Forms.GroupBox();
+            this.byoSausage = new System.Windows.Forms.CheckBox();
+            this.byoChk = new System.Windows.Forms.CheckBox();
+            this.byoPep = new System.Windows.Forms.CheckBox();
+            this.byoExtraCheeseGB = new System.Windows.Forms.GroupBox();
+            this.byoTripleBlend = new System.Windows.Forms.CheckBox();
+            this.byoParmesan = new System.Windows.Forms.CheckBox();
+            this.byoExtra = new System.Windows.Forms.CheckBox();
+            this.byoCheeseGB = new System.Windows.Forms.GroupBox();
+            this.byoNoCheese = new System.Windows.Forms.RadioButton();
+            this.byoLightCheese = new System.Windows.Forms.RadioButton();
+            this.byoNormalCheese = new System.Windows.Forms.RadioButton();
+            this.byoSauceGB = new System.Windows.Forms.GroupBox();
+            this.byoRanchSauce = new System.Windows.Forms.RadioButton();
+            this.byoBBQSauce = new System.Windows.Forms.RadioButton();
+            this.byoOriginalSauce = new System.Windows.Forms.RadioButton();
+            this.byoCutGB = new System.Windows.Forms.GroupBox();
+            this.byoSquareCut = new System.Windows.Forms.RadioButton();
+            this.byoCleanCut = new System.Windows.Forms.RadioButton();
+            this.byoNormalCut = new System.Windows.Forms.RadioButton();
+            this.crustGB = new System.Windows.Forms.GroupBox();
+            this.byoStuffedCrust = new System.Windows.Forms.RadioButton();
+            this.byoThinCrust = new System.Windows.Forms.RadioButton();
+            this.byoRegularCrust = new System.Windows.Forms.RadioButton();
+            this.sizeGB = new System.Windows.Forms.GroupBox();
+            this.byoLarge = new System.Windows.Forms.RadioButton();
+            this.byoMedium = new System.Windows.Forms.RadioButton();
+            this.byoSmall = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.sizeGB = new System.Windows.Forms.GroupBox();
-            this.crustGB = new System.Windows.Forms.GroupBox();
-            this.byoCutGB = new System.Windows.Forms.GroupBox();
-            this.byoSauceGB = new System.Windows.Forms.GroupBox();
-            this.byoCheeseGB = new System.Windows.Forms.GroupBox();
-            this.byoExtraCheeseGB = new System.Windows.Forms.GroupBox();
-            this.byoMeatGB = new System.Windows.Forms.GroupBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.byoSmall = new System.Windows.Forms.RadioButton();
-            this.byoMedium = new System.Windows.Forms.RadioButton();
-            this.byoLarge = new System.Windows.Forms.RadioButton();
-            this.byoStuffedCrust = new System.Windows.Forms.RadioButton();
-            this.byoThinCrust = new System.Windows.Forms.RadioButton();
-            this.byoRegularCrust = new System.Windows.Forms.RadioButton();
-            this.byoSquareCut = new System.Windows.Forms.RadioButton();
-            this.byoCleanCut = new System.Windows.Forms.RadioButton();
-            this.byoNormalCut = new System.Windows.Forms.RadioButton();
-            this.byoRanchSauce = new System.Windows.Forms.RadioButton();
-            this.byoBBQSauce = new System.Windows.Forms.RadioButton();
-            this.byoOriginalSauce = new System.Windows.Forms.RadioButton();
-            this.byoNoCheese = new System.Windows.Forms.RadioButton();
-            this.byoLightCheese = new System.Windows.Forms.RadioButton();
-            this.byoNormalCheese = new System.Windows.Forms.RadioButton();
-            this.byoExtra = new System.Windows.Forms.CheckBox();
-            this.byoParmesan = new System.Windows.Forms.CheckBox();
-            this.byoTripleBlend = new System.Windows.Forms.CheckBox();
-            this.byoSausage = new System.Windows.Forms.CheckBox();
-            this.byoChk = new System.Windows.Forms.CheckBox();
-            this.byoPep = new System.Windows.Forms.CheckBox();
-            this.byoPineapple = new System.Windows.Forms.CheckBox();
-            this.byoOnions = new System.Windows.Forms.CheckBox();
-            this.byoPeppers = new System.Windows.Forms.CheckBox();
-            this.byoClearButton = new System.Windows.Forms.Button();
+            this.bevBox = new System.Windows.Forms.GroupBox();
+            this.teaBox = new System.Windows.Forms.GroupBox();
+            this.teaLargeRB = new System.Windows.Forms.RadioButton();
+            this.teaMediumRB = new System.Windows.Forms.RadioButton();
+            this.teaSmallRB = new System.Windows.Forms.RadioButton();
+            this.teaNumerator = new System.Windows.Forms.NumericUpDown();
+            this.teaCheck = new System.Windows.Forms.CheckBox();
+            this.dpBox = new System.Windows.Forms.GroupBox();
+            this.dpLargeRB = new System.Windows.Forms.RadioButton();
+            this.dpMediumRB = new System.Windows.Forms.RadioButton();
+            this.dpSmallRB = new System.Windows.Forms.RadioButton();
+            this.dpNumerator = new System.Windows.Forms.NumericUpDown();
+            this.dpCheck = new System.Windows.Forms.CheckBox();
+            this.powerBox = new System.Windows.Forms.GroupBox();
+            this.powerLargeRB = new System.Windows.Forms.RadioButton();
+            this.powerMediumRB = new System.Windows.Forms.RadioButton();
+            this.powerSmallRB = new System.Windows.Forms.RadioButton();
+            this.powerNumerator = new System.Windows.Forms.NumericUpDown();
+            this.powerCheck = new System.Windows.Forms.CheckBox();
+            this.spriteBox = new System.Windows.Forms.GroupBox();
+            this.spriteLargeRB = new System.Windows.Forms.RadioButton();
+            this.spriteMediumRB = new System.Windows.Forms.RadioButton();
+            this.spriteSmallRB = new System.Windows.Forms.RadioButton();
+            this.spriteNumerator = new System.Windows.Forms.NumericUpDown();
+            this.spriteCheck = new System.Windows.Forms.CheckBox();
+            this.cokeBox = new System.Windows.Forms.GroupBox();
+            this.cokeLargeRB = new System.Windows.Forms.RadioButton();
+            this.cokeMediumRB = new System.Windows.Forms.RadioButton();
+            this.cokeSmallRB = new System.Windows.Forms.RadioButton();
+            this.cokeNumerator = new System.Windows.Forms.NumericUpDown();
+            this.cokeCheck = new System.Windows.Forms.CheckBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.bevLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -183,14 +216,26 @@
             this.crustGBcheese.SuspendLayout();
             this.sizeGBcheese.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.sizeGB.SuspendLayout();
-            this.crustGB.SuspendLayout();
-            this.byoCutGB.SuspendLayout();
-            this.byoSauceGB.SuspendLayout();
-            this.byoCheeseGB.SuspendLayout();
-            this.byoExtraCheeseGB.SuspendLayout();
-            this.byoMeatGB.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.byoMeatGB.SuspendLayout();
+            this.byoExtraCheeseGB.SuspendLayout();
+            this.byoCheeseGB.SuspendLayout();
+            this.byoSauceGB.SuspendLayout();
+            this.byoCutGB.SuspendLayout();
+            this.crustGB.SuspendLayout();
+            this.sizeGB.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.bevBox.SuspendLayout();
+            this.teaBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.teaNumerator)).BeginInit();
+            this.dpBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dpNumerator)).BeginInit();
+            this.powerBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.powerNumerator)).BeginInit();
+            this.spriteBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spriteNumerator)).BeginInit();
+            this.cokeBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cokeNumerator)).BeginInit();
             this.SuspendLayout();
             // 
             // loginLogoText
@@ -1337,155 +1382,16 @@
             this.tabPage5.Text = "Build Your Own";
             this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
-            // tabPage6
+            // byoClearButton
             // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 41);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Beverages";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 41);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Review Order";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 41);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Checkout";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 41);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Help";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Orange;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(537, 16);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            this.label1.Size = new System.Drawing.Size(294, 53);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "Build Your Own";
-            // 
-            // sizeGB
-            // 
-            this.sizeGB.BackColor = System.Drawing.Color.Orange;
-            this.sizeGB.Controls.Add(this.byoLarge);
-            this.sizeGB.Controls.Add(this.byoMedium);
-            this.sizeGB.Controls.Add(this.byoSmall);
-            this.sizeGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.sizeGB.Location = new System.Drawing.Point(66, 90);
-            this.sizeGB.Name = "sizeGB";
-            this.sizeGB.Size = new System.Drawing.Size(200, 181);
-            this.sizeGB.TabIndex = 36;
-            this.sizeGB.TabStop = false;
-            this.sizeGB.Text = "Size";
-            // 
-            // crustGB
-            // 
-            this.crustGB.BackColor = System.Drawing.Color.Orange;
-            this.crustGB.Controls.Add(this.byoStuffedCrust);
-            this.crustGB.Controls.Add(this.byoThinCrust);
-            this.crustGB.Controls.Add(this.byoRegularCrust);
-            this.crustGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.crustGB.Location = new System.Drawing.Point(393, 90);
-            this.crustGB.Name = "crustGB";
-            this.crustGB.Size = new System.Drawing.Size(200, 181);
-            this.crustGB.TabIndex = 37;
-            this.crustGB.TabStop = false;
-            this.crustGB.Text = "Crust";
-            // 
-            // byoCutGB
-            // 
-            this.byoCutGB.BackColor = System.Drawing.Color.Orange;
-            this.byoCutGB.Controls.Add(this.byoSquareCut);
-            this.byoCutGB.Controls.Add(this.byoCleanCut);
-            this.byoCutGB.Controls.Add(this.byoNormalCut);
-            this.byoCutGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoCutGB.Location = new System.Drawing.Point(759, 90);
-            this.byoCutGB.Name = "byoCutGB";
-            this.byoCutGB.Size = new System.Drawing.Size(200, 181);
-            this.byoCutGB.TabIndex = 37;
-            this.byoCutGB.TabStop = false;
-            this.byoCutGB.Text = "Cut";
-            // 
-            // byoSauceGB
-            // 
-            this.byoSauceGB.BackColor = System.Drawing.Color.Orange;
-            this.byoSauceGB.Controls.Add(this.byoRanchSauce);
-            this.byoSauceGB.Controls.Add(this.byoBBQSauce);
-            this.byoSauceGB.Controls.Add(this.byoOriginalSauce);
-            this.byoSauceGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoSauceGB.Location = new System.Drawing.Point(1046, 90);
-            this.byoSauceGB.Name = "byoSauceGB";
-            this.byoSauceGB.Size = new System.Drawing.Size(200, 181);
-            this.byoSauceGB.TabIndex = 37;
-            this.byoSauceGB.TabStop = false;
-            this.byoSauceGB.Text = "Sauce";
-            // 
-            // byoCheeseGB
-            // 
-            this.byoCheeseGB.BackColor = System.Drawing.Color.Orange;
-            this.byoCheeseGB.Controls.Add(this.byoNoCheese);
-            this.byoCheeseGB.Controls.Add(this.byoLightCheese);
-            this.byoCheeseGB.Controls.Add(this.byoNormalCheese);
-            this.byoCheeseGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoCheeseGB.Location = new System.Drawing.Point(66, 351);
-            this.byoCheeseGB.Name = "byoCheeseGB";
-            this.byoCheeseGB.Size = new System.Drawing.Size(200, 181);
-            this.byoCheeseGB.TabIndex = 37;
-            this.byoCheeseGB.TabStop = false;
-            this.byoCheeseGB.Text = "Cheese";
-            // 
-            // byoExtraCheeseGB
-            // 
-            this.byoExtraCheeseGB.BackColor = System.Drawing.Color.Orange;
-            this.byoExtraCheeseGB.Controls.Add(this.byoTripleBlend);
-            this.byoExtraCheeseGB.Controls.Add(this.byoParmesan);
-            this.byoExtraCheeseGB.Controls.Add(this.byoExtra);
-            this.byoExtraCheeseGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoExtraCheeseGB.Location = new System.Drawing.Point(393, 351);
-            this.byoExtraCheeseGB.Name = "byoExtraCheeseGB";
-            this.byoExtraCheeseGB.Size = new System.Drawing.Size(200, 181);
-            this.byoExtraCheeseGB.TabIndex = 37;
-            this.byoExtraCheeseGB.TabStop = false;
-            this.byoExtraCheeseGB.Text = "Extra Cheese";
-            // 
-            // byoMeatGB
-            // 
-            this.byoMeatGB.BackColor = System.Drawing.Color.Orange;
-            this.byoMeatGB.Controls.Add(this.byoSausage);
-            this.byoMeatGB.Controls.Add(this.byoChk);
-            this.byoMeatGB.Controls.Add(this.byoPep);
-            this.byoMeatGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoMeatGB.Location = new System.Drawing.Point(759, 351);
-            this.byoMeatGB.Name = "byoMeatGB";
-            this.byoMeatGB.Size = new System.Drawing.Size(200, 181);
-            this.byoMeatGB.TabIndex = 37;
-            this.byoMeatGB.TabStop = false;
-            this.byoMeatGB.Text = "Meat";
+            this.byoClearButton.BackColor = System.Drawing.Color.Red;
+            this.byoClearButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoClearButton.Location = new System.Drawing.Point(584, 572);
+            this.byoClearButton.Name = "byoClearButton";
+            this.byoClearButton.Size = new System.Drawing.Size(189, 39);
+            this.byoClearButton.TabIndex = 38;
+            this.byoClearButton.Text = "Clear Choices";
+            this.byoClearButton.UseVisualStyleBackColor = false;
             // 
             // groupBox9
             // 
@@ -1501,149 +1407,146 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Vegetables";
             // 
-            // byoSmall
+            // byoPineapple
             // 
-            this.byoSmall.AutoSize = true;
-            this.byoSmall.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoSmall.Location = new System.Drawing.Point(36, 34);
-            this.byoSmall.Name = "byoSmall";
-            this.byoSmall.Size = new System.Drawing.Size(85, 28);
-            this.byoSmall.TabIndex = 0;
-            this.byoSmall.TabStop = true;
-            this.byoSmall.Text = "Small";
-            this.byoSmall.UseVisualStyleBackColor = true;
+            this.byoPineapple.AutoSize = true;
+            this.byoPineapple.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoPineapple.Location = new System.Drawing.Point(24, 122);
+            this.byoPineapple.Name = "byoPineapple";
+            this.byoPineapple.Size = new System.Drawing.Size(130, 28);
+            this.byoPineapple.TabIndex = 5;
+            this.byoPineapple.Text = "Pineapple";
+            this.byoPineapple.UseVisualStyleBackColor = true;
             // 
-            // byoMedium
+            // byoOnions
             // 
-            this.byoMedium.AutoSize = true;
-            this.byoMedium.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoMedium.Location = new System.Drawing.Point(36, 82);
-            this.byoMedium.Name = "byoMedium";
-            this.byoMedium.Size = new System.Drawing.Size(108, 28);
-            this.byoMedium.TabIndex = 1;
-            this.byoMedium.TabStop = true;
-            this.byoMedium.Text = "Medium";
-            this.byoMedium.UseVisualStyleBackColor = true;
+            this.byoOnions.AutoSize = true;
+            this.byoOnions.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoOnions.Location = new System.Drawing.Point(24, 72);
+            this.byoOnions.Name = "byoOnions";
+            this.byoOnions.Size = new System.Drawing.Size(102, 28);
+            this.byoOnions.TabIndex = 4;
+            this.byoOnions.Text = "Onions";
+            this.byoOnions.UseVisualStyleBackColor = true;
             // 
-            // byoLarge
+            // byoPeppers
             // 
-            this.byoLarge.AutoSize = true;
-            this.byoLarge.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoLarge.Location = new System.Drawing.Point(36, 132);
-            this.byoLarge.Name = "byoLarge";
-            this.byoLarge.Size = new System.Drawing.Size(87, 28);
-            this.byoLarge.TabIndex = 2;
-            this.byoLarge.TabStop = true;
-            this.byoLarge.Text = "Large";
-            this.byoLarge.UseVisualStyleBackColor = true;
+            this.byoPeppers.AutoSize = true;
+            this.byoPeppers.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoPeppers.Location = new System.Drawing.Point(24, 31);
+            this.byoPeppers.Name = "byoPeppers";
+            this.byoPeppers.Size = new System.Drawing.Size(113, 28);
+            this.byoPeppers.TabIndex = 3;
+            this.byoPeppers.Text = "Peppers";
+            this.byoPeppers.UseVisualStyleBackColor = true;
             // 
-            // byoStuffedCrust
+            // byoMeatGB
             // 
-            this.byoStuffedCrust.AutoSize = true;
-            this.byoStuffedCrust.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoStuffedCrust.Location = new System.Drawing.Point(46, 125);
-            this.byoStuffedCrust.Name = "byoStuffedCrust";
-            this.byoStuffedCrust.Size = new System.Drawing.Size(101, 28);
-            this.byoStuffedCrust.TabIndex = 5;
-            this.byoStuffedCrust.TabStop = true;
-            this.byoStuffedCrust.Text = "Stuffed";
-            this.byoStuffedCrust.UseVisualStyleBackColor = true;
+            this.byoMeatGB.BackColor = System.Drawing.Color.Orange;
+            this.byoMeatGB.Controls.Add(this.byoSausage);
+            this.byoMeatGB.Controls.Add(this.byoChk);
+            this.byoMeatGB.Controls.Add(this.byoPep);
+            this.byoMeatGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoMeatGB.Location = new System.Drawing.Point(759, 351);
+            this.byoMeatGB.Name = "byoMeatGB";
+            this.byoMeatGB.Size = new System.Drawing.Size(200, 181);
+            this.byoMeatGB.TabIndex = 37;
+            this.byoMeatGB.TabStop = false;
+            this.byoMeatGB.Text = "Meat";
             // 
-            // byoThinCrust
+            // byoSausage
             // 
-            this.byoThinCrust.AutoSize = true;
-            this.byoThinCrust.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoThinCrust.Location = new System.Drawing.Point(46, 75);
-            this.byoThinCrust.Name = "byoThinCrust";
-            this.byoThinCrust.Size = new System.Drawing.Size(73, 28);
-            this.byoThinCrust.TabIndex = 4;
-            this.byoThinCrust.TabStop = true;
-            this.byoThinCrust.Text = "Thin";
-            this.byoThinCrust.UseVisualStyleBackColor = true;
+            this.byoSausage.AutoSize = true;
+            this.byoSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoSausage.Location = new System.Drawing.Point(24, 122);
+            this.byoSausage.Name = "byoSausage";
+            this.byoSausage.Size = new System.Drawing.Size(116, 28);
+            this.byoSausage.TabIndex = 5;
+            this.byoSausage.Text = "Sausage";
+            this.byoSausage.UseVisualStyleBackColor = true;
             // 
-            // byoRegularCrust
+            // byoChk
             // 
-            this.byoRegularCrust.AutoSize = true;
-            this.byoRegularCrust.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoRegularCrust.Location = new System.Drawing.Point(46, 27);
-            this.byoRegularCrust.Name = "byoRegularCrust";
-            this.byoRegularCrust.Size = new System.Drawing.Size(108, 28);
-            this.byoRegularCrust.TabIndex = 3;
-            this.byoRegularCrust.TabStop = true;
-            this.byoRegularCrust.Text = "Regular";
-            this.byoRegularCrust.UseVisualStyleBackColor = true;
+            this.byoChk.AutoSize = true;
+            this.byoChk.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoChk.Location = new System.Drawing.Point(24, 72);
+            this.byoChk.Name = "byoChk";
+            this.byoChk.Size = new System.Drawing.Size(113, 28);
+            this.byoChk.TabIndex = 4;
+            this.byoChk.Text = "Chicken";
+            this.byoChk.UseVisualStyleBackColor = true;
             // 
-            // byoSquareCut
+            // byoPep
             // 
-            this.byoSquareCut.AutoSize = true;
-            this.byoSquareCut.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoSquareCut.Location = new System.Drawing.Point(46, 125);
-            this.byoSquareCut.Name = "byoSquareCut";
-            this.byoSquareCut.Size = new System.Drawing.Size(101, 28);
-            this.byoSquareCut.TabIndex = 5;
-            this.byoSquareCut.TabStop = true;
-            this.byoSquareCut.Text = "Square";
-            this.byoSquareCut.UseVisualStyleBackColor = true;
+            this.byoPep.AutoSize = true;
+            this.byoPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoPep.Location = new System.Drawing.Point(24, 31);
+            this.byoPep.Name = "byoPep";
+            this.byoPep.Size = new System.Drawing.Size(134, 28);
+            this.byoPep.TabIndex = 3;
+            this.byoPep.Text = "Pepperoni";
+            this.byoPep.UseVisualStyleBackColor = false;
             // 
-            // byoCleanCut
+            // byoExtraCheeseGB
             // 
-            this.byoCleanCut.AutoSize = true;
-            this.byoCleanCut.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoCleanCut.Location = new System.Drawing.Point(46, 75);
-            this.byoCleanCut.Name = "byoCleanCut";
-            this.byoCleanCut.Size = new System.Drawing.Size(87, 28);
-            this.byoCleanCut.TabIndex = 4;
-            this.byoCleanCut.TabStop = true;
-            this.byoCleanCut.Text = "Clean";
-            this.byoCleanCut.UseVisualStyleBackColor = true;
+            this.byoExtraCheeseGB.BackColor = System.Drawing.Color.Orange;
+            this.byoExtraCheeseGB.Controls.Add(this.byoTripleBlend);
+            this.byoExtraCheeseGB.Controls.Add(this.byoParmesan);
+            this.byoExtraCheeseGB.Controls.Add(this.byoExtra);
+            this.byoExtraCheeseGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoExtraCheeseGB.Location = new System.Drawing.Point(393, 351);
+            this.byoExtraCheeseGB.Name = "byoExtraCheeseGB";
+            this.byoExtraCheeseGB.Size = new System.Drawing.Size(200, 181);
+            this.byoExtraCheeseGB.TabIndex = 37;
+            this.byoExtraCheeseGB.TabStop = false;
+            this.byoExtraCheeseGB.Text = "Extra Cheese";
             // 
-            // byoNormalCut
+            // byoTripleBlend
             // 
-            this.byoNormalCut.AutoSize = true;
-            this.byoNormalCut.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoNormalCut.Location = new System.Drawing.Point(46, 27);
-            this.byoNormalCut.Name = "byoNormalCut";
-            this.byoNormalCut.Size = new System.Drawing.Size(103, 28);
-            this.byoNormalCut.TabIndex = 3;
-            this.byoNormalCut.TabStop = true;
-            this.byoNormalCut.Text = "Normal";
-            this.byoNormalCut.UseVisualStyleBackColor = true;
+            this.byoTripleBlend.AutoSize = true;
+            this.byoTripleBlend.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoTripleBlend.Location = new System.Drawing.Point(25, 125);
+            this.byoTripleBlend.Name = "byoTripleBlend";
+            this.byoTripleBlend.Size = new System.Drawing.Size(152, 28);
+            this.byoTripleBlend.TabIndex = 2;
+            this.byoTripleBlend.Text = "Triple Blend";
+            this.byoTripleBlend.UseVisualStyleBackColor = true;
             // 
-            // byoRanchSauce
+            // byoParmesan
             // 
-            this.byoRanchSauce.AutoSize = true;
-            this.byoRanchSauce.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoRanchSauce.Location = new System.Drawing.Point(49, 125);
-            this.byoRanchSauce.Name = "byoRanchSauce";
-            this.byoRanchSauce.Size = new System.Drawing.Size(93, 28);
-            this.byoRanchSauce.TabIndex = 8;
-            this.byoRanchSauce.TabStop = true;
-            this.byoRanchSauce.Text = "Ranch";
-            this.byoRanchSauce.UseVisualStyleBackColor = true;
+            this.byoParmesan.AutoSize = true;
+            this.byoParmesan.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoParmesan.Location = new System.Drawing.Point(25, 75);
+            this.byoParmesan.Name = "byoParmesan";
+            this.byoParmesan.Size = new System.Drawing.Size(131, 28);
+            this.byoParmesan.TabIndex = 1;
+            this.byoParmesan.Text = "Parmesan";
+            this.byoParmesan.UseVisualStyleBackColor = true;
             // 
-            // byoBBQSauce
+            // byoExtra
             // 
-            this.byoBBQSauce.AutoSize = true;
-            this.byoBBQSauce.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoBBQSauce.Location = new System.Drawing.Point(49, 75);
-            this.byoBBQSauce.Name = "byoBBQSauce";
-            this.byoBBQSauce.Size = new System.Drawing.Size(75, 28);
-            this.byoBBQSauce.TabIndex = 7;
-            this.byoBBQSauce.TabStop = true;
-            this.byoBBQSauce.Text = "BBQ";
-            this.byoBBQSauce.UseVisualStyleBackColor = true;
+            this.byoExtra.AutoSize = true;
+            this.byoExtra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoExtra.Location = new System.Drawing.Point(25, 34);
+            this.byoExtra.Name = "byoExtra";
+            this.byoExtra.Size = new System.Drawing.Size(82, 28);
+            this.byoExtra.TabIndex = 0;
+            this.byoExtra.Text = "Extra";
+            this.byoExtra.UseVisualStyleBackColor = true;
             // 
-            // byoOriginalSauce
+            // byoCheeseGB
             // 
-            this.byoOriginalSauce.AutoSize = true;
-            this.byoOriginalSauce.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoOriginalSauce.Location = new System.Drawing.Point(49, 27);
-            this.byoOriginalSauce.Name = "byoOriginalSauce";
-            this.byoOriginalSauce.Size = new System.Drawing.Size(110, 28);
-            this.byoOriginalSauce.TabIndex = 6;
-            this.byoOriginalSauce.TabStop = true;
-            this.byoOriginalSauce.Text = "Original";
-            this.byoOriginalSauce.UseVisualStyleBackColor = true;
+            this.byoCheeseGB.BackColor = System.Drawing.Color.Orange;
+            this.byoCheeseGB.Controls.Add(this.byoNoCheese);
+            this.byoCheeseGB.Controls.Add(this.byoLightCheese);
+            this.byoCheeseGB.Controls.Add(this.byoNormalCheese);
+            this.byoCheeseGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoCheeseGB.Location = new System.Drawing.Point(66, 351);
+            this.byoCheeseGB.Name = "byoCheeseGB";
+            this.byoCheeseGB.Size = new System.Drawing.Size(200, 181);
+            this.byoCheeseGB.TabIndex = 37;
+            this.byoCheeseGB.TabStop = false;
+            this.byoCheeseGB.Text = "Cheese";
             // 
             // byoNoCheese
             // 
@@ -1681,115 +1584,635 @@
             this.byoNormalCheese.Text = "Normal";
             this.byoNormalCheese.UseVisualStyleBackColor = true;
             // 
-            // byoExtra
+            // byoSauceGB
             // 
-            this.byoExtra.AutoSize = true;
-            this.byoExtra.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoExtra.Location = new System.Drawing.Point(25, 34);
-            this.byoExtra.Name = "byoExtra";
-            this.byoExtra.Size = new System.Drawing.Size(82, 28);
-            this.byoExtra.TabIndex = 0;
-            this.byoExtra.Text = "Extra";
-            this.byoExtra.UseVisualStyleBackColor = true;
+            this.byoSauceGB.BackColor = System.Drawing.Color.Orange;
+            this.byoSauceGB.Controls.Add(this.byoRanchSauce);
+            this.byoSauceGB.Controls.Add(this.byoBBQSauce);
+            this.byoSauceGB.Controls.Add(this.byoOriginalSauce);
+            this.byoSauceGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoSauceGB.Location = new System.Drawing.Point(1046, 90);
+            this.byoSauceGB.Name = "byoSauceGB";
+            this.byoSauceGB.Size = new System.Drawing.Size(200, 181);
+            this.byoSauceGB.TabIndex = 37;
+            this.byoSauceGB.TabStop = false;
+            this.byoSauceGB.Text = "Sauce";
             // 
-            // byoParmesan
+            // byoRanchSauce
             // 
-            this.byoParmesan.AutoSize = true;
-            this.byoParmesan.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoParmesan.Location = new System.Drawing.Point(25, 75);
-            this.byoParmesan.Name = "byoParmesan";
-            this.byoParmesan.Size = new System.Drawing.Size(131, 28);
-            this.byoParmesan.TabIndex = 1;
-            this.byoParmesan.Text = "Parmesan";
-            this.byoParmesan.UseVisualStyleBackColor = true;
+            this.byoRanchSauce.AutoSize = true;
+            this.byoRanchSauce.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoRanchSauce.Location = new System.Drawing.Point(49, 125);
+            this.byoRanchSauce.Name = "byoRanchSauce";
+            this.byoRanchSauce.Size = new System.Drawing.Size(93, 28);
+            this.byoRanchSauce.TabIndex = 8;
+            this.byoRanchSauce.TabStop = true;
+            this.byoRanchSauce.Text = "Ranch";
+            this.byoRanchSauce.UseVisualStyleBackColor = true;
             // 
-            // byoTripleBlend
+            // byoBBQSauce
             // 
-            this.byoTripleBlend.AutoSize = true;
-            this.byoTripleBlend.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoTripleBlend.Location = new System.Drawing.Point(25, 125);
-            this.byoTripleBlend.Name = "byoTripleBlend";
-            this.byoTripleBlend.Size = new System.Drawing.Size(152, 28);
-            this.byoTripleBlend.TabIndex = 2;
-            this.byoTripleBlend.Text = "Triple Blend";
-            this.byoTripleBlend.UseVisualStyleBackColor = true;
+            this.byoBBQSauce.AutoSize = true;
+            this.byoBBQSauce.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoBBQSauce.Location = new System.Drawing.Point(49, 75);
+            this.byoBBQSauce.Name = "byoBBQSauce";
+            this.byoBBQSauce.Size = new System.Drawing.Size(75, 28);
+            this.byoBBQSauce.TabIndex = 7;
+            this.byoBBQSauce.TabStop = true;
+            this.byoBBQSauce.Text = "BBQ";
+            this.byoBBQSauce.UseVisualStyleBackColor = true;
             // 
-            // byoSausage
+            // byoOriginalSauce
             // 
-            this.byoSausage.AutoSize = true;
-            this.byoSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoSausage.Location = new System.Drawing.Point(24, 122);
-            this.byoSausage.Name = "byoSausage";
-            this.byoSausage.Size = new System.Drawing.Size(116, 28);
-            this.byoSausage.TabIndex = 5;
-            this.byoSausage.Text = "Sausage";
-            this.byoSausage.UseVisualStyleBackColor = true;
+            this.byoOriginalSauce.AutoSize = true;
+            this.byoOriginalSauce.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoOriginalSauce.Location = new System.Drawing.Point(49, 27);
+            this.byoOriginalSauce.Name = "byoOriginalSauce";
+            this.byoOriginalSauce.Size = new System.Drawing.Size(110, 28);
+            this.byoOriginalSauce.TabIndex = 6;
+            this.byoOriginalSauce.TabStop = true;
+            this.byoOriginalSauce.Text = "Original";
+            this.byoOriginalSauce.UseVisualStyleBackColor = true;
             // 
-            // byoChk
+            // byoCutGB
             // 
-            this.byoChk.AutoSize = true;
-            this.byoChk.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoChk.Location = new System.Drawing.Point(24, 72);
-            this.byoChk.Name = "byoChk";
-            this.byoChk.Size = new System.Drawing.Size(113, 28);
-            this.byoChk.TabIndex = 4;
-            this.byoChk.Text = "Chicken";
-            this.byoChk.UseVisualStyleBackColor = true;
+            this.byoCutGB.BackColor = System.Drawing.Color.Orange;
+            this.byoCutGB.Controls.Add(this.byoSquareCut);
+            this.byoCutGB.Controls.Add(this.byoCleanCut);
+            this.byoCutGB.Controls.Add(this.byoNormalCut);
+            this.byoCutGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoCutGB.Location = new System.Drawing.Point(759, 90);
+            this.byoCutGB.Name = "byoCutGB";
+            this.byoCutGB.Size = new System.Drawing.Size(200, 181);
+            this.byoCutGB.TabIndex = 37;
+            this.byoCutGB.TabStop = false;
+            this.byoCutGB.Text = "Cut";
             // 
-            // byoPep
+            // byoSquareCut
             // 
-            this.byoPep.AutoSize = true;
-            this.byoPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoPep.Location = new System.Drawing.Point(24, 31);
-            this.byoPep.Name = "byoPep";
-            this.byoPep.Size = new System.Drawing.Size(134, 28);
-            this.byoPep.TabIndex = 3;
-            this.byoPep.Text = "Pepperoni";
-            this.byoPep.UseVisualStyleBackColor = false;
+            this.byoSquareCut.AutoSize = true;
+            this.byoSquareCut.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoSquareCut.Location = new System.Drawing.Point(46, 125);
+            this.byoSquareCut.Name = "byoSquareCut";
+            this.byoSquareCut.Size = new System.Drawing.Size(101, 28);
+            this.byoSquareCut.TabIndex = 5;
+            this.byoSquareCut.TabStop = true;
+            this.byoSquareCut.Text = "Square";
+            this.byoSquareCut.UseVisualStyleBackColor = true;
             // 
-            // byoPineapple
+            // byoCleanCut
             // 
-            this.byoPineapple.AutoSize = true;
-            this.byoPineapple.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoPineapple.Location = new System.Drawing.Point(24, 122);
-            this.byoPineapple.Name = "byoPineapple";
-            this.byoPineapple.Size = new System.Drawing.Size(130, 28);
-            this.byoPineapple.TabIndex = 5;
-            this.byoPineapple.Text = "Pineapple";
-            this.byoPineapple.UseVisualStyleBackColor = true;
+            this.byoCleanCut.AutoSize = true;
+            this.byoCleanCut.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoCleanCut.Location = new System.Drawing.Point(46, 75);
+            this.byoCleanCut.Name = "byoCleanCut";
+            this.byoCleanCut.Size = new System.Drawing.Size(87, 28);
+            this.byoCleanCut.TabIndex = 4;
+            this.byoCleanCut.TabStop = true;
+            this.byoCleanCut.Text = "Clean";
+            this.byoCleanCut.UseVisualStyleBackColor = true;
             // 
-            // byoOnions
+            // byoNormalCut
             // 
-            this.byoOnions.AutoSize = true;
-            this.byoOnions.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoOnions.Location = new System.Drawing.Point(24, 72);
-            this.byoOnions.Name = "byoOnions";
-            this.byoOnions.Size = new System.Drawing.Size(102, 28);
-            this.byoOnions.TabIndex = 4;
-            this.byoOnions.Text = "Onions";
-            this.byoOnions.UseVisualStyleBackColor = true;
+            this.byoNormalCut.AutoSize = true;
+            this.byoNormalCut.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoNormalCut.Location = new System.Drawing.Point(46, 27);
+            this.byoNormalCut.Name = "byoNormalCut";
+            this.byoNormalCut.Size = new System.Drawing.Size(103, 28);
+            this.byoNormalCut.TabIndex = 3;
+            this.byoNormalCut.TabStop = true;
+            this.byoNormalCut.Text = "Normal";
+            this.byoNormalCut.UseVisualStyleBackColor = true;
             // 
-            // byoPeppers
+            // crustGB
             // 
-            this.byoPeppers.AutoSize = true;
-            this.byoPeppers.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoPeppers.Location = new System.Drawing.Point(24, 31);
-            this.byoPeppers.Name = "byoPeppers";
-            this.byoPeppers.Size = new System.Drawing.Size(113, 28);
-            this.byoPeppers.TabIndex = 3;
-            this.byoPeppers.Text = "Peppers";
-            this.byoPeppers.UseVisualStyleBackColor = true;
+            this.crustGB.BackColor = System.Drawing.Color.Orange;
+            this.crustGB.Controls.Add(this.byoStuffedCrust);
+            this.crustGB.Controls.Add(this.byoThinCrust);
+            this.crustGB.Controls.Add(this.byoRegularCrust);
+            this.crustGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crustGB.Location = new System.Drawing.Point(393, 90);
+            this.crustGB.Name = "crustGB";
+            this.crustGB.Size = new System.Drawing.Size(200, 181);
+            this.crustGB.TabIndex = 37;
+            this.crustGB.TabStop = false;
+            this.crustGB.Text = "Crust";
             // 
-            // byoClearButton
+            // byoStuffedCrust
             // 
-            this.byoClearButton.BackColor = System.Drawing.Color.Red;
-            this.byoClearButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoClearButton.Location = new System.Drawing.Point(584, 572);
-            this.byoClearButton.Name = "byoClearButton";
-            this.byoClearButton.Size = new System.Drawing.Size(189, 39);
-            this.byoClearButton.TabIndex = 38;
-            this.byoClearButton.Text = "Clear Choices";
-            this.byoClearButton.UseVisualStyleBackColor = false;
+            this.byoStuffedCrust.AutoSize = true;
+            this.byoStuffedCrust.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoStuffedCrust.Location = new System.Drawing.Point(46, 125);
+            this.byoStuffedCrust.Name = "byoStuffedCrust";
+            this.byoStuffedCrust.Size = new System.Drawing.Size(101, 28);
+            this.byoStuffedCrust.TabIndex = 5;
+            this.byoStuffedCrust.TabStop = true;
+            this.byoStuffedCrust.Text = "Stuffed";
+            this.byoStuffedCrust.UseVisualStyleBackColor = true;
+            // 
+            // byoThinCrust
+            // 
+            this.byoThinCrust.AutoSize = true;
+            this.byoThinCrust.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoThinCrust.Location = new System.Drawing.Point(46, 75);
+            this.byoThinCrust.Name = "byoThinCrust";
+            this.byoThinCrust.Size = new System.Drawing.Size(73, 28);
+            this.byoThinCrust.TabIndex = 4;
+            this.byoThinCrust.TabStop = true;
+            this.byoThinCrust.Text = "Thin";
+            this.byoThinCrust.UseVisualStyleBackColor = true;
+            // 
+            // byoRegularCrust
+            // 
+            this.byoRegularCrust.AutoSize = true;
+            this.byoRegularCrust.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoRegularCrust.Location = new System.Drawing.Point(46, 27);
+            this.byoRegularCrust.Name = "byoRegularCrust";
+            this.byoRegularCrust.Size = new System.Drawing.Size(108, 28);
+            this.byoRegularCrust.TabIndex = 3;
+            this.byoRegularCrust.TabStop = true;
+            this.byoRegularCrust.Text = "Regular";
+            this.byoRegularCrust.UseVisualStyleBackColor = true;
+            // 
+            // sizeGB
+            // 
+            this.sizeGB.BackColor = System.Drawing.Color.Orange;
+            this.sizeGB.Controls.Add(this.byoLarge);
+            this.sizeGB.Controls.Add(this.byoMedium);
+            this.sizeGB.Controls.Add(this.byoSmall);
+            this.sizeGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sizeGB.Location = new System.Drawing.Point(66, 90);
+            this.sizeGB.Name = "sizeGB";
+            this.sizeGB.Size = new System.Drawing.Size(200, 181);
+            this.sizeGB.TabIndex = 36;
+            this.sizeGB.TabStop = false;
+            this.sizeGB.Text = "Size";
+            // 
+            // byoLarge
+            // 
+            this.byoLarge.AutoSize = true;
+            this.byoLarge.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoLarge.Location = new System.Drawing.Point(36, 132);
+            this.byoLarge.Name = "byoLarge";
+            this.byoLarge.Size = new System.Drawing.Size(87, 28);
+            this.byoLarge.TabIndex = 2;
+            this.byoLarge.TabStop = true;
+            this.byoLarge.Text = "Large";
+            this.byoLarge.UseVisualStyleBackColor = true;
+            // 
+            // byoMedium
+            // 
+            this.byoMedium.AutoSize = true;
+            this.byoMedium.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoMedium.Location = new System.Drawing.Point(36, 82);
+            this.byoMedium.Name = "byoMedium";
+            this.byoMedium.Size = new System.Drawing.Size(108, 28);
+            this.byoMedium.TabIndex = 1;
+            this.byoMedium.TabStop = true;
+            this.byoMedium.Text = "Medium";
+            this.byoMedium.UseVisualStyleBackColor = true;
+            // 
+            // byoSmall
+            // 
+            this.byoSmall.AutoSize = true;
+            this.byoSmall.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoSmall.Location = new System.Drawing.Point(36, 34);
+            this.byoSmall.Name = "byoSmall";
+            this.byoSmall.Size = new System.Drawing.Size(85, 28);
+            this.byoSmall.TabIndex = 0;
+            this.byoSmall.TabStop = true;
+            this.byoSmall.Text = "Small";
+            this.byoSmall.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Orange;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(537, 16);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.label1.Size = new System.Drawing.Size(294, 53);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Build Your Own";
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.tabPage6.Controls.Add(this.bevBox);
+            this.tabPage6.Controls.Add(this.bevLabel);
+            this.tabPage6.Location = new System.Drawing.Point(4, 41);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1318, 649);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Beverages";
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 41);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1318, 649);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Review Order";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 41);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1318, 649);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Checkout";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 41);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1318, 649);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Help";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // bevBox
+            // 
+            this.bevBox.BackColor = System.Drawing.Color.Orange;
+            this.bevBox.Controls.Add(this.teaBox);
+            this.bevBox.Controls.Add(this.dpBox);
+            this.bevBox.Controls.Add(this.powerBox);
+            this.bevBox.Controls.Add(this.spriteBox);
+            this.bevBox.Controls.Add(this.cokeBox);
+            this.bevBox.Location = new System.Drawing.Point(261, 107);
+            this.bevBox.Name = "bevBox";
+            this.bevBox.Size = new System.Drawing.Size(796, 507);
+            this.bevBox.TabIndex = 3;
+            this.bevBox.TabStop = false;
+            // 
+            // teaBox
+            // 
+            this.teaBox.BackColor = System.Drawing.Color.Chocolate;
+            this.teaBox.Controls.Add(this.teaLargeRB);
+            this.teaBox.Controls.Add(this.teaMediumRB);
+            this.teaBox.Controls.Add(this.teaSmallRB);
+            this.teaBox.Controls.Add(this.teaNumerator);
+            this.teaBox.Controls.Add(this.teaCheck);
+            this.teaBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.teaBox.Location = new System.Drawing.Point(64, 383);
+            this.teaBox.Name = "teaBox";
+            this.teaBox.Size = new System.Drawing.Size(679, 79);
+            this.teaBox.TabIndex = 11;
+            this.teaBox.TabStop = false;
+            this.teaBox.Text = "Sweet Tea";
+            // 
+            // teaLargeRB
+            // 
+            this.teaLargeRB.AutoSize = true;
+            this.teaLargeRB.BackColor = System.Drawing.Color.Gold;
+            this.teaLargeRB.Location = new System.Drawing.Point(369, 29);
+            this.teaLargeRB.Name = "teaLargeRB";
+            this.teaLargeRB.Size = new System.Drawing.Size(98, 32);
+            this.teaLargeRB.TabIndex = 16;
+            this.teaLargeRB.TabStop = true;
+            this.teaLargeRB.Text = "Large";
+            this.teaLargeRB.UseVisualStyleBackColor = false;
+            // 
+            // teaMediumRB
+            // 
+            this.teaMediumRB.AutoSize = true;
+            this.teaMediumRB.BackColor = System.Drawing.Color.Gold;
+            this.teaMediumRB.Location = new System.Drawing.Point(241, 29);
+            this.teaMediumRB.Name = "teaMediumRB";
+            this.teaMediumRB.Size = new System.Drawing.Size(121, 32);
+            this.teaMediumRB.TabIndex = 15;
+            this.teaMediumRB.TabStop = true;
+            this.teaMediumRB.Text = "Medium";
+            this.teaMediumRB.UseVisualStyleBackColor = false;
+            // 
+            // teaSmallRB
+            // 
+            this.teaSmallRB.AutoSize = true;
+            this.teaSmallRB.BackColor = System.Drawing.Color.Gold;
+            this.teaSmallRB.Location = new System.Drawing.Point(145, 29);
+            this.teaSmallRB.Name = "teaSmallRB";
+            this.teaSmallRB.Size = new System.Drawing.Size(95, 32);
+            this.teaSmallRB.TabIndex = 14;
+            this.teaSmallRB.TabStop = true;
+            this.teaSmallRB.Text = "Small";
+            this.teaSmallRB.UseVisualStyleBackColor = false;
+            // 
+            // teaNumerator
+            // 
+            this.teaNumerator.Location = new System.Drawing.Point(584, 26);
+            this.teaNumerator.Name = "teaNumerator";
+            this.teaNumerator.Size = new System.Drawing.Size(38, 35);
+            this.teaNumerator.TabIndex = 1;
+            // 
+            // teaCheck
+            // 
+            this.teaCheck.AutoSize = true;
+            this.teaCheck.Location = new System.Drawing.Point(6, 38);
+            this.teaCheck.Name = "teaCheck";
+            this.teaCheck.Size = new System.Drawing.Size(15, 14);
+            this.teaCheck.TabIndex = 0;
+            this.teaCheck.UseVisualStyleBackColor = true;
+            // 
+            // dpBox
+            // 
+            this.dpBox.BackColor = System.Drawing.Color.Chocolate;
+            this.dpBox.Controls.Add(this.dpLargeRB);
+            this.dpBox.Controls.Add(this.dpMediumRB);
+            this.dpBox.Controls.Add(this.dpSmallRB);
+            this.dpBox.Controls.Add(this.dpNumerator);
+            this.dpBox.Controls.Add(this.dpCheck);
+            this.dpBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dpBox.Location = new System.Drawing.Point(64, 289);
+            this.dpBox.Name = "dpBox";
+            this.dpBox.Size = new System.Drawing.Size(679, 76);
+            this.dpBox.TabIndex = 10;
+            this.dpBox.TabStop = false;
+            this.dpBox.Text = "Dr. Pepper";
+            // 
+            // dpLargeRB
+            // 
+            this.dpLargeRB.AutoSize = true;
+            this.dpLargeRB.BackColor = System.Drawing.Color.Gold;
+            this.dpLargeRB.Location = new System.Drawing.Point(369, 29);
+            this.dpLargeRB.Name = "dpLargeRB";
+            this.dpLargeRB.Size = new System.Drawing.Size(98, 32);
+            this.dpLargeRB.TabIndex = 16;
+            this.dpLargeRB.TabStop = true;
+            this.dpLargeRB.Text = "Large";
+            this.dpLargeRB.UseVisualStyleBackColor = false;
+            // 
+            // dpMediumRB
+            // 
+            this.dpMediumRB.AutoSize = true;
+            this.dpMediumRB.BackColor = System.Drawing.Color.Gold;
+            this.dpMediumRB.Location = new System.Drawing.Point(241, 29);
+            this.dpMediumRB.Name = "dpMediumRB";
+            this.dpMediumRB.Size = new System.Drawing.Size(121, 32);
+            this.dpMediumRB.TabIndex = 15;
+            this.dpMediumRB.TabStop = true;
+            this.dpMediumRB.Text = "Medium";
+            this.dpMediumRB.UseVisualStyleBackColor = false;
+            // 
+            // dpSmallRB
+            // 
+            this.dpSmallRB.AutoSize = true;
+            this.dpSmallRB.BackColor = System.Drawing.Color.Gold;
+            this.dpSmallRB.Location = new System.Drawing.Point(145, 29);
+            this.dpSmallRB.Name = "dpSmallRB";
+            this.dpSmallRB.Size = new System.Drawing.Size(95, 32);
+            this.dpSmallRB.TabIndex = 14;
+            this.dpSmallRB.TabStop = true;
+            this.dpSmallRB.Text = "Small";
+            this.dpSmallRB.UseVisualStyleBackColor = false;
+            // 
+            // dpNumerator
+            // 
+            this.dpNumerator.Location = new System.Drawing.Point(584, 26);
+            this.dpNumerator.Name = "dpNumerator";
+            this.dpNumerator.Size = new System.Drawing.Size(38, 35);
+            this.dpNumerator.TabIndex = 1;
+            // 
+            // dpCheck
+            // 
+            this.dpCheck.AutoSize = true;
+            this.dpCheck.Location = new System.Drawing.Point(6, 38);
+            this.dpCheck.Name = "dpCheck";
+            this.dpCheck.Size = new System.Drawing.Size(15, 14);
+            this.dpCheck.TabIndex = 0;
+            this.dpCheck.UseVisualStyleBackColor = true;
+            // 
+            // powerBox
+            // 
+            this.powerBox.BackColor = System.Drawing.Color.Chocolate;
+            this.powerBox.Controls.Add(this.powerLargeRB);
+            this.powerBox.Controls.Add(this.powerMediumRB);
+            this.powerBox.Controls.Add(this.powerSmallRB);
+            this.powerBox.Controls.Add(this.powerNumerator);
+            this.powerBox.Controls.Add(this.powerCheck);
+            this.powerBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.powerBox.Location = new System.Drawing.Point(64, 196);
+            this.powerBox.Name = "powerBox";
+            this.powerBox.Size = new System.Drawing.Size(679, 77);
+            this.powerBox.TabIndex = 9;
+            this.powerBox.TabStop = false;
+            this.powerBox.Text = "Powerade";
+            // 
+            // powerLargeRB
+            // 
+            this.powerLargeRB.AutoSize = true;
+            this.powerLargeRB.BackColor = System.Drawing.Color.Gold;
+            this.powerLargeRB.Location = new System.Drawing.Point(369, 29);
+            this.powerLargeRB.Name = "powerLargeRB";
+            this.powerLargeRB.Size = new System.Drawing.Size(98, 32);
+            this.powerLargeRB.TabIndex = 16;
+            this.powerLargeRB.TabStop = true;
+            this.powerLargeRB.Text = "Large";
+            this.powerLargeRB.UseVisualStyleBackColor = false;
+            // 
+            // powerMediumRB
+            // 
+            this.powerMediumRB.AutoSize = true;
+            this.powerMediumRB.BackColor = System.Drawing.Color.Gold;
+            this.powerMediumRB.Location = new System.Drawing.Point(241, 29);
+            this.powerMediumRB.Name = "powerMediumRB";
+            this.powerMediumRB.Size = new System.Drawing.Size(121, 32);
+            this.powerMediumRB.TabIndex = 15;
+            this.powerMediumRB.TabStop = true;
+            this.powerMediumRB.Text = "Medium";
+            this.powerMediumRB.UseVisualStyleBackColor = false;
+            // 
+            // powerSmallRB
+            // 
+            this.powerSmallRB.AutoSize = true;
+            this.powerSmallRB.BackColor = System.Drawing.Color.Gold;
+            this.powerSmallRB.Location = new System.Drawing.Point(145, 29);
+            this.powerSmallRB.Name = "powerSmallRB";
+            this.powerSmallRB.Size = new System.Drawing.Size(95, 32);
+            this.powerSmallRB.TabIndex = 14;
+            this.powerSmallRB.TabStop = true;
+            this.powerSmallRB.Text = "Small";
+            this.powerSmallRB.UseVisualStyleBackColor = false;
+            // 
+            // powerNumerator
+            // 
+            this.powerNumerator.Location = new System.Drawing.Point(584, 26);
+            this.powerNumerator.Name = "powerNumerator";
+            this.powerNumerator.Size = new System.Drawing.Size(38, 35);
+            this.powerNumerator.TabIndex = 1;
+            // 
+            // powerCheck
+            // 
+            this.powerCheck.AutoSize = true;
+            this.powerCheck.Location = new System.Drawing.Point(6, 38);
+            this.powerCheck.Name = "powerCheck";
+            this.powerCheck.Size = new System.Drawing.Size(15, 14);
+            this.powerCheck.TabIndex = 0;
+            this.powerCheck.UseVisualStyleBackColor = true;
+            // 
+            // spriteBox
+            // 
+            this.spriteBox.BackColor = System.Drawing.Color.Chocolate;
+            this.spriteBox.Controls.Add(this.spriteLargeRB);
+            this.spriteBox.Controls.Add(this.spriteMediumRB);
+            this.spriteBox.Controls.Add(this.spriteSmallRB);
+            this.spriteBox.Controls.Add(this.spriteNumerator);
+            this.spriteBox.Controls.Add(this.spriteCheck);
+            this.spriteBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.spriteBox.Location = new System.Drawing.Point(64, 99);
+            this.spriteBox.Name = "spriteBox";
+            this.spriteBox.Size = new System.Drawing.Size(679, 85);
+            this.spriteBox.TabIndex = 8;
+            this.spriteBox.TabStop = false;
+            this.spriteBox.Text = "Sprite";
+            // 
+            // spriteLargeRB
+            // 
+            this.spriteLargeRB.AutoSize = true;
+            this.spriteLargeRB.BackColor = System.Drawing.Color.Gold;
+            this.spriteLargeRB.Location = new System.Drawing.Point(368, 37);
+            this.spriteLargeRB.Name = "spriteLargeRB";
+            this.spriteLargeRB.Size = new System.Drawing.Size(98, 32);
+            this.spriteLargeRB.TabIndex = 16;
+            this.spriteLargeRB.TabStop = true;
+            this.spriteLargeRB.Text = "Large";
+            this.spriteLargeRB.UseVisualStyleBackColor = false;
+            // 
+            // spriteMediumRB
+            // 
+            this.spriteMediumRB.AutoSize = true;
+            this.spriteMediumRB.BackColor = System.Drawing.Color.Gold;
+            this.spriteMediumRB.Location = new System.Drawing.Point(241, 37);
+            this.spriteMediumRB.Name = "spriteMediumRB";
+            this.spriteMediumRB.Size = new System.Drawing.Size(121, 32);
+            this.spriteMediumRB.TabIndex = 15;
+            this.spriteMediumRB.TabStop = true;
+            this.spriteMediumRB.Text = "Medium";
+            this.spriteMediumRB.UseVisualStyleBackColor = false;
+            // 
+            // spriteSmallRB
+            // 
+            this.spriteSmallRB.AutoSize = true;
+            this.spriteSmallRB.BackColor = System.Drawing.Color.Gold;
+            this.spriteSmallRB.Location = new System.Drawing.Point(145, 37);
+            this.spriteSmallRB.Name = "spriteSmallRB";
+            this.spriteSmallRB.Size = new System.Drawing.Size(95, 32);
+            this.spriteSmallRB.TabIndex = 14;
+            this.spriteSmallRB.TabStop = true;
+            this.spriteSmallRB.Text = "Small";
+            this.spriteSmallRB.UseVisualStyleBackColor = false;
+            // 
+            // spriteNumerator
+            // 
+            this.spriteNumerator.Location = new System.Drawing.Point(584, 34);
+            this.spriteNumerator.Name = "spriteNumerator";
+            this.spriteNumerator.Size = new System.Drawing.Size(38, 35);
+            this.spriteNumerator.TabIndex = 1;
+            // 
+            // spriteCheck
+            // 
+            this.spriteCheck.AutoSize = true;
+            this.spriteCheck.Location = new System.Drawing.Point(6, 49);
+            this.spriteCheck.Name = "spriteCheck";
+            this.spriteCheck.Size = new System.Drawing.Size(15, 14);
+            this.spriteCheck.TabIndex = 0;
+            this.spriteCheck.UseVisualStyleBackColor = true;
+            // 
+            // cokeBox
+            // 
+            this.cokeBox.BackColor = System.Drawing.Color.Chocolate;
+            this.cokeBox.Controls.Add(this.cokeLargeRB);
+            this.cokeBox.Controls.Add(this.cokeMediumRB);
+            this.cokeBox.Controls.Add(this.cokeSmallRB);
+            this.cokeBox.Controls.Add(this.cokeNumerator);
+            this.cokeBox.Controls.Add(this.cokeCheck);
+            this.cokeBox.Controls.Add(this.groupBox2);
+            this.cokeBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cokeBox.Location = new System.Drawing.Point(64, 23);
+            this.cokeBox.Name = "cokeBox";
+            this.cokeBox.Size = new System.Drawing.Size(679, 70);
+            this.cokeBox.TabIndex = 7;
+            this.cokeBox.TabStop = false;
+            this.cokeBox.Text = "Coca-Cola";
+            // 
+            // cokeLargeRB
+            // 
+            this.cokeLargeRB.AutoSize = true;
+            this.cokeLargeRB.BackColor = System.Drawing.Color.Gold;
+            this.cokeLargeRB.Location = new System.Drawing.Point(369, 25);
+            this.cokeLargeRB.Name = "cokeLargeRB";
+            this.cokeLargeRB.Size = new System.Drawing.Size(98, 32);
+            this.cokeLargeRB.TabIndex = 13;
+            this.cokeLargeRB.TabStop = true;
+            this.cokeLargeRB.Text = "Large";
+            this.cokeLargeRB.UseVisualStyleBackColor = false;
+            // 
+            // cokeMediumRB
+            // 
+            this.cokeMediumRB.AutoSize = true;
+            this.cokeMediumRB.BackColor = System.Drawing.Color.Gold;
+            this.cokeMediumRB.Location = new System.Drawing.Point(241, 25);
+            this.cokeMediumRB.Name = "cokeMediumRB";
+            this.cokeMediumRB.Size = new System.Drawing.Size(121, 32);
+            this.cokeMediumRB.TabIndex = 12;
+            this.cokeMediumRB.TabStop = true;
+            this.cokeMediumRB.Text = "Medium";
+            this.cokeMediumRB.UseVisualStyleBackColor = false;
+            // 
+            // cokeSmallRB
+            // 
+            this.cokeSmallRB.AutoSize = true;
+            this.cokeSmallRB.BackColor = System.Drawing.Color.Gold;
+            this.cokeSmallRB.Location = new System.Drawing.Point(145, 25);
+            this.cokeSmallRB.Name = "cokeSmallRB";
+            this.cokeSmallRB.Size = new System.Drawing.Size(95, 32);
+            this.cokeSmallRB.TabIndex = 11;
+            this.cokeSmallRB.TabStop = true;
+            this.cokeSmallRB.Text = "Small";
+            this.cokeSmallRB.UseVisualStyleBackColor = false;
+            // 
+            // cokeNumerator
+            // 
+            this.cokeNumerator.Location = new System.Drawing.Point(584, 22);
+            this.cokeNumerator.Name = "cokeNumerator";
+            this.cokeNumerator.Size = new System.Drawing.Size(38, 35);
+            this.cokeNumerator.TabIndex = 10;
+            // 
+            // cokeCheck
+            // 
+            this.cokeCheck.AutoSize = true;
+            this.cokeCheck.Location = new System.Drawing.Point(6, 38);
+            this.cokeCheck.Name = "cokeCheck";
+            this.cokeCheck.Size = new System.Drawing.Size(15, 14);
+            this.cokeCheck.TabIndex = 9;
+            this.cokeCheck.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Location = new System.Drawing.Point(0, 67);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 100);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // bevLabel
+            // 
+            this.bevLabel.AutoSize = true;
+            this.bevLabel.BackColor = System.Drawing.Color.Orange;
+            this.bevLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bevLabel.Location = new System.Drawing.Point(547, 35);
+            this.bevLabel.Name = "bevLabel";
+            this.bevLabel.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.bevLabel.Size = new System.Drawing.Size(227, 53);
+            this.bevLabel.TabIndex = 2;
+            this.bevLabel.Text = "Beverages\r\n";
             // 
             // Form1
             // 
@@ -1840,22 +2263,40 @@
             this.sizeGBcheese.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            this.sizeGB.ResumeLayout(false);
-            this.sizeGB.PerformLayout();
-            this.crustGB.ResumeLayout(false);
-            this.crustGB.PerformLayout();
-            this.byoCutGB.ResumeLayout(false);
-            this.byoCutGB.PerformLayout();
-            this.byoSauceGB.ResumeLayout(false);
-            this.byoSauceGB.PerformLayout();
-            this.byoCheeseGB.ResumeLayout(false);
-            this.byoCheeseGB.PerformLayout();
-            this.byoExtraCheeseGB.ResumeLayout(false);
-            this.byoExtraCheeseGB.PerformLayout();
-            this.byoMeatGB.ResumeLayout(false);
-            this.byoMeatGB.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.byoMeatGB.ResumeLayout(false);
+            this.byoMeatGB.PerformLayout();
+            this.byoExtraCheeseGB.ResumeLayout(false);
+            this.byoExtraCheeseGB.PerformLayout();
+            this.byoCheeseGB.ResumeLayout(false);
+            this.byoCheeseGB.PerformLayout();
+            this.byoSauceGB.ResumeLayout(false);
+            this.byoSauceGB.PerformLayout();
+            this.byoCutGB.ResumeLayout(false);
+            this.byoCutGB.PerformLayout();
+            this.crustGB.ResumeLayout(false);
+            this.crustGB.PerformLayout();
+            this.sizeGB.ResumeLayout(false);
+            this.sizeGB.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.bevBox.ResumeLayout(false);
+            this.teaBox.ResumeLayout(false);
+            this.teaBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.teaNumerator)).EndInit();
+            this.dpBox.ResumeLayout(false);
+            this.dpBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dpNumerator)).EndInit();
+            this.powerBox.ResumeLayout(false);
+            this.powerBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.powerNumerator)).EndInit();
+            this.spriteBox.ResumeLayout(false);
+            this.spriteBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spriteNumerator)).EndInit();
+            this.cokeBox.ResumeLayout(false);
+            this.cokeBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cokeNumerator)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1997,5 +2438,38 @@
         private CheckBox byoSausage;
         private CheckBox byoChk;
         private CheckBox byoPep;
+        private GroupBox bevBox;
+        private GroupBox teaBox;
+        private RadioButton teaLargeRB;
+        private RadioButton teaMediumRB;
+        private RadioButton teaSmallRB;
+        private NumericUpDown teaNumerator;
+        private CheckBox teaCheck;
+        private GroupBox dpBox;
+        private RadioButton dpLargeRB;
+        private RadioButton dpMediumRB;
+        private RadioButton dpSmallRB;
+        private NumericUpDown dpNumerator;
+        private CheckBox dpCheck;
+        private GroupBox powerBox;
+        private RadioButton powerLargeRB;
+        private RadioButton powerMediumRB;
+        private RadioButton powerSmallRB;
+        private NumericUpDown powerNumerator;
+        private CheckBox powerCheck;
+        private GroupBox spriteBox;
+        private RadioButton spriteLargeRB;
+        private RadioButton spriteMediumRB;
+        private RadioButton spriteSmallRB;
+        private NumericUpDown spriteNumerator;
+        private CheckBox spriteCheck;
+        private GroupBox cokeBox;
+        private RadioButton cokeLargeRB;
+        private RadioButton cokeMediumRB;
+        private RadioButton cokeSmallRB;
+        private NumericUpDown cokeNumerator;
+        private CheckBox cokeCheck;
+        private GroupBox groupBox2;
+        private Label bevLabel;
     }
 }
