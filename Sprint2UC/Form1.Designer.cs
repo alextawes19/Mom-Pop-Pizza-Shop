@@ -72,18 +72,63 @@
             this.RegisterLabel = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.stPizzaLabel = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.bevBox = new System.Windows.Forms.GroupBox();
+            this.teaBox = new System.Windows.Forms.GroupBox();
+            this.teaLargeRB = new System.Windows.Forms.RadioButton();
+            this.teaMediumRB = new System.Windows.Forms.RadioButton();
+            this.teaSmallRB = new System.Windows.Forms.RadioButton();
+            this.teaNumerator = new System.Windows.Forms.NumericUpDown();
+            this.teaCheck = new System.Windows.Forms.CheckBox();
+            this.dpBox = new System.Windows.Forms.GroupBox();
+            this.dpLargeRB = new System.Windows.Forms.RadioButton();
+            this.dpMediumRB = new System.Windows.Forms.RadioButton();
+            this.dpSmallRB = new System.Windows.Forms.RadioButton();
+            this.dpNumerator = new System.Windows.Forms.NumericUpDown();
+            this.dpCheck = new System.Windows.Forms.CheckBox();
+            this.powerBox = new System.Windows.Forms.GroupBox();
+            this.powerLargeRB = new System.Windows.Forms.RadioButton();
+            this.powerMediumRB = new System.Windows.Forms.RadioButton();
+            this.powerSmallRB = new System.Windows.Forms.RadioButton();
+            this.powerNumerator = new System.Windows.Forms.NumericUpDown();
+            this.powerCheck = new System.Windows.Forms.CheckBox();
+            this.spriteBox = new System.Windows.Forms.GroupBox();
+            this.spriteLargeRB = new System.Windows.Forms.RadioButton();
+            this.spriteMediumRB = new System.Windows.Forms.RadioButton();
+            this.spriteSmallRB = new System.Windows.Forms.RadioButton();
+            this.spriteNumerator = new System.Windows.Forms.NumericUpDown();
+            this.spriteCheck = new System.Windows.Forms.CheckBox();
+            this.cokeBox = new System.Windows.Forms.GroupBox();
+            this.cokeLargeRB = new System.Windows.Forms.RadioButton();
+            this.cokeMediumRB = new System.Windows.Forms.RadioButton();
+            this.cokeSmallRB = new System.Windows.Forms.RadioButton();
+            this.cokeNumerator = new System.Windows.Forms.NumericUpDown();
+            this.cokeCheck = new System.Windows.Forms.CheckBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.bevLabel = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.bevBox.SuspendLayout();
+            this.teaBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.teaNumerator)).BeginInit();
+            this.dpBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dpNumerator)).BeginInit();
+            this.powerBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.powerNumerator)).BeginInit();
+            this.spriteBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spriteNumerator)).BeginInit();
+            this.cokeBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cokeNumerator)).BeginInit();
             this.SuspendLayout();
             // 
             // loginLogoText
@@ -567,6 +612,17 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Standard Pizzas";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(595, 604);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 39);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "Clear Choices";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Orange;
@@ -602,13 +658,392 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.tabPage6.Controls.Add(this.bevBox);
+            this.tabPage6.Controls.Add(this.bevLabel);
             this.tabPage6.Location = new System.Drawing.Point(4, 41);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage6.Size = new System.Drawing.Size(1318, 649);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Beverages";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // bevBox
+            // 
+            this.bevBox.BackColor = System.Drawing.Color.Orange;
+            this.bevBox.Controls.Add(this.teaBox);
+            this.bevBox.Controls.Add(this.dpBox);
+            this.bevBox.Controls.Add(this.powerBox);
+            this.bevBox.Controls.Add(this.spriteBox);
+            this.bevBox.Controls.Add(this.cokeBox);
+            this.bevBox.Location = new System.Drawing.Point(273, 91);
+            this.bevBox.Name = "bevBox";
+            this.bevBox.Size = new System.Drawing.Size(796, 507);
+            this.bevBox.TabIndex = 1;
+            this.bevBox.TabStop = false;
+            // 
+            // teaBox
+            // 
+            this.teaBox.BackColor = System.Drawing.Color.Chocolate;
+            this.teaBox.Controls.Add(this.teaLargeRB);
+            this.teaBox.Controls.Add(this.teaMediumRB);
+            this.teaBox.Controls.Add(this.teaSmallRB);
+            this.teaBox.Controls.Add(this.teaNumerator);
+            this.teaBox.Controls.Add(this.teaCheck);
+            this.teaBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.teaBox.Location = new System.Drawing.Point(64, 383);
+            this.teaBox.Name = "teaBox";
+            this.teaBox.Size = new System.Drawing.Size(679, 79);
+            this.teaBox.TabIndex = 11;
+            this.teaBox.TabStop = false;
+            this.teaBox.Text = "Sweet Tea";
+            // 
+            // teaLargeRB
+            // 
+            this.teaLargeRB.AutoSize = true;
+            this.teaLargeRB.BackColor = System.Drawing.Color.Gold;
+            this.teaLargeRB.Location = new System.Drawing.Point(369, 29);
+            this.teaLargeRB.Name = "teaLargeRB";
+            this.teaLargeRB.Size = new System.Drawing.Size(98, 32);
+            this.teaLargeRB.TabIndex = 16;
+            this.teaLargeRB.TabStop = true;
+            this.teaLargeRB.Text = "Large";
+            this.teaLargeRB.UseVisualStyleBackColor = false;
+            // 
+            // teaMediumRB
+            // 
+            this.teaMediumRB.AutoSize = true;
+            this.teaMediumRB.BackColor = System.Drawing.Color.Gold;
+            this.teaMediumRB.Location = new System.Drawing.Point(241, 29);
+            this.teaMediumRB.Name = "teaMediumRB";
+            this.teaMediumRB.Size = new System.Drawing.Size(121, 32);
+            this.teaMediumRB.TabIndex = 15;
+            this.teaMediumRB.TabStop = true;
+            this.teaMediumRB.Text = "Medium";
+            this.teaMediumRB.UseVisualStyleBackColor = false;
+            // 
+            // teaSmallRB
+            // 
+            this.teaSmallRB.AutoSize = true;
+            this.teaSmallRB.BackColor = System.Drawing.Color.Gold;
+            this.teaSmallRB.Location = new System.Drawing.Point(145, 29);
+            this.teaSmallRB.Name = "teaSmallRB";
+            this.teaSmallRB.Size = new System.Drawing.Size(95, 32);
+            this.teaSmallRB.TabIndex = 14;
+            this.teaSmallRB.TabStop = true;
+            this.teaSmallRB.Text = "Small";
+            this.teaSmallRB.UseVisualStyleBackColor = false;
+            this.teaSmallRB.CheckedChanged += new System.EventHandler(this.radioButton12_CheckedChanged);
+            // 
+            // teaNumerator
+            // 
+            this.teaNumerator.Location = new System.Drawing.Point(584, 26);
+            this.teaNumerator.Name = "teaNumerator";
+            this.teaNumerator.Size = new System.Drawing.Size(38, 35);
+            this.teaNumerator.TabIndex = 1;
+            // 
+            // teaCheck
+            // 
+            this.teaCheck.AutoSize = true;
+            this.teaCheck.Location = new System.Drawing.Point(6, 38);
+            this.teaCheck.Name = "teaCheck";
+            this.teaCheck.Size = new System.Drawing.Size(15, 14);
+            this.teaCheck.TabIndex = 0;
+            this.teaCheck.UseVisualStyleBackColor = true;
+            // 
+            // dpBox
+            // 
+            this.dpBox.BackColor = System.Drawing.Color.Chocolate;
+            this.dpBox.Controls.Add(this.dpLargeRB);
+            this.dpBox.Controls.Add(this.dpMediumRB);
+            this.dpBox.Controls.Add(this.dpSmallRB);
+            this.dpBox.Controls.Add(this.dpNumerator);
+            this.dpBox.Controls.Add(this.dpCheck);
+            this.dpBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dpBox.Location = new System.Drawing.Point(64, 289);
+            this.dpBox.Name = "dpBox";
+            this.dpBox.Size = new System.Drawing.Size(679, 76);
+            this.dpBox.TabIndex = 10;
+            this.dpBox.TabStop = false;
+            this.dpBox.Text = "Dr. Pepper";
+            // 
+            // dpLargeRB
+            // 
+            this.dpLargeRB.AutoSize = true;
+            this.dpLargeRB.BackColor = System.Drawing.Color.Gold;
+            this.dpLargeRB.Location = new System.Drawing.Point(369, 29);
+            this.dpLargeRB.Name = "dpLargeRB";
+            this.dpLargeRB.Size = new System.Drawing.Size(98, 32);
+            this.dpLargeRB.TabIndex = 16;
+            this.dpLargeRB.TabStop = true;
+            this.dpLargeRB.Text = "Large";
+            this.dpLargeRB.UseVisualStyleBackColor = false;
+            // 
+            // dpMediumRB
+            // 
+            this.dpMediumRB.AutoSize = true;
+            this.dpMediumRB.BackColor = System.Drawing.Color.Gold;
+            this.dpMediumRB.Location = new System.Drawing.Point(241, 29);
+            this.dpMediumRB.Name = "dpMediumRB";
+            this.dpMediumRB.Size = new System.Drawing.Size(121, 32);
+            this.dpMediumRB.TabIndex = 15;
+            this.dpMediumRB.TabStop = true;
+            this.dpMediumRB.Text = "Medium";
+            this.dpMediumRB.UseVisualStyleBackColor = false;
+            // 
+            // dpSmallRB
+            // 
+            this.dpSmallRB.AutoSize = true;
+            this.dpSmallRB.BackColor = System.Drawing.Color.Gold;
+            this.dpSmallRB.Location = new System.Drawing.Point(145, 29);
+            this.dpSmallRB.Name = "dpSmallRB";
+            this.dpSmallRB.Size = new System.Drawing.Size(95, 32);
+            this.dpSmallRB.TabIndex = 14;
+            this.dpSmallRB.TabStop = true;
+            this.dpSmallRB.Text = "Small";
+            this.dpSmallRB.UseVisualStyleBackColor = false;
+            // 
+            // dpNumerator
+            // 
+            this.dpNumerator.Location = new System.Drawing.Point(584, 26);
+            this.dpNumerator.Name = "dpNumerator";
+            this.dpNumerator.Size = new System.Drawing.Size(38, 35);
+            this.dpNumerator.TabIndex = 1;
+            // 
+            // dpCheck
+            // 
+            this.dpCheck.AutoSize = true;
+            this.dpCheck.Location = new System.Drawing.Point(6, 38);
+            this.dpCheck.Name = "dpCheck";
+            this.dpCheck.Size = new System.Drawing.Size(15, 14);
+            this.dpCheck.TabIndex = 0;
+            this.dpCheck.UseVisualStyleBackColor = true;
+            // 
+            // powerBox
+            // 
+            this.powerBox.BackColor = System.Drawing.Color.Chocolate;
+            this.powerBox.Controls.Add(this.powerLargeRB);
+            this.powerBox.Controls.Add(this.powerMediumRB);
+            this.powerBox.Controls.Add(this.powerSmallRB);
+            this.powerBox.Controls.Add(this.powerNumerator);
+            this.powerBox.Controls.Add(this.powerCheck);
+            this.powerBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.powerBox.Location = new System.Drawing.Point(64, 196);
+            this.powerBox.Name = "powerBox";
+            this.powerBox.Size = new System.Drawing.Size(679, 77);
+            this.powerBox.TabIndex = 9;
+            this.powerBox.TabStop = false;
+            this.powerBox.Text = "Powerade";
+            // 
+            // powerLargeRB
+            // 
+            this.powerLargeRB.AutoSize = true;
+            this.powerLargeRB.BackColor = System.Drawing.Color.Gold;
+            this.powerLargeRB.Location = new System.Drawing.Point(369, 29);
+            this.powerLargeRB.Name = "powerLargeRB";
+            this.powerLargeRB.Size = new System.Drawing.Size(98, 32);
+            this.powerLargeRB.TabIndex = 16;
+            this.powerLargeRB.TabStop = true;
+            this.powerLargeRB.Text = "Large";
+            this.powerLargeRB.UseVisualStyleBackColor = false;
+            // 
+            // powerMediumRB
+            // 
+            this.powerMediumRB.AutoSize = true;
+            this.powerMediumRB.BackColor = System.Drawing.Color.Gold;
+            this.powerMediumRB.Location = new System.Drawing.Point(241, 29);
+            this.powerMediumRB.Name = "powerMediumRB";
+            this.powerMediumRB.Size = new System.Drawing.Size(121, 32);
+            this.powerMediumRB.TabIndex = 15;
+            this.powerMediumRB.TabStop = true;
+            this.powerMediumRB.Text = "Medium";
+            this.powerMediumRB.UseVisualStyleBackColor = false;
+            // 
+            // powerSmallRB
+            // 
+            this.powerSmallRB.AutoSize = true;
+            this.powerSmallRB.BackColor = System.Drawing.Color.Gold;
+            this.powerSmallRB.Location = new System.Drawing.Point(145, 29);
+            this.powerSmallRB.Name = "powerSmallRB";
+            this.powerSmallRB.Size = new System.Drawing.Size(95, 32);
+            this.powerSmallRB.TabIndex = 14;
+            this.powerSmallRB.TabStop = true;
+            this.powerSmallRB.Text = "Small";
+            this.powerSmallRB.UseVisualStyleBackColor = false;
+            // 
+            // powerNumerator
+            // 
+            this.powerNumerator.Location = new System.Drawing.Point(584, 26);
+            this.powerNumerator.Name = "powerNumerator";
+            this.powerNumerator.Size = new System.Drawing.Size(38, 35);
+            this.powerNumerator.TabIndex = 1;
+            // 
+            // powerCheck
+            // 
+            this.powerCheck.AutoSize = true;
+            this.powerCheck.Location = new System.Drawing.Point(6, 38);
+            this.powerCheck.Name = "powerCheck";
+            this.powerCheck.Size = new System.Drawing.Size(15, 14);
+            this.powerCheck.TabIndex = 0;
+            this.powerCheck.UseVisualStyleBackColor = true;
+            // 
+            // spriteBox
+            // 
+            this.spriteBox.BackColor = System.Drawing.Color.Chocolate;
+            this.spriteBox.Controls.Add(this.spriteLargeRB);
+            this.spriteBox.Controls.Add(this.spriteMediumRB);
+            this.spriteBox.Controls.Add(this.spriteSmallRB);
+            this.spriteBox.Controls.Add(this.spriteNumerator);
+            this.spriteBox.Controls.Add(this.spriteCheck);
+            this.spriteBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.spriteBox.Location = new System.Drawing.Point(64, 99);
+            this.spriteBox.Name = "spriteBox";
+            this.spriteBox.Size = new System.Drawing.Size(679, 85);
+            this.spriteBox.TabIndex = 8;
+            this.spriteBox.TabStop = false;
+            this.spriteBox.Text = "Sprite";
+            // 
+            // spriteLargeRB
+            // 
+            this.spriteLargeRB.AutoSize = true;
+            this.spriteLargeRB.BackColor = System.Drawing.Color.Gold;
+            this.spriteLargeRB.Location = new System.Drawing.Point(368, 37);
+            this.spriteLargeRB.Name = "spriteLargeRB";
+            this.spriteLargeRB.Size = new System.Drawing.Size(98, 32);
+            this.spriteLargeRB.TabIndex = 16;
+            this.spriteLargeRB.TabStop = true;
+            this.spriteLargeRB.Text = "Large";
+            this.spriteLargeRB.UseVisualStyleBackColor = false;
+            // 
+            // spriteMediumRB
+            // 
+            this.spriteMediumRB.AutoSize = true;
+            this.spriteMediumRB.BackColor = System.Drawing.Color.Gold;
+            this.spriteMediumRB.Location = new System.Drawing.Point(241, 37);
+            this.spriteMediumRB.Name = "spriteMediumRB";
+            this.spriteMediumRB.Size = new System.Drawing.Size(121, 32);
+            this.spriteMediumRB.TabIndex = 15;
+            this.spriteMediumRB.TabStop = true;
+            this.spriteMediumRB.Text = "Medium";
+            this.spriteMediumRB.UseVisualStyleBackColor = false;
+            // 
+            // spriteSmallRB
+            // 
+            this.spriteSmallRB.AutoSize = true;
+            this.spriteSmallRB.BackColor = System.Drawing.Color.Gold;
+            this.spriteSmallRB.Location = new System.Drawing.Point(145, 37);
+            this.spriteSmallRB.Name = "spriteSmallRB";
+            this.spriteSmallRB.Size = new System.Drawing.Size(95, 32);
+            this.spriteSmallRB.TabIndex = 14;
+            this.spriteSmallRB.TabStop = true;
+            this.spriteSmallRB.Text = "Small";
+            this.spriteSmallRB.UseVisualStyleBackColor = false;
+            // 
+            // spriteNumerator
+            // 
+            this.spriteNumerator.Location = new System.Drawing.Point(584, 34);
+            this.spriteNumerator.Name = "spriteNumerator";
+            this.spriteNumerator.Size = new System.Drawing.Size(38, 35);
+            this.spriteNumerator.TabIndex = 1;
+            // 
+            // spriteCheck
+            // 
+            this.spriteCheck.AutoSize = true;
+            this.spriteCheck.Location = new System.Drawing.Point(6, 49);
+            this.spriteCheck.Name = "spriteCheck";
+            this.spriteCheck.Size = new System.Drawing.Size(15, 14);
+            this.spriteCheck.TabIndex = 0;
+            this.spriteCheck.UseVisualStyleBackColor = true;
+            // 
+            // cokeBox
+            // 
+            this.cokeBox.BackColor = System.Drawing.Color.Chocolate;
+            this.cokeBox.Controls.Add(this.cokeLargeRB);
+            this.cokeBox.Controls.Add(this.cokeMediumRB);
+            this.cokeBox.Controls.Add(this.cokeSmallRB);
+            this.cokeBox.Controls.Add(this.cokeNumerator);
+            this.cokeBox.Controls.Add(this.cokeCheck);
+            this.cokeBox.Controls.Add(this.groupBox2);
+            this.cokeBox.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cokeBox.Location = new System.Drawing.Point(64, 23);
+            this.cokeBox.Name = "cokeBox";
+            this.cokeBox.Size = new System.Drawing.Size(679, 70);
+            this.cokeBox.TabIndex = 7;
+            this.cokeBox.TabStop = false;
+            this.cokeBox.Text = "Coca-Cola";
+            // 
+            // cokeLargeRB
+            // 
+            this.cokeLargeRB.AutoSize = true;
+            this.cokeLargeRB.BackColor = System.Drawing.Color.Gold;
+            this.cokeLargeRB.Location = new System.Drawing.Point(369, 25);
+            this.cokeLargeRB.Name = "cokeLargeRB";
+            this.cokeLargeRB.Size = new System.Drawing.Size(98, 32);
+            this.cokeLargeRB.TabIndex = 13;
+            this.cokeLargeRB.TabStop = true;
+            this.cokeLargeRB.Text = "Large";
+            this.cokeLargeRB.UseVisualStyleBackColor = false;
+            // 
+            // cokeMediumRB
+            // 
+            this.cokeMediumRB.AutoSize = true;
+            this.cokeMediumRB.BackColor = System.Drawing.Color.Gold;
+            this.cokeMediumRB.Location = new System.Drawing.Point(241, 25);
+            this.cokeMediumRB.Name = "cokeMediumRB";
+            this.cokeMediumRB.Size = new System.Drawing.Size(121, 32);
+            this.cokeMediumRB.TabIndex = 12;
+            this.cokeMediumRB.TabStop = true;
+            this.cokeMediumRB.Text = "Medium";
+            this.cokeMediumRB.UseVisualStyleBackColor = false;
+            // 
+            // cokeSmallRB
+            // 
+            this.cokeSmallRB.AutoSize = true;
+            this.cokeSmallRB.BackColor = System.Drawing.Color.Gold;
+            this.cokeSmallRB.Location = new System.Drawing.Point(145, 25);
+            this.cokeSmallRB.Name = "cokeSmallRB";
+            this.cokeSmallRB.Size = new System.Drawing.Size(95, 32);
+            this.cokeSmallRB.TabIndex = 11;
+            this.cokeSmallRB.TabStop = true;
+            this.cokeSmallRB.Text = "Small";
+            this.cokeSmallRB.UseVisualStyleBackColor = false;
+            // 
+            // cokeNumerator
+            // 
+            this.cokeNumerator.Location = new System.Drawing.Point(584, 22);
+            this.cokeNumerator.Name = "cokeNumerator";
+            this.cokeNumerator.Size = new System.Drawing.Size(38, 35);
+            this.cokeNumerator.TabIndex = 10;
+            // 
+            // cokeCheck
+            // 
+            this.cokeCheck.AutoSize = true;
+            this.cokeCheck.Location = new System.Drawing.Point(6, 38);
+            this.cokeCheck.Name = "cokeCheck";
+            this.cokeCheck.Size = new System.Drawing.Size(15, 14);
+            this.cokeCheck.TabIndex = 9;
+            this.cokeCheck.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Location = new System.Drawing.Point(0, 67);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 100);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // bevLabel
+            // 
+            this.bevLabel.AutoSize = true;
+            this.bevLabel.BackColor = System.Drawing.Color.Orange;
+            this.bevLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bevLabel.Location = new System.Drawing.Point(559, 19);
+            this.bevLabel.Name = "bevLabel";
+            this.bevLabel.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.bevLabel.Size = new System.Drawing.Size(227, 53);
+            this.bevLabel.TabIndex = 0;
+            this.bevLabel.Text = "Beverages\r\n";
             // 
             // tabPage7
             // 
@@ -640,17 +1075,6 @@
             this.tabPage9.Text = "Help";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(595, 604);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 39);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Clear Choices";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -668,6 +1092,24 @@
             this.tabPage2.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.bevBox.ResumeLayout(false);
+            this.teaBox.ResumeLayout(false);
+            this.teaBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.teaNumerator)).EndInit();
+            this.dpBox.ResumeLayout(false);
+            this.dpBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dpNumerator)).EndInit();
+            this.powerBox.ResumeLayout(false);
+            this.powerBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.powerNumerator)).EndInit();
+            this.spriteBox.ResumeLayout(false);
+            this.spriteBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spriteNumerator)).EndInit();
+            this.cokeBox.ResumeLayout(false);
+            this.cokeBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cokeNumerator)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -726,5 +1168,38 @@
         private GroupBox groupBox1;
         private Label stPizzaLabel;
         private Button button1;
+        private Label bevLabel;
+        private GroupBox bevBox;
+        private GroupBox teaBox;
+        private RadioButton teaLargeRB;
+        private RadioButton teaMediumRB;
+        private RadioButton teaSmallRB;
+        private NumericUpDown teaNumerator;
+        private CheckBox teaCheck;
+        private GroupBox dpBox;
+        private RadioButton dpLargeRB;
+        private RadioButton dpMediumRB;
+        private RadioButton dpSmallRB;
+        private NumericUpDown dpNumerator;
+        private CheckBox dpCheck;
+        private GroupBox powerBox;
+        private RadioButton powerLargeRB;
+        private RadioButton powerMediumRB;
+        private RadioButton powerSmallRB;
+        private NumericUpDown powerNumerator;
+        private CheckBox powerCheck;
+        private GroupBox spriteBox;
+        private RadioButton spriteLargeRB;
+        private RadioButton spriteMediumRB;
+        private RadioButton spriteSmallRB;
+        private NumericUpDown spriteNumerator;
+        private CheckBox spriteCheck;
+        private GroupBox cokeBox;
+        private RadioButton cokeLargeRB;
+        private RadioButton cokeMediumRB;
+        private RadioButton cokeSmallRB;
+        private NumericUpDown cokeNumerator;
+        private CheckBox cokeCheck;
+        private GroupBox groupBox2;
     }
 }
