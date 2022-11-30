@@ -5,7 +5,14 @@ namespace Sprint2UC
         public Form1()
         {
             InitializeComponent();
-       
+            loginTab.Enabled = false;
+            standardTab.Enabled = false;
+            byoTab.Enabled = false;
+            beveragesTab.Enabled = false;
+            orderTab.Enabled = false;
+            checkoutTab.Enabled = false;
+
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,7 +43,7 @@ namespace Sprint2UC
 
         private void usernameInput_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void passwordInput_TextChanged(object sender, EventArgs e)
@@ -52,6 +59,11 @@ namespace Sprint2UC
         private void groupBox3_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void loginCompletionLabel_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

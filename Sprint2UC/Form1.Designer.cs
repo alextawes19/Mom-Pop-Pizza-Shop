@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.loginLogoText = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.loginTab = new System.Windows.Forms.TabPage();
+            this.loginCompletionLabel = new System.Windows.Forms.Label();
             this.loginLabel = new System.Windows.Forms.Label();
             this.signUpButton = new System.Windows.Forms.Button();
             this.questionText = new System.Windows.Forms.Label();
@@ -39,7 +40,7 @@
             this.usernameText = new System.Windows.Forms.Label();
             this.passwordBox = new System.Windows.Forms.TextBox();
             this.usernameBox = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.registerTab = new System.Windows.Forms.TabPage();
             this.cancelSignUp = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.cvvInput = new System.Windows.Forms.TextBox();
@@ -70,8 +71,7 @@
             this.personalInfoLabel = new System.Windows.Forms.Label();
             this.SignInLabel = new System.Windows.Forms.Label();
             this.RegisterLabel = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.standardTab = new System.Windows.Forms.TabPage();
             this.bbqGB = new System.Windows.Forms.GroupBox();
             this.crustGBbbq = new System.Windows.Forms.GroupBox();
             this.stuffedBBQ = new System.Windows.Forms.RadioButton();
@@ -124,7 +124,7 @@
             this.smallCheese = new System.Windows.Forms.RadioButton();
             this.cheeseCheck = new System.Windows.Forms.CheckBox();
             this.stPizzaLabel = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.byoTab = new System.Windows.Forms.TabPage();
             this.byoClearButton = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.byoPineapple = new System.Windows.Forms.CheckBox();
@@ -159,7 +159,7 @@
             this.byoMedium = new System.Windows.Forms.RadioButton();
             this.byoSmall = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.beveragesTab = new System.Windows.Forms.TabPage();
             this.bevBox = new System.Windows.Forms.GroupBox();
             this.teaBox = new System.Windows.Forms.GroupBox();
             this.teaLargeRB = new System.Windows.Forms.RadioButton();
@@ -193,7 +193,7 @@
             this.cokeCheck = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bevLabel = new System.Windows.Forms.Label();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.orderTab = new System.Windows.Forms.TabPage();
             this.orderTotalPanel = new System.Windows.Forms.Panel();
             this.orderTotal = new System.Windows.Forms.Label();
             this.orderTotalLabel = new System.Windows.Forms.Label();
@@ -215,7 +215,7 @@
             this.pizza2 = new System.Windows.Forms.Label();
             this.pizza1 = new System.Windows.Forms.Label();
             this.yourOrderLabel = new System.Windows.Forms.Label();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.checkoutTab = new System.Windows.Forms.TabPage();
             this.topGB = new System.Windows.Forms.GroupBox();
             this.checkoutTotalPanel = new System.Windows.Forms.Panel();
             this.checkoutTotal = new System.Windows.Forms.Label();
@@ -226,18 +226,17 @@
             this.takeout = new System.Windows.Forms.RadioButton();
             this.delivery = new System.Windows.Forms.RadioButton();
             this.checkoutLabel = new System.Windows.Forms.Label();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.helpTab = new System.Windows.Forms.TabPage();
             this.helpGB = new System.Windows.Forms.GroupBox();
             this.helpTip4 = new System.Windows.Forms.Label();
             this.helpTip3 = new System.Windows.Forms.Label();
             this.helpTip2 = new System.Windows.Forms.Label();
             this.helpTip1 = new System.Windows.Forms.Label();
             this.helpLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.tabControl.SuspendLayout();
+            this.loginTab.SuspendLayout();
+            this.registerTab.SuspendLayout();
+            this.standardTab.SuspendLayout();
             this.bbqGB.SuspendLayout();
             this.crustGBbbq.SuspendLayout();
             this.sizeGBbbq.SuspendLayout();
@@ -253,7 +252,7 @@
             this.groupBox1.SuspendLayout();
             this.crustGBcheese.SuspendLayout();
             this.sizeGBcheese.SuspendLayout();
-            this.tabPage5.SuspendLayout();
+            this.byoTab.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.byoMeatGB.SuspendLayout();
             this.byoExtraCheeseGB.SuspendLayout();
@@ -262,7 +261,7 @@
             this.byoCutGB.SuspendLayout();
             this.crustGB.SuspendLayout();
             this.sizeGB.SuspendLayout();
-            this.tabPage6.SuspendLayout();
+            this.beveragesTab.SuspendLayout();
             this.bevBox.SuspendLayout();
             this.teaBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teaNumerator)).BeginInit();
@@ -274,17 +273,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.spriteNumerator)).BeginInit();
             this.cokeBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cokeNumerator)).BeginInit();
-            this.tabPage7.SuspendLayout();
+            this.orderTab.SuspendLayout();
             this.orderTotalPanel.SuspendLayout();
             this.orderDrinksGB.SuspendLayout();
             this.drinkTotalPanel.SuspendLayout();
             this.orderPizzasGB.SuspendLayout();
             this.pizzaTotalPanel.SuspendLayout();
-            this.tabPage8.SuspendLayout();
+            this.checkoutTab.SuspendLayout();
             this.topGB.SuspendLayout();
             this.checkoutTotalPanel.SuspendLayout();
             this.orderOptionGB.SuspendLayout();
-            this.tabPage9.SuspendLayout();
+            this.helpTab.SuspendLayout();
             this.helpGB.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -298,42 +297,53 @@
             this.loginLogoText.TabIndex = 1;
             this.loginLogoText.Text = "Mom and Pop’s ​Pizza Shop🍕";
             // 
-            // tabControl1
+            // tabControl
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Controls.Add(this.tabPage8);
-            this.tabControl1.Controls.Add(this.tabPage9);
-            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tabControl1.Location = new System.Drawing.Point(31, 65);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1326, 694);
-            this.tabControl1.TabIndex = 4;
+            this.tabControl.Controls.Add(this.loginTab);
+            this.tabControl.Controls.Add(this.registerTab);
+            this.tabControl.Controls.Add(this.standardTab);
+            this.tabControl.Controls.Add(this.byoTab);
+            this.tabControl.Controls.Add(this.beveragesTab);
+            this.tabControl.Controls.Add(this.orderTab);
+            this.tabControl.Controls.Add(this.checkoutTab);
+            this.tabControl.Controls.Add(this.helpTab);
+            this.tabControl.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tabControl.Location = new System.Drawing.Point(31, 65);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(1326, 694);
+            this.tabControl.TabIndex = 4;
             // 
-            // tabPage1
+            // loginTab
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.loginLabel);
-            this.tabPage1.Controls.Add(this.signUpButton);
-            this.tabPage1.Controls.Add(this.questionText);
-            this.tabPage1.Controls.Add(this.loginButton);
-            this.tabPage1.Controls.Add(this.passwordText);
-            this.tabPage1.Controls.Add(this.usernameText);
-            this.tabPage1.Controls.Add(this.passwordBox);
-            this.tabPage1.Controls.Add(this.usernameBox);
-            this.tabPage1.Location = new System.Drawing.Point(4, 41);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Login";
+            this.loginTab.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.loginTab.Controls.Add(this.loginCompletionLabel);
+            this.loginTab.Controls.Add(this.loginLabel);
+            this.loginTab.Controls.Add(this.signUpButton);
+            this.loginTab.Controls.Add(this.questionText);
+            this.loginTab.Controls.Add(this.loginButton);
+            this.loginTab.Controls.Add(this.passwordText);
+            this.loginTab.Controls.Add(this.usernameText);
+            this.loginTab.Controls.Add(this.passwordBox);
+            this.loginTab.Controls.Add(this.usernameBox);
+            this.loginTab.Location = new System.Drawing.Point(4, 41);
+            this.loginTab.Name = "loginTab";
+            this.loginTab.Padding = new System.Windows.Forms.Padding(3);
+            this.loginTab.Size = new System.Drawing.Size(1318, 649);
+            this.loginTab.TabIndex = 0;
+            this.loginTab.Text = "Login";
+            // 
+            // loginCompletionLabel
+            // 
+            this.loginCompletionLabel.AutoSize = true;
+            this.loginCompletionLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.loginCompletionLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.loginCompletionLabel.Location = new System.Drawing.Point(819, 438);
+            this.loginCompletionLabel.Name = "loginCompletionLabel";
+            this.loginCompletionLabel.Size = new System.Drawing.Size(12, 18);
+            this.loginCompletionLabel.TabIndex = 34;
+            this.loginCompletionLabel.Text = "|";
+            this.loginCompletionLabel.Click += new System.EventHandler(this.loginCompletionLabel_Click);
             // 
             // loginLabel
             // 
@@ -419,45 +429,45 @@
             this.usernameBox.TabIndex = 8;
             this.usernameBox.TextChanged += new System.EventHandler(this.usernameBox_TextChanged);
             // 
-            // tabPage2
+            // registerTab
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.tabPage2.Controls.Add(this.cancelSignUp);
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.cvvInput);
-            this.tabPage2.Controls.Add(this.cvvLabel);
-            this.tabPage2.Controls.Add(this.expDateInput);
-            this.tabPage2.Controls.Add(this.cardNumInput);
-            this.tabPage2.Controls.Add(this.expDateLabel);
-            this.tabPage2.Controls.Add(this.cardNumLabel);
-            this.tabPage2.Controls.Add(this.payInfoLabel);
-            this.tabPage2.Controls.Add(this.conEmailInput);
-            this.tabPage2.Controls.Add(this.conEmailLabel);
-            this.tabPage2.Controls.Add(this.phoneInput);
-            this.tabPage2.Controls.Add(this.phoneLabel);
-            this.tabPage2.Controls.Add(this.addyInput);
-            this.tabPage2.Controls.Add(this.addyLabel);
-            this.tabPage2.Controls.Add(this.emailInput);
-            this.tabPage2.Controls.Add(this.LNameInput);
-            this.tabPage2.Controls.Add(this.fNameInput);
-            this.tabPage2.Controls.Add(this.emailLabel);
-            this.tabPage2.Controls.Add(this.LNameLabel);
-            this.tabPage2.Controls.Add(this.fNameLabel);
-            this.tabPage2.Controls.Add(this.conPasswordInput);
-            this.tabPage2.Controls.Add(this.passwordInput);
-            this.tabPage2.Controls.Add(this.usernameInput);
-            this.tabPage2.Controls.Add(this.conPasswordLabel);
-            this.tabPage2.Controls.Add(this.passwordLabel);
-            this.tabPage2.Controls.Add(this.usernameLabel);
-            this.tabPage2.Controls.Add(this.personalInfoLabel);
-            this.tabPage2.Controls.Add(this.SignInLabel);
-            this.tabPage2.Controls.Add(this.RegisterLabel);
-            this.tabPage2.Location = new System.Drawing.Point(4, 41);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Register";
+            this.registerTab.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.registerTab.Controls.Add(this.cancelSignUp);
+            this.registerTab.Controls.Add(this.button3);
+            this.registerTab.Controls.Add(this.cvvInput);
+            this.registerTab.Controls.Add(this.cvvLabel);
+            this.registerTab.Controls.Add(this.expDateInput);
+            this.registerTab.Controls.Add(this.cardNumInput);
+            this.registerTab.Controls.Add(this.expDateLabel);
+            this.registerTab.Controls.Add(this.cardNumLabel);
+            this.registerTab.Controls.Add(this.payInfoLabel);
+            this.registerTab.Controls.Add(this.conEmailInput);
+            this.registerTab.Controls.Add(this.conEmailLabel);
+            this.registerTab.Controls.Add(this.phoneInput);
+            this.registerTab.Controls.Add(this.phoneLabel);
+            this.registerTab.Controls.Add(this.addyInput);
+            this.registerTab.Controls.Add(this.addyLabel);
+            this.registerTab.Controls.Add(this.emailInput);
+            this.registerTab.Controls.Add(this.LNameInput);
+            this.registerTab.Controls.Add(this.fNameInput);
+            this.registerTab.Controls.Add(this.emailLabel);
+            this.registerTab.Controls.Add(this.LNameLabel);
+            this.registerTab.Controls.Add(this.fNameLabel);
+            this.registerTab.Controls.Add(this.conPasswordInput);
+            this.registerTab.Controls.Add(this.passwordInput);
+            this.registerTab.Controls.Add(this.usernameInput);
+            this.registerTab.Controls.Add(this.conPasswordLabel);
+            this.registerTab.Controls.Add(this.passwordLabel);
+            this.registerTab.Controls.Add(this.usernameLabel);
+            this.registerTab.Controls.Add(this.personalInfoLabel);
+            this.registerTab.Controls.Add(this.SignInLabel);
+            this.registerTab.Controls.Add(this.RegisterLabel);
+            this.registerTab.Location = new System.Drawing.Point(4, 41);
+            this.registerTab.Name = "registerTab";
+            this.registerTab.Padding = new System.Windows.Forms.Padding(3);
+            this.registerTab.Size = new System.Drawing.Size(1318, 649);
+            this.registerTab.TabIndex = 1;
+            this.registerTab.Text = "Register";
             // 
             // cancelSignUp
             // 
@@ -747,32 +757,22 @@
             this.RegisterLabel.TabIndex = 32;
             this.RegisterLabel.Text = "Register";
             // 
-            // tabPage3
+            // standardTab
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.tabPage3.Location = new System.Drawing.Point(4, 41);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Menu";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.tabPage4.Controls.Add(this.bbqGB);
-            this.tabPage4.Controls.Add(this.hawaiianGB);
-            this.tabPage4.Controls.Add(this.sausageGB);
-            this.tabPage4.Controls.Add(this.peppGB);
-            this.tabPage4.Controls.Add(this.clearChoicesButton);
-            this.tabPage4.Controls.Add(this.groupBox1);
-            this.tabPage4.Controls.Add(this.stPizzaLabel);
-            this.tabPage4.Location = new System.Drawing.Point(4, 41);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Standard Pizzas";
+            this.standardTab.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.standardTab.Controls.Add(this.bbqGB);
+            this.standardTab.Controls.Add(this.hawaiianGB);
+            this.standardTab.Controls.Add(this.sausageGB);
+            this.standardTab.Controls.Add(this.peppGB);
+            this.standardTab.Controls.Add(this.clearChoicesButton);
+            this.standardTab.Controls.Add(this.groupBox1);
+            this.standardTab.Controls.Add(this.stPizzaLabel);
+            this.standardTab.Location = new System.Drawing.Point(4, 41);
+            this.standardTab.Name = "standardTab";
+            this.standardTab.Padding = new System.Windows.Forms.Padding(3);
+            this.standardTab.Size = new System.Drawing.Size(1318, 649);
+            this.standardTab.TabIndex = 3;
+            this.standardTab.Text = "Standard Pizzas";
             // 
             // bbqGB
             // 
@@ -1412,26 +1412,26 @@
             this.stPizzaLabel.TabIndex = 34;
             this.stPizzaLabel.Text = "Standard Pizzas";
             // 
-            // tabPage5
+            // byoTab
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.tabPage5.Controls.Add(this.byoClearButton);
-            this.tabPage5.Controls.Add(this.groupBox9);
-            this.tabPage5.Controls.Add(this.byoMeatGB);
-            this.tabPage5.Controls.Add(this.byoExtraCheeseGB);
-            this.tabPage5.Controls.Add(this.byoCheeseGB);
-            this.tabPage5.Controls.Add(this.byoSauceGB);
-            this.tabPage5.Controls.Add(this.byoCutGB);
-            this.tabPage5.Controls.Add(this.crustGB);
-            this.tabPage5.Controls.Add(this.sizeGB);
-            this.tabPage5.Controls.Add(this.label1);
-            this.tabPage5.Location = new System.Drawing.Point(4, 41);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Build Your Own";
-            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
+            this.byoTab.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.byoTab.Controls.Add(this.byoClearButton);
+            this.byoTab.Controls.Add(this.groupBox9);
+            this.byoTab.Controls.Add(this.byoMeatGB);
+            this.byoTab.Controls.Add(this.byoExtraCheeseGB);
+            this.byoTab.Controls.Add(this.byoCheeseGB);
+            this.byoTab.Controls.Add(this.byoSauceGB);
+            this.byoTab.Controls.Add(this.byoCutGB);
+            this.byoTab.Controls.Add(this.crustGB);
+            this.byoTab.Controls.Add(this.sizeGB);
+            this.byoTab.Controls.Add(this.label1);
+            this.byoTab.Location = new System.Drawing.Point(4, 41);
+            this.byoTab.Name = "byoTab";
+            this.byoTab.Padding = new System.Windows.Forms.Padding(3);
+            this.byoTab.Size = new System.Drawing.Size(1318, 649);
+            this.byoTab.TabIndex = 4;
+            this.byoTab.Text = "Build Your Own";
+            this.byoTab.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // byoClearButton
             // 
@@ -1847,17 +1847,17 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Build Your Own";
             // 
-            // tabPage6
+            // beveragesTab
             // 
-            this.tabPage6.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.tabPage6.Controls.Add(this.bevBox);
-            this.tabPage6.Controls.Add(this.bevLabel);
-            this.tabPage6.Location = new System.Drawing.Point(4, 41);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Beverages";
+            this.beveragesTab.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.beveragesTab.Controls.Add(this.bevBox);
+            this.beveragesTab.Controls.Add(this.bevLabel);
+            this.beveragesTab.Location = new System.Drawing.Point(4, 41);
+            this.beveragesTab.Name = "beveragesTab";
+            this.beveragesTab.Padding = new System.Windows.Forms.Padding(3);
+            this.beveragesTab.Size = new System.Drawing.Size(1318, 649);
+            this.beveragesTab.TabIndex = 5;
+            this.beveragesTab.Text = "Beverages";
             // 
             // bevBox
             // 
@@ -2235,20 +2235,20 @@
             this.bevLabel.TabIndex = 2;
             this.bevLabel.Text = "Beverages\r\n";
             // 
-            // tabPage7
+            // orderTab
             // 
-            this.tabPage7.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.tabPage7.Controls.Add(this.orderTotalPanel);
-            this.tabPage7.Controls.Add(this.orderTotalLabel);
-            this.tabPage7.Controls.Add(this.orderDrinksGB);
-            this.tabPage7.Controls.Add(this.orderPizzasGB);
-            this.tabPage7.Controls.Add(this.yourOrderLabel);
-            this.tabPage7.Location = new System.Drawing.Point(4, 41);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Review Order";
+            this.orderTab.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.orderTab.Controls.Add(this.orderTotalPanel);
+            this.orderTab.Controls.Add(this.orderTotalLabel);
+            this.orderTab.Controls.Add(this.orderDrinksGB);
+            this.orderTab.Controls.Add(this.orderPizzasGB);
+            this.orderTab.Controls.Add(this.yourOrderLabel);
+            this.orderTab.Location = new System.Drawing.Point(4, 41);
+            this.orderTab.Name = "orderTab";
+            this.orderTab.Padding = new System.Windows.Forms.Padding(3);
+            this.orderTab.Size = new System.Drawing.Size(1318, 649);
+            this.orderTab.TabIndex = 6;
+            this.orderTab.Text = "Review Order";
             // 
             // orderTotalPanel
             // 
@@ -2475,18 +2475,18 @@
             this.yourOrderLabel.TabIndex = 3;
             this.yourOrderLabel.Text = "Your Order";
             // 
-            // tabPage8
+            // checkoutTab
             // 
-            this.tabPage8.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.tabPage8.Controls.Add(this.topGB);
-            this.tabPage8.Controls.Add(this.orderOptionGB);
-            this.tabPage8.Controls.Add(this.checkoutLabel);
-            this.tabPage8.Location = new System.Drawing.Point(4, 41);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Checkout";
+            this.checkoutTab.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.checkoutTab.Controls.Add(this.topGB);
+            this.checkoutTab.Controls.Add(this.orderOptionGB);
+            this.checkoutTab.Controls.Add(this.checkoutLabel);
+            this.checkoutTab.Location = new System.Drawing.Point(4, 41);
+            this.checkoutTab.Name = "checkoutTab";
+            this.checkoutTab.Padding = new System.Windows.Forms.Padding(3);
+            this.checkoutTab.Size = new System.Drawing.Size(1318, 649);
+            this.checkoutTab.TabIndex = 7;
+            this.checkoutTab.Text = "Checkout";
             // 
             // topGB
             // 
@@ -2604,17 +2604,17 @@
             this.checkoutLabel.TabIndex = 4;
             this.checkoutLabel.Text = "Checkout";
             // 
-            // tabPage9
+            // helpTab
             // 
-            this.tabPage9.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.tabPage9.Controls.Add(this.helpGB);
-            this.tabPage9.Controls.Add(this.helpLabel);
-            this.tabPage9.Location = new System.Drawing.Point(4, 41);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Help";
+            this.helpTab.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.helpTab.Controls.Add(this.helpGB);
+            this.helpTab.Controls.Add(this.helpLabel);
+            this.helpTab.Location = new System.Drawing.Point(4, 41);
+            this.helpTab.Name = "helpTab";
+            this.helpTab.Padding = new System.Windows.Forms.Padding(3);
+            this.helpTab.Size = new System.Drawing.Size(1318, 649);
+            this.helpTab.TabIndex = 8;
+            this.helpTab.Text = "Help";
             // 
             // helpGB
             // 
@@ -2680,34 +2680,23 @@
             this.helpLabel.TabIndex = 5;
             this.helpLabel.Text = "Help";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(819, 438);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(418, 18);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "You have successfully logged in and can now order!";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(1387, 791);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.loginLogoText);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.tabControl.ResumeLayout(false);
+            this.loginTab.ResumeLayout(false);
+            this.loginTab.PerformLayout();
+            this.registerTab.ResumeLayout(false);
+            this.registerTab.PerformLayout();
+            this.standardTab.ResumeLayout(false);
+            this.standardTab.PerformLayout();
             this.bbqGB.ResumeLayout(false);
             this.bbqGB.PerformLayout();
             this.crustGBbbq.ResumeLayout(false);
@@ -2738,8 +2727,8 @@
             this.crustGBcheese.PerformLayout();
             this.sizeGBcheese.ResumeLayout(false);
             this.sizeGBcheese.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
+            this.byoTab.ResumeLayout(false);
+            this.byoTab.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.byoMeatGB.ResumeLayout(false);
@@ -2756,8 +2745,8 @@
             this.crustGB.PerformLayout();
             this.sizeGB.ResumeLayout(false);
             this.sizeGB.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
+            this.beveragesTab.ResumeLayout(false);
+            this.beveragesTab.PerformLayout();
             this.bevBox.ResumeLayout(false);
             this.teaBox.ResumeLayout(false);
             this.teaBox.PerformLayout();
@@ -2774,8 +2763,8 @@
             this.cokeBox.ResumeLayout(false);
             this.cokeBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cokeNumerator)).EndInit();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
+            this.orderTab.ResumeLayout(false);
+            this.orderTab.PerformLayout();
             this.orderTotalPanel.ResumeLayout(false);
             this.orderTotalPanel.PerformLayout();
             this.orderDrinksGB.ResumeLayout(false);
@@ -2786,16 +2775,16 @@
             this.orderPizzasGB.PerformLayout();
             this.pizzaTotalPanel.ResumeLayout(false);
             this.pizzaTotalPanel.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
+            this.checkoutTab.ResumeLayout(false);
+            this.checkoutTab.PerformLayout();
             this.topGB.ResumeLayout(false);
             this.topGB.PerformLayout();
             this.checkoutTotalPanel.ResumeLayout(false);
             this.checkoutTotalPanel.PerformLayout();
             this.orderOptionGB.ResumeLayout(false);
             this.orderOptionGB.PerformLayout();
-            this.tabPage9.ResumeLayout(false);
-            this.tabPage9.PerformLayout();
+            this.helpTab.ResumeLayout(false);
+            this.helpTab.PerformLayout();
             this.helpGB.ResumeLayout(false);
             this.helpGB.PerformLayout();
             this.ResumeLayout(false);
@@ -2805,9 +2794,9 @@
 
         #endregion
         private Label loginLogoText;
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
+        private TabControl tabControl;
+        private TabPage loginTab;
+        private TabPage registerTab;
         private Button signUpButton;
         private Label questionText;
         private Button loginButton;
@@ -2845,13 +2834,12 @@
         private Label personalInfoLabel;
         private Label SignInLabel;
         private Label RegisterLabel;
-        private TabPage tabPage3;
-        private TabPage tabPage4;
-        private TabPage tabPage5;
-        private TabPage tabPage6;
-        private TabPage tabPage7;
-        private TabPage tabPage8;
-        private TabPage tabPage9;
+        private TabPage standardTab;
+        private TabPage byoTab;
+        private TabPage beveragesTab;
+        private TabPage orderTab;
+        private TabPage checkoutTab;
+        private TabPage helpTab;
         private Label loginLabel;
         private GroupBox groupBox1;
         private Label stPizzaLabel;
@@ -3009,6 +2997,6 @@
         private Label helpTip2;
         private Label helpTip1;
         private Label helpLabel;
-        private Label label2;
+        private Label loginCompletionLabel;
     }
 }
