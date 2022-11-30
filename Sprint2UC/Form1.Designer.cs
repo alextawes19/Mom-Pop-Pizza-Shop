@@ -160,9 +160,6 @@
             this.byoSmall = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.bevBox = new System.Windows.Forms.GroupBox();
             this.teaBox = new System.Windows.Forms.GroupBox();
             this.teaLargeRB = new System.Windows.Forms.RadioButton();
@@ -196,6 +193,30 @@
             this.cokeCheck = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bevLabel = new System.Windows.Forms.Label();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.orderPizzasGB = new System.Windows.Forms.GroupBox();
+            this.pizza1 = new System.Windows.Forms.Label();
+            this.pizza2 = new System.Windows.Forms.Label();
+            this.pizza3 = new System.Windows.Forms.Label();
+            this.pizza4 = new System.Windows.Forms.Label();
+            this.pizza5 = new System.Windows.Forms.Label();
+            this.pizza6 = new System.Windows.Forms.Label();
+            this.pizzaTotalPanel = new System.Windows.Forms.Panel();
+            this.orderDrinksGB = new System.Windows.Forms.GroupBox();
+            this.drink1 = new System.Windows.Forms.Label();
+            this.drink2 = new System.Windows.Forms.Label();
+            this.drink3 = new System.Windows.Forms.Label();
+            this.drink4 = new System.Windows.Forms.Label();
+            this.drink5 = new System.Windows.Forms.Label();
+            this.pizzaTotal = new System.Windows.Forms.Label();
+            this.drinkTotalPanel = new System.Windows.Forms.Panel();
+            this.drinkTotal = new System.Windows.Forms.Label();
+            this.orderTotalLabel = new System.Windows.Forms.Label();
+            this.orderTotalPanel = new System.Windows.Forms.Panel();
+            this.orderTotal = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -236,6 +257,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.spriteNumerator)).BeginInit();
             this.cokeBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cokeNumerator)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            this.orderPizzasGB.SuspendLayout();
+            this.pizzaTotalPanel.SuspendLayout();
+            this.orderDrinksGB.SuspendLayout();
+            this.drinkTotalPanel.SuspendLayout();
+            this.orderTotalPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // loginLogoText
@@ -1808,36 +1835,6 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Beverages";
             // 
-            // tabPage7
-            // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 41);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Review Order";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 41);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Checkout";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 41);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1318, 649);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Help";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
             // bevBox
             // 
             this.bevBox.BackColor = System.Drawing.Color.Orange;
@@ -2214,6 +2211,266 @@
             this.bevLabel.TabIndex = 2;
             this.bevLabel.Text = "Beverages\r\n";
             // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.tabPage7.Controls.Add(this.orderTotalPanel);
+            this.tabPage7.Controls.Add(this.orderTotalLabel);
+            this.tabPage7.Controls.Add(this.orderDrinksGB);
+            this.tabPage7.Controls.Add(this.orderPizzasGB);
+            this.tabPage7.Controls.Add(this.label2);
+            this.tabPage7.Location = new System.Drawing.Point(4, 41);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1318, 649);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Review Order";
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 41);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1318, 649);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Checkout";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 41);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1318, 649);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Help";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Orange;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(536, 19);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.label2.Size = new System.Drawing.Size(233, 53);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Your Order";
+            // 
+            // orderPizzasGB
+            // 
+            this.orderPizzasGB.BackColor = System.Drawing.Color.Orange;
+            this.orderPizzasGB.Controls.Add(this.pizzaTotalPanel);
+            this.orderPizzasGB.Controls.Add(this.pizza6);
+            this.orderPizzasGB.Controls.Add(this.pizza5);
+            this.orderPizzasGB.Controls.Add(this.pizza4);
+            this.orderPizzasGB.Controls.Add(this.pizza3);
+            this.orderPizzasGB.Controls.Add(this.pizza2);
+            this.orderPizzasGB.Controls.Add(this.pizza1);
+            this.orderPizzasGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.orderPizzasGB.Location = new System.Drawing.Point(91, 90);
+            this.orderPizzasGB.Name = "orderPizzasGB";
+            this.orderPizzasGB.Size = new System.Drawing.Size(1131, 234);
+            this.orderPizzasGB.TabIndex = 4;
+            this.orderPizzasGB.TabStop = false;
+            this.orderPizzasGB.Text = "Pizzas";
+            // 
+            // pizza1
+            // 
+            this.pizza1.AutoSize = true;
+            this.pizza1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pizza1.Location = new System.Drawing.Point(34, 41);
+            this.pizza1.Name = "pizza1";
+            this.pizza1.Size = new System.Drawing.Size(125, 18);
+            this.pizza1.TabIndex = 0;
+            this.pizza1.Text = "Example Pizza:";
+            // 
+            // pizza2
+            // 
+            this.pizza2.AutoSize = true;
+            this.pizza2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pizza2.Location = new System.Drawing.Point(34, 69);
+            this.pizza2.Name = "pizza2";
+            this.pizza2.Size = new System.Drawing.Size(125, 18);
+            this.pizza2.TabIndex = 1;
+            this.pizza2.Text = "Example Pizza:";
+            // 
+            // pizza3
+            // 
+            this.pizza3.AutoSize = true;
+            this.pizza3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pizza3.Location = new System.Drawing.Point(34, 98);
+            this.pizza3.Name = "pizza3";
+            this.pizza3.Size = new System.Drawing.Size(125, 18);
+            this.pizza3.TabIndex = 2;
+            this.pizza3.Text = "Example Pizza:";
+            // 
+            // pizza4
+            // 
+            this.pizza4.AutoSize = true;
+            this.pizza4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pizza4.Location = new System.Drawing.Point(34, 128);
+            this.pizza4.Name = "pizza4";
+            this.pizza4.Size = new System.Drawing.Size(125, 18);
+            this.pizza4.TabIndex = 3;
+            this.pizza4.Text = "Example Pizza:";
+            // 
+            // pizza5
+            // 
+            this.pizza5.AutoSize = true;
+            this.pizza5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pizza5.Location = new System.Drawing.Point(34, 158);
+            this.pizza5.Name = "pizza5";
+            this.pizza5.Size = new System.Drawing.Size(125, 18);
+            this.pizza5.TabIndex = 4;
+            this.pizza5.Text = "Example Pizza:";
+            // 
+            // pizza6
+            // 
+            this.pizza6.AutoSize = true;
+            this.pizza6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pizza6.Location = new System.Drawing.Point(34, 188);
+            this.pizza6.Name = "pizza6";
+            this.pizza6.Size = new System.Drawing.Size(125, 18);
+            this.pizza6.TabIndex = 5;
+            this.pizza6.Text = "Example Pizza:";
+            // 
+            // pizzaTotalPanel
+            // 
+            this.pizzaTotalPanel.BackColor = System.Drawing.Color.Chartreuse;
+            this.pizzaTotalPanel.Controls.Add(this.pizzaTotal);
+            this.pizzaTotalPanel.Location = new System.Drawing.Point(982, 191);
+            this.pizzaTotalPanel.Name = "pizzaTotalPanel";
+            this.pizzaTotalPanel.Size = new System.Drawing.Size(143, 37);
+            this.pizzaTotalPanel.TabIndex = 6;
+            // 
+            // orderDrinksGB
+            // 
+            this.orderDrinksGB.BackColor = System.Drawing.Color.Orange;
+            this.orderDrinksGB.Controls.Add(this.drinkTotalPanel);
+            this.orderDrinksGB.Controls.Add(this.drink5);
+            this.orderDrinksGB.Controls.Add(this.drink4);
+            this.orderDrinksGB.Controls.Add(this.drink3);
+            this.orderDrinksGB.Controls.Add(this.drink2);
+            this.orderDrinksGB.Controls.Add(this.drink1);
+            this.orderDrinksGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.orderDrinksGB.Location = new System.Drawing.Point(91, 362);
+            this.orderDrinksGB.Name = "orderDrinksGB";
+            this.orderDrinksGB.Size = new System.Drawing.Size(599, 207);
+            this.orderDrinksGB.TabIndex = 5;
+            this.orderDrinksGB.TabStop = false;
+            this.orderDrinksGB.Text = "Drinks";
+            this.orderDrinksGB.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // drink1
+            // 
+            this.drink1.AutoSize = true;
+            this.drink1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.drink1.Location = new System.Drawing.Point(34, 41);
+            this.drink1.Name = "drink1";
+            this.drink1.Size = new System.Drawing.Size(126, 18);
+            this.drink1.TabIndex = 7;
+            this.drink1.Text = "Example Drink:";
+            // 
+            // drink2
+            // 
+            this.drink2.AutoSize = true;
+            this.drink2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.drink2.Location = new System.Drawing.Point(34, 68);
+            this.drink2.Name = "drink2";
+            this.drink2.Size = new System.Drawing.Size(126, 18);
+            this.drink2.TabIndex = 8;
+            this.drink2.Text = "Example Drink:";
+            // 
+            // drink3
+            // 
+            this.drink3.AutoSize = true;
+            this.drink3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.drink3.Location = new System.Drawing.Point(34, 95);
+            this.drink3.Name = "drink3";
+            this.drink3.Size = new System.Drawing.Size(126, 18);
+            this.drink3.TabIndex = 9;
+            this.drink3.Text = "Example Drink:";
+            // 
+            // drink4
+            // 
+            this.drink4.AutoSize = true;
+            this.drink4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.drink4.Location = new System.Drawing.Point(34, 122);
+            this.drink4.Name = "drink4";
+            this.drink4.Size = new System.Drawing.Size(126, 18);
+            this.drink4.TabIndex = 10;
+            this.drink4.Text = "Example Drink:";
+            // 
+            // drink5
+            // 
+            this.drink5.AutoSize = true;
+            this.drink5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.drink5.Location = new System.Drawing.Point(34, 150);
+            this.drink5.Name = "drink5";
+            this.drink5.Size = new System.Drawing.Size(126, 18);
+            this.drink5.TabIndex = 11;
+            this.drink5.Text = "Example Drink:";
+            // 
+            // pizzaTotal
+            // 
+            this.pizzaTotal.AutoSize = true;
+            this.pizzaTotal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pizzaTotal.Location = new System.Drawing.Point(37, 10);
+            this.pizzaTotal.Name = "pizzaTotal";
+            this.pizzaTotal.Size = new System.Drawing.Size(63, 18);
+            this.pizzaTotal.TabIndex = 0;
+            this.pizzaTotal.Text = "$12.99";
+            // 
+            // drinkTotalPanel
+            // 
+            this.drinkTotalPanel.BackColor = System.Drawing.Color.Chartreuse;
+            this.drinkTotalPanel.Controls.Add(this.drinkTotal);
+            this.drinkTotalPanel.Location = new System.Drawing.Point(450, 164);
+            this.drinkTotalPanel.Name = "drinkTotalPanel";
+            this.drinkTotalPanel.Size = new System.Drawing.Size(143, 37);
+            this.drinkTotalPanel.TabIndex = 12;
+            // 
+            // drinkTotal
+            // 
+            this.drinkTotal.AutoSize = true;
+            this.drinkTotal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.drinkTotal.Location = new System.Drawing.Point(35, 10);
+            this.drinkTotal.Name = "drinkTotal";
+            this.drinkTotal.Size = new System.Drawing.Size(63, 18);
+            this.drinkTotal.TabIndex = 0;
+            this.drinkTotal.Text = "$12.99";
+            // 
+            // orderTotalLabel
+            // 
+            this.orderTotalLabel.AutoSize = true;
+            this.orderTotalLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.orderTotalLabel.Location = new System.Drawing.Point(805, 449);
+            this.orderTotalLabel.Name = "orderTotalLabel";
+            this.orderTotalLabel.Size = new System.Drawing.Size(154, 28);
+            this.orderTotalLabel.TabIndex = 6;
+            this.orderTotalLabel.Text = "Order Total:";
+            // 
+            // orderTotalPanel
+            // 
+            this.orderTotalPanel.BackColor = System.Drawing.Color.Chartreuse;
+            this.orderTotalPanel.Controls.Add(this.orderTotal);
+            this.orderTotalPanel.Location = new System.Drawing.Point(965, 430);
+            this.orderTotalPanel.Name = "orderTotalPanel";
+            this.orderTotalPanel.Size = new System.Drawing.Size(215, 62);
+            this.orderTotalPanel.TabIndex = 13;
+            // 
+            // orderTotal
+            // 
+            this.orderTotal.AutoSize = true;
+            this.orderTotal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.orderTotal.Location = new System.Drawing.Point(66, 17);
+            this.orderTotal.Name = "orderTotal";
+            this.orderTotal.Size = new System.Drawing.Size(90, 28);
+            this.orderTotal.TabIndex = 1;
+            this.orderTotal.Text = "$12.99";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2297,6 +2554,18 @@
             this.cokeBox.ResumeLayout(false);
             this.cokeBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cokeNumerator)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.orderPizzasGB.ResumeLayout(false);
+            this.orderPizzasGB.PerformLayout();
+            this.pizzaTotalPanel.ResumeLayout(false);
+            this.pizzaTotalPanel.PerformLayout();
+            this.orderDrinksGB.ResumeLayout(false);
+            this.orderDrinksGB.PerformLayout();
+            this.drinkTotalPanel.ResumeLayout(false);
+            this.drinkTotalPanel.PerformLayout();
+            this.orderTotalPanel.ResumeLayout(false);
+            this.orderTotalPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2471,5 +2740,26 @@
         private CheckBox cokeCheck;
         private GroupBox groupBox2;
         private Label bevLabel;
+        private GroupBox orderDrinksGB;
+        private Label drink5;
+        private Label drink4;
+        private Label drink3;
+        private Label drink2;
+        private Label drink1;
+        private GroupBox orderPizzasGB;
+        private Panel pizzaTotalPanel;
+        private Label pizza6;
+        private Label pizza5;
+        private Label pizza4;
+        private Label pizza3;
+        private Label pizza2;
+        private Label pizza1;
+        private Label label2;
+        private Label pizzaTotal;
+        private Panel orderTotalPanel;
+        private Label orderTotal;
+        private Label orderTotalLabel;
+        private Panel drinkTotalPanel;
+        private Label drinkTotal;
     }
 }
