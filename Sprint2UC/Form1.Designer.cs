@@ -196,7 +196,7 @@
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
+            this.yourOrderLabel = new System.Windows.Forms.Label();
             this.orderPizzasGB = new System.Windows.Forms.GroupBox();
             this.pizza1 = new System.Windows.Forms.Label();
             this.pizza2 = new System.Windows.Forms.Label();
@@ -2218,7 +2218,7 @@
             this.tabPage7.Controls.Add(this.orderTotalLabel);
             this.tabPage7.Controls.Add(this.orderDrinksGB);
             this.tabPage7.Controls.Add(this.orderPizzasGB);
-            this.tabPage7.Controls.Add(this.label2);
+            this.tabPage7.Controls.Add(this.yourOrderLabel);
             this.tabPage7.Location = new System.Drawing.Point(4, 41);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -2228,13 +2228,13 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.tabPage8.Location = new System.Drawing.Point(4, 41);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage8.Size = new System.Drawing.Size(1318, 649);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Checkout";
-            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // tabPage9
             // 
@@ -2246,17 +2246,17 @@
             this.tabPage9.Text = "Help";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // yourOrderLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Orange;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(536, 19);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            this.label2.Size = new System.Drawing.Size(233, 53);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Your Order";
+            this.yourOrderLabel.AutoSize = true;
+            this.yourOrderLabel.BackColor = System.Drawing.Color.Orange;
+            this.yourOrderLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.yourOrderLabel.Location = new System.Drawing.Point(536, 19);
+            this.yourOrderLabel.Name = "yourOrderLabel";
+            this.yourOrderLabel.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
+            this.yourOrderLabel.Size = new System.Drawing.Size(233, 53);
+            this.yourOrderLabel.TabIndex = 3;
+            this.yourOrderLabel.Text = "Your Order";
             // 
             // orderPizzasGB
             // 
@@ -2754,7 +2754,7 @@
         private Label pizza3;
         private Label pizza2;
         private Label pizza1;
-        private Label label2;
+        private Label yourOrderLabel;
         private Label pizzaTotal;
         private Panel orderTotalPanel;
         private Label orderTotal;
