@@ -14,10 +14,15 @@ namespace Sprint2UC
             orderTab.Enabled = false;
             checkoutTab.Enabled = false;
 
+            //register tab
             matchError.Text = "";
             eMatchError.Text = "";
             usernameError.Text = "";
             successPanel.Visible = false;
+
+            //login tab
+            matchingError.Text = "";
+            successfullLoginPanel.Visible = false;
 
         }
 
@@ -44,7 +49,52 @@ namespace Sprint2UC
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+            StreamReader usernameRead = new StreamReader("D:\\usernames.txt");
+            StreamReader passwordRead = new StreamReader("D:\\passwords.txt");
+            string username = usernameBox.Text;
+            string password = passwordBox.Text;
 
+            bool userMatches = false;
+            bool passwordMatches = false;
+
+            using (usernameRead)
+            {
+                string contents = usernameRead.ReadToEnd();
+                if (contents.Contains(username))
+                {
+                    userMatches = true;
+                }
+            }
+
+            using (passwordRead)
+            {
+                string contents = passwordRead.ReadToEnd();
+                if (contents.Contains(password))
+                {
+                    passwordMatches = true;
+                }
+            }
+
+            if ((userMatches==true) && (passwordMatches==true))
+            {
+                loginTab.Enabled = false;
+                matchingError.Text = "";
+                successfullLoginPanel.Visible = true;
+
+                standardTab.Enabled = true;
+                byoTab.Enabled = true;
+                beveragesTab.Enabled = true;
+                orderTab.Enabled = true;
+                checkoutTab.Enabled = true;
+            }
+            else
+            {
+                matchingError.Text = "Your username or password is incorrect!";
+            }
+
+
+            usernameRead.Close();
+            passwordRead.Close();
         }
 
         private void usernameInput_TextChanged(object sender, EventArgs e)
@@ -120,8 +170,7 @@ namespace Sprint2UC
                 
                 StreamWriter usernamesWrite = new StreamWriter("D:\\usernames.txt");
                 StreamWriter passwordsWrite = new StreamWriter("D:\\passwords.txt");
-                usernamesWrite.WriteLine(username);
-                usernamesWrite.Close();
+                
 
                 if ((password==conPassword) && (email==conEmail))
                 {
@@ -132,8 +181,8 @@ namespace Sprint2UC
                     
                 }
 
-                usernamesWrite.Close();
                 passwordsWrite.Close();
+                usernamesWrite.Close();
             }
             catch
             {

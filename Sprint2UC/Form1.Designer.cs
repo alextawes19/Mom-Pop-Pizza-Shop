@@ -31,7 +31,9 @@
             this.loginLogoText = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.loginTab = new System.Windows.Forms.TabPage();
-            this.loginCompletionLabel = new System.Windows.Forms.Label();
+            this.successfullLoginPanel = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.matchingError = new System.Windows.Forms.Label();
             this.loginLabel = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
             this.passwordText = new System.Windows.Forms.Label();
@@ -40,6 +42,7 @@
             this.usernameBox = new System.Windows.Forms.TextBox();
             this.registerTab = new System.Windows.Forms.TabPage();
             this.successPanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.usernameError = new System.Windows.Forms.Label();
             this.eMatchError = new System.Windows.Forms.Label();
             this.matchError = new System.Windows.Forms.Label();
@@ -235,9 +238,9 @@
             this.helpTip2 = new System.Windows.Forms.Label();
             this.helpTip1 = new System.Windows.Forms.Label();
             this.helpLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.loginTab.SuspendLayout();
+            this.successfullLoginPanel.SuspendLayout();
             this.registerTab.SuspendLayout();
             this.successPanel.SuspendLayout();
             this.standardTab.SuspendLayout();
@@ -321,7 +324,8 @@
             // loginTab
             // 
             this.loginTab.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.loginTab.Controls.Add(this.loginCompletionLabel);
+            this.loginTab.Controls.Add(this.successfullLoginPanel);
+            this.loginTab.Controls.Add(this.matchingError);
             this.loginTab.Controls.Add(this.loginLabel);
             this.loginTab.Controls.Add(this.loginButton);
             this.loginTab.Controls.Add(this.passwordText);
@@ -335,17 +339,35 @@
             this.loginTab.TabIndex = 0;
             this.loginTab.Text = "Login";
             // 
-            // loginCompletionLabel
+            // successfullLoginPanel
             // 
-            this.loginCompletionLabel.AutoSize = true;
-            this.loginCompletionLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.loginCompletionLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.loginCompletionLabel.Location = new System.Drawing.Point(819, 438);
-            this.loginCompletionLabel.Name = "loginCompletionLabel";
-            this.loginCompletionLabel.Size = new System.Drawing.Size(12, 18);
-            this.loginCompletionLabel.TabIndex = 34;
-            this.loginCompletionLabel.Text = "|";
-            this.loginCompletionLabel.Click += new System.EventHandler(this.loginCompletionLabel_Click);
+            this.successfullLoginPanel.BackColor = System.Drawing.Color.Yellow;
+            this.successfullLoginPanel.Controls.Add(this.label3);
+            this.successfullLoginPanel.Location = new System.Drawing.Point(337, 148);
+            this.successfullLoginPanel.Name = "successfullLoginPanel";
+            this.successfullLoginPanel.Size = new System.Drawing.Size(719, 259);
+            this.successfullLoginPanel.TabIndex = 36;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(45, 109);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(610, 33);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Succesfully Logged In! You can now order";
+            // 
+            // matchingError
+            // 
+            this.matchingError.AutoSize = true;
+            this.matchingError.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.matchingError.ForeColor = System.Drawing.Color.Red;
+            this.matchingError.Location = new System.Drawing.Point(470, 517);
+            this.matchingError.Name = "matchingError";
+            this.matchingError.Size = new System.Drawing.Size(75, 28);
+            this.matchingError.TabIndex = 35;
+            this.matchingError.Text = "Error";
             // 
             // loginLabel
             // 
@@ -462,6 +484,16 @@
             this.successPanel.Name = "successPanel";
             this.successPanel.Size = new System.Drawing.Size(756, 149);
             this.successPanel.TabIndex = 66;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(123, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(531, 28);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Account Created! Please Return to Login Tab";
             // 
             // usernameError
             // 
@@ -2705,16 +2737,6 @@
             this.helpLabel.TabIndex = 5;
             this.helpLabel.Text = "Help";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(123, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(531, 28);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Account Created! Please Return to Login Tab";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2728,6 +2750,8 @@
             this.tabControl.ResumeLayout(false);
             this.loginTab.ResumeLayout(false);
             this.loginTab.PerformLayout();
+            this.successfullLoginPanel.ResumeLayout(false);
+            this.successfullLoginPanel.PerformLayout();
             this.registerTab.ResumeLayout(false);
             this.registerTab.PerformLayout();
             this.successPanel.ResumeLayout(false);
@@ -3032,11 +3056,13 @@
         private Label helpTip2;
         private Label helpTip1;
         private Label helpLabel;
-        private Label loginCompletionLabel;
         private Label matchError;
         private Label eMatchError;
         private Label usernameError;
         private Panel successPanel;
         private Label label2;
+        private Label matchingError;
+        private Panel successfullLoginPanel;
+        private Label label3;
     }
 }
