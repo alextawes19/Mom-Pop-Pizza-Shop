@@ -132,7 +132,7 @@
             this.byoTab = new System.Windows.Forms.TabPage();
             this.byoClearButton = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.byoPineapple = new System.Windows.Forms.CheckBox();
+            this.byoMushrooms = new System.Windows.Forms.CheckBox();
             this.byoOnions = new System.Windows.Forms.CheckBox();
             this.byoPeppers = new System.Windows.Forms.CheckBox();
             this.byoMeatGB = new System.Windows.Forms.GroupBox();
@@ -234,6 +234,7 @@
             this.crust1 = new System.Windows.Forms.Label();
             this.size1 = new System.Windows.Forms.Label();
             this.pizzaTotalPanel = new System.Windows.Forms.Panel();
+            this.dollaSign = new System.Windows.Forms.Label();
             this.pizzaTotal = new System.Windows.Forms.Label();
             this.pizza6 = new System.Windows.Forms.Label();
             this.pizza5 = new System.Windows.Forms.Label();
@@ -1561,7 +1562,7 @@
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.Orange;
-            this.groupBox9.Controls.Add(this.byoPineapple);
+            this.groupBox9.Controls.Add(this.byoMushrooms);
             this.groupBox9.Controls.Add(this.byoOnions);
             this.groupBox9.Controls.Add(this.byoPeppers);
             this.groupBox9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -1572,16 +1573,16 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Vegetables";
             // 
-            // byoPineapple
+            // byoMushrooms
             // 
-            this.byoPineapple.AutoSize = true;
-            this.byoPineapple.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.byoPineapple.Location = new System.Drawing.Point(24, 122);
-            this.byoPineapple.Name = "byoPineapple";
-            this.byoPineapple.Size = new System.Drawing.Size(130, 28);
-            this.byoPineapple.TabIndex = 5;
-            this.byoPineapple.Text = "Pineapple";
-            this.byoPineapple.UseVisualStyleBackColor = true;
+            this.byoMushrooms.AutoSize = true;
+            this.byoMushrooms.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoMushrooms.Location = new System.Drawing.Point(24, 122);
+            this.byoMushrooms.Name = "byoMushrooms";
+            this.byoMushrooms.Size = new System.Drawing.Size(148, 28);
+            this.byoMushrooms.TabIndex = 5;
+            this.byoMushrooms.Text = "Mushrooms";
+            this.byoMushrooms.UseVisualStyleBackColor = true;
             // 
             // byoOnions
             // 
@@ -2768,21 +2769,34 @@
             // pizzaTotalPanel
             // 
             this.pizzaTotalPanel.BackColor = System.Drawing.Color.Chartreuse;
+            this.pizzaTotalPanel.Controls.Add(this.dollaSign);
             this.pizzaTotalPanel.Controls.Add(this.pizzaTotal);
             this.pizzaTotalPanel.Location = new System.Drawing.Point(982, 22);
             this.pizzaTotalPanel.Name = "pizzaTotalPanel";
             this.pizzaTotalPanel.Size = new System.Drawing.Size(143, 37);
             this.pizzaTotalPanel.TabIndex = 6;
             // 
+            // dollaSign
+            // 
+            this.dollaSign.AutoSize = true;
+            this.dollaSign.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dollaSign.Location = new System.Drawing.Point(16, 10);
+            this.dollaSign.Name = "dollaSign";
+            this.dollaSign.Size = new System.Drawing.Size(18, 18);
+            this.dollaSign.TabIndex = 1;
+            this.dollaSign.Text = "$";
+            this.dollaSign.Click += new System.EventHandler(this.dollaSign_Click);
+            // 
             // pizzaTotal
             // 
             this.pizzaTotal.AutoSize = true;
             this.pizzaTotal.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pizzaTotal.Location = new System.Drawing.Point(37, 10);
+            this.pizzaTotal.Location = new System.Drawing.Point(54, 10);
             this.pizzaTotal.Name = "pizzaTotal";
             this.pizzaTotal.Size = new System.Drawing.Size(63, 18);
             this.pizzaTotal.TabIndex = 0;
             this.pizzaTotal.Text = "$12.99";
+            this.pizzaTotal.Click += new System.EventHandler(this.pizzaTotal_Click);
             // 
             // pizza6
             // 
@@ -3304,7 +3318,7 @@
         private CheckBox byoParmesan;
         private CheckBox byoExtra;
         private Button byoClearButton;
-        private CheckBox byoPineapple;
+        private CheckBox byoMushrooms;
         private CheckBox byoOnions;
         private CheckBox byoPeppers;
         private CheckBox byoSausage;
@@ -3410,5 +3424,6 @@
         private Label dsize3;
         private Label dsize2;
         private Label dsize1;
+        private Label dollaSign;
     }
 }

@@ -4,6 +4,8 @@ namespace Sprint2UC
 {
     public partial class Form1 : Form
     {
+        double price = 0.0;
+        double drinkPrice = 0.0;
         public Form1()
         {
             InitializeComponent();
@@ -107,6 +109,8 @@ namespace Sprint2UC
             teaMediumRB.Enabled = false;
             teaLargeRB.Enabled = false;
             teaNumerator.Enabled = false;
+
+            
 
         }
 
@@ -285,12 +289,20 @@ namespace Sprint2UC
         {
             if (cheeseCheck.Checked)
             {
+                price += 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 sizeGBcheese.Enabled = true;
                 crustGBcheese.Enabled=true;
                 pizza1.Text = "Cheese Pizza";
             }
             if (!cheeseCheck.Checked)
             {
+                price -= 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 pizza1.Text = "";
                 sizeGBcheese.Enabled = false;
                 crustGBcheese.Enabled= false;
@@ -383,12 +395,20 @@ namespace Sprint2UC
         {
             if (pepCheck.Checked)
             {
+                price += 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 sizeGBpep.Enabled = true;
                 crustGBpep.Enabled = true;
                 pizza2.Text = "Pepperoni Pizza";
             }
             if (!pepCheck.Checked)
             {
+                price -= 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 pizza2.Text = "";
                 sizeGBpep.Enabled = false;
                 crustGBpep.Enabled = false;
@@ -480,12 +500,20 @@ namespace Sprint2UC
         {
             if (sausageCheck.Checked)
             {
+                price += 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 sizeGBSausage.Enabled = true;
                 crustGBSausage.Enabled = true;
                 pizza3.Text = "Sausage Pizza";
             }
             if (!sausageCheck.Checked)
             {
+                price -= 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 pizza3.Text = "";
                 sizeGBSausage.Enabled = false;
                 crustGBSausage.Enabled = false;
@@ -577,12 +605,20 @@ namespace Sprint2UC
         {
             if (hawaiianCheck.Checked)
             {
+                price += 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 sizeGBHawaiian.Enabled = true;
                 crustGBHawaiian.Enabled = true;
                 pizza4.Text = "Hawaiian Pizza";
             }
             if (!hawaiianCheck.Checked)
             {
+                price -= 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 pizza4.Text = "";
                 sizeGBHawaiian.Enabled = false;
                 crustGBHawaiian.Enabled = false;
@@ -674,12 +710,20 @@ namespace Sprint2UC
         {
             if (bbqCheck.Checked)
             {
+                price += 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 sizeGBbbq.Enabled = true;
                 crustGBbbq.Enabled = true;
                 pizza5.Text = "BBQ Chicken Pizza";
             }
             if (!bbqCheck.Checked)
             {
+                price -= 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 pizza5.Text = "";
                 sizeGBbbq.Enabled = false;
                 crustGBbbq.Enabled = false;
@@ -773,6 +817,10 @@ namespace Sprint2UC
         {
             if (cokeCheck.Checked)
             {
+                drinkPrice += 2.49;
+                drinkTotal.Text = Convert.ToString("$" + drinkPrice);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 drink1.Text = "Coke";
 
                 cokeSmallRB.Enabled = true;
@@ -783,6 +831,10 @@ namespace Sprint2UC
             }
             if (!cokeCheck.Checked)
             {
+                drinkPrice -= 2.49;
+                drinkTotal.Text = Convert.ToString("$" + drinkPrice);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 cokeSmallRB.Enabled = false;
                 cokeMediumRB.Enabled = false;
                 cokeLargeRB.Enabled = false;
@@ -847,6 +899,10 @@ namespace Sprint2UC
         {
             if (spriteCheck.Checked)
             {
+                drinkPrice += 2.49;
+                drinkTotal.Text = Convert.ToString("$" + drinkPrice);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 drink2.Text = "Sprite";
 
                 spriteSmallRB.Enabled = true;
@@ -857,6 +913,10 @@ namespace Sprint2UC
             }
             if (!spriteCheck.Checked)
             {
+                drinkPrice -= 2.49;
+                drinkTotal.Text = Convert.ToString("$" + drinkPrice);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 spriteSmallRB.Enabled = false;
                 spriteMediumRB.Enabled = false;
                 spriteLargeRB.Enabled = false;
@@ -919,6 +979,10 @@ namespace Sprint2UC
         {
             if (powerCheck.Checked)
             {
+                drinkPrice += 2.49;
+                drinkTotal.Text = Convert.ToString("$" + drinkPrice);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 drink3.Text = "Powerade";
 
                 powerSmallRB.Enabled = true;
@@ -929,6 +993,10 @@ namespace Sprint2UC
             }
             if (!powerCheck.Checked)
             {
+                drinkPrice -= 2.49;
+                drinkTotal.Text = Convert.ToString("$" + drinkPrice);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 powerSmallRB.Enabled = false;
                 powerMediumRB.Enabled = false;
                 powerLargeRB.Enabled = false;
@@ -993,6 +1061,10 @@ namespace Sprint2UC
         {
             if (dpCheck.Checked)
             {
+                drinkPrice += 2.49;
+                drinkTotal.Text = Convert.ToString("$" + drinkPrice);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 drink4.Text = "Dr Pepper";
 
                 dpSmallRB.Enabled = true;
@@ -1003,6 +1075,10 @@ namespace Sprint2UC
             }
             if (!dpCheck.Checked)
             {
+                drinkPrice -= 2.49;
+                drinkTotal.Text = Convert.ToString("$" + drinkPrice);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 dpSmallRB.Enabled = false;
                 dpMediumRB.Enabled = false;
                 dpLargeRB.Enabled = false;
@@ -1067,6 +1143,10 @@ namespace Sprint2UC
         {
             if (teaCheck.Checked)
             {
+                drinkPrice += 2.49;
+                drinkTotal.Text = Convert.ToString("$" + drinkPrice);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 drink5.Text = "Sweet Tea";
 
                 teaSmallRB.Enabled = true;
@@ -1077,6 +1157,10 @@ namespace Sprint2UC
             }
             if (!teaCheck.Checked)
             {
+                drinkPrice -= 2.49;
+                drinkTotal.Text = Convert.ToString("$" + drinkPrice);
+                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+
                 teaSmallRB.Enabled = false;
                 teaMediumRB.Enabled = false;
                 teaLargeRB.Enabled = false;
@@ -1134,6 +1218,16 @@ namespace Sprint2UC
         private void teaNumerator_ValueChanged(object sender, EventArgs e)
         {
             qt5.Text = Convert.ToString("x" + teaNumerator.Value);
+        }
+
+        private void pizzaTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dollaSign_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
