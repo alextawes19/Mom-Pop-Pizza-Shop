@@ -75,6 +75,14 @@ namespace Sprint2UC
             dsize4.Text = "";
             dsize5.Text = "";
 
+            cut.Text = "";
+            sauce.Text = "";
+            cheese.Text = "";
+            extraCheese.Text = "";
+            meat.Text = "";
+            veggies.Text = "";
+
+
             qt1.Text = "";
             qt2.Text = "";
             qt3.Text = "";
@@ -1316,6 +1324,157 @@ namespace Sprint2UC
                 }
                
             }
+        }
+
+        //BYO PIZZA 
+
+        private void byoSmall_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoSmall.Checked)
+            {
+                pizza6.Text = "Custom";
+                size6.Text = "Small";
+            }
+            if (!byoSmall.Checked)
+            {
+                pizza6.Text = "";
+                size6.Text = "";
+            }
+        }
+
+        private void byoMedium_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoMedium.Checked)
+            {
+                pizza6.Text = "Custom";
+                size6.Text = "Medium";
+            }
+            if (!byoMedium.Checked)
+            {
+                pizza6.Text = "";
+                size6.Text = "";
+            }
+        }
+
+        private void byoLarge_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoLarge.Checked)
+            {
+                pizza6.Text = "Custom";
+                size6.Text = "Large";
+            }
+            if (!byoLarge.Checked)
+            {
+                pizza6.Text = "";
+                size6.Text = "";
+            }
+        }
+
+        private void byoRegularCrust_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoRegularCrust.Checked)
+            {
+                crust6.Text = "Regular Crust";
+            }
+            
+        }
+
+        private void byoThinCrust_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoThinCrust.Checked)
+            {
+                crust6.Text = "Thin Crust";
+            }
+        }
+
+        private void byoStuffedCrust_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoStuffedCrust.Checked)
+            {
+                crust6.Text = "Stuffed Crust";
+            }
+        }
+
+        private void byoNormalCut_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoNormalCut.Checked)
+            {
+                cut.Text = "Normal Cut";
+            }
+        }
+
+        private void sauce_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void byoCleanCut_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoCleanCut.Checked)
+            {
+                cut.Text = "Clean Cut";
+            }
+        }
+
+        private void byoSquareCut_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoSquareCut.Checked)
+            {
+                cut.Text = "Square Cut";
+            }
+        }
+
+        private void byoOriginalSauce_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoOriginalSauce.Checked)
+            {
+                sauce.Text = "Original Sauce";
+            }
+        }
+
+        private void byoBBQSauce_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoBBQSauce.Checked)
+            {
+                sauce.Text = "BBQ Sauce";
+            }
+        }
+
+        private void byoRanchSauce_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoRanchSauce.Checked)
+            {
+                sauce.Text = "Ranch Sauce";
+            }
+        }
+
+        private void byoNormalCheese_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoNormalCheese.Checked)
+            {
+                cheese.Text = "Normal Cheese";
+            }
+        }
+
+        private void byoLightCheese_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoLightCheese.Checked)
+            {
+                cheese.Text = "Light Cheese";
+            }
+        }
+
+        private void byoNoCheese_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoNoCheese.Checked)
+            {
+                cheese.Text = "No Cheese";
+            }
+        }
+
+        private void meat_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

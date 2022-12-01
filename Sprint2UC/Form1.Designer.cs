@@ -221,6 +221,12 @@
             this.drink2 = new System.Windows.Forms.Label();
             this.drink1 = new System.Windows.Forms.Label();
             this.orderPizzasGB = new System.Windows.Forms.GroupBox();
+            this.veggies = new System.Windows.Forms.Label();
+            this.meat = new System.Windows.Forms.Label();
+            this.extraCheese = new System.Windows.Forms.Label();
+            this.cheese = new System.Windows.Forms.Label();
+            this.sauce = new System.Windows.Forms.Label();
+            this.cut = new System.Windows.Forms.Label();
             this.crust6 = new System.Windows.Forms.Label();
             this.crust5 = new System.Windows.Forms.Label();
             this.crust4 = new System.Windows.Forms.Label();
@@ -1733,6 +1739,7 @@
             this.byoNoCheese.TabStop = true;
             this.byoNoCheese.Text = "None";
             this.byoNoCheese.UseVisualStyleBackColor = true;
+            this.byoNoCheese.CheckedChanged += new System.EventHandler(this.byoNoCheese_CheckedChanged);
             // 
             // byoLightCheese
             // 
@@ -1745,6 +1752,7 @@
             this.byoLightCheese.TabStop = true;
             this.byoLightCheese.Text = "Light";
             this.byoLightCheese.UseVisualStyleBackColor = true;
+            this.byoLightCheese.CheckedChanged += new System.EventHandler(this.byoLightCheese_CheckedChanged);
             // 
             // byoNormalCheese
             // 
@@ -1757,6 +1765,7 @@
             this.byoNormalCheese.TabStop = true;
             this.byoNormalCheese.Text = "Normal";
             this.byoNormalCheese.UseVisualStyleBackColor = true;
+            this.byoNormalCheese.CheckedChanged += new System.EventHandler(this.byoNormalCheese_CheckedChanged);
             // 
             // byoSauceGB
             // 
@@ -1783,6 +1792,7 @@
             this.byoRanchSauce.TabStop = true;
             this.byoRanchSauce.Text = "Ranch";
             this.byoRanchSauce.UseVisualStyleBackColor = true;
+            this.byoRanchSauce.CheckedChanged += new System.EventHandler(this.byoRanchSauce_CheckedChanged);
             // 
             // byoBBQSauce
             // 
@@ -1795,6 +1805,7 @@
             this.byoBBQSauce.TabStop = true;
             this.byoBBQSauce.Text = "BBQ";
             this.byoBBQSauce.UseVisualStyleBackColor = true;
+            this.byoBBQSauce.CheckedChanged += new System.EventHandler(this.byoBBQSauce_CheckedChanged);
             // 
             // byoOriginalSauce
             // 
@@ -1807,6 +1818,7 @@
             this.byoOriginalSauce.TabStop = true;
             this.byoOriginalSauce.Text = "Original";
             this.byoOriginalSauce.UseVisualStyleBackColor = true;
+            this.byoOriginalSauce.CheckedChanged += new System.EventHandler(this.byoOriginalSauce_CheckedChanged);
             // 
             // byoCutGB
             // 
@@ -1833,6 +1845,7 @@
             this.byoSquareCut.TabStop = true;
             this.byoSquareCut.Text = "Square";
             this.byoSquareCut.UseVisualStyleBackColor = true;
+            this.byoSquareCut.CheckedChanged += new System.EventHandler(this.byoSquareCut_CheckedChanged);
             // 
             // byoCleanCut
             // 
@@ -1845,6 +1858,7 @@
             this.byoCleanCut.TabStop = true;
             this.byoCleanCut.Text = "Clean";
             this.byoCleanCut.UseVisualStyleBackColor = true;
+            this.byoCleanCut.CheckedChanged += new System.EventHandler(this.byoCleanCut_CheckedChanged);
             // 
             // byoNormalCut
             // 
@@ -1857,6 +1871,7 @@
             this.byoNormalCut.TabStop = true;
             this.byoNormalCut.Text = "Normal";
             this.byoNormalCut.UseVisualStyleBackColor = true;
+            this.byoNormalCut.CheckedChanged += new System.EventHandler(this.byoNormalCut_CheckedChanged);
             // 
             // crustGB
             // 
@@ -1883,6 +1898,7 @@
             this.byoStuffedCrust.TabStop = true;
             this.byoStuffedCrust.Text = "Stuffed";
             this.byoStuffedCrust.UseVisualStyleBackColor = true;
+            this.byoStuffedCrust.CheckedChanged += new System.EventHandler(this.byoStuffedCrust_CheckedChanged);
             // 
             // byoThinCrust
             // 
@@ -1895,6 +1911,7 @@
             this.byoThinCrust.TabStop = true;
             this.byoThinCrust.Text = "Thin";
             this.byoThinCrust.UseVisualStyleBackColor = true;
+            this.byoThinCrust.CheckedChanged += new System.EventHandler(this.byoThinCrust_CheckedChanged);
             // 
             // byoRegularCrust
             // 
@@ -1907,6 +1924,7 @@
             this.byoRegularCrust.TabStop = true;
             this.byoRegularCrust.Text = "Regular";
             this.byoRegularCrust.UseVisualStyleBackColor = true;
+            this.byoRegularCrust.CheckedChanged += new System.EventHandler(this.byoRegularCrust_CheckedChanged);
             // 
             // sizeGB
             // 
@@ -1933,6 +1951,7 @@
             this.byoLarge.TabStop = true;
             this.byoLarge.Text = "Large";
             this.byoLarge.UseVisualStyleBackColor = true;
+            this.byoLarge.CheckedChanged += new System.EventHandler(this.byoLarge_CheckedChanged);
             // 
             // byoMedium
             // 
@@ -1945,6 +1964,7 @@
             this.byoMedium.TabStop = true;
             this.byoMedium.Text = "Medium";
             this.byoMedium.UseVisualStyleBackColor = true;
+            this.byoMedium.CheckedChanged += new System.EventHandler(this.byoMedium_CheckedChanged);
             // 
             // byoSmall
             // 
@@ -1957,6 +1977,7 @@
             this.byoSmall.TabStop = true;
             this.byoSmall.Text = "Small";
             this.byoSmall.UseVisualStyleBackColor = true;
+            this.byoSmall.CheckedChanged += new System.EventHandler(this.byoSmall_CheckedChanged);
             // 
             // label1
             // 
@@ -2627,6 +2648,12 @@
             // orderPizzasGB
             // 
             this.orderPizzasGB.BackColor = System.Drawing.Color.Orange;
+            this.orderPizzasGB.Controls.Add(this.veggies);
+            this.orderPizzasGB.Controls.Add(this.meat);
+            this.orderPizzasGB.Controls.Add(this.extraCheese);
+            this.orderPizzasGB.Controls.Add(this.cheese);
+            this.orderPizzasGB.Controls.Add(this.sauce);
+            this.orderPizzasGB.Controls.Add(this.cut);
             this.orderPizzasGB.Controls.Add(this.crust6);
             this.orderPizzasGB.Controls.Add(this.crust5);
             this.orderPizzasGB.Controls.Add(this.crust4);
@@ -2654,11 +2681,73 @@
             this.orderPizzasGB.TabStop = false;
             this.orderPizzasGB.Text = "Pizzas";
             // 
+            // veggies
+            // 
+            this.veggies.AutoSize = true;
+            this.veggies.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.veggies.Location = new System.Drawing.Point(1036, 191);
+            this.veggies.Name = "veggies";
+            this.veggies.Size = new System.Drawing.Size(72, 18);
+            this.veggies.TabIndex = 24;
+            this.veggies.Text = "Veggies";
+            // 
+            // meat
+            // 
+            this.meat.AutoSize = true;
+            this.meat.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.meat.Location = new System.Drawing.Point(898, 191);
+            this.meat.Name = "meat";
+            this.meat.Size = new System.Drawing.Size(47, 18);
+            this.meat.TabIndex = 23;
+            this.meat.Text = "Meat";
+            this.meat.Click += new System.EventHandler(this.meat_Click);
+            // 
+            // extraCheese
+            // 
+            this.extraCheese.AutoSize = true;
+            this.extraCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.extraCheese.Location = new System.Drawing.Point(789, 191);
+            this.extraCheese.Name = "extraCheese";
+            this.extraCheese.Size = new System.Drawing.Size(79, 18);
+            this.extraCheese.TabIndex = 22;
+            this.extraCheese.Text = "eCheese";
+            // 
+            // cheese
+            // 
+            this.cheese.AutoSize = true;
+            this.cheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cheese.Location = new System.Drawing.Point(654, 191);
+            this.cheese.Name = "cheese";
+            this.cheese.Size = new System.Drawing.Size(69, 18);
+            this.cheese.TabIndex = 21;
+            this.cheese.Text = "Cheese";
+            // 
+            // sauce
+            // 
+            this.sauce.AutoSize = true;
+            this.sauce.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sauce.Location = new System.Drawing.Point(485, 191);
+            this.sauce.Name = "sauce";
+            this.sauce.Size = new System.Drawing.Size(59, 18);
+            this.sauce.TabIndex = 20;
+            this.sauce.Text = "Sauce";
+            this.sauce.Click += new System.EventHandler(this.sauce_Click);
+            // 
+            // cut
+            // 
+            this.cut.AutoSize = true;
+            this.cut.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cut.Location = new System.Drawing.Point(363, 191);
+            this.cut.Name = "cut";
+            this.cut.Size = new System.Drawing.Size(36, 18);
+            this.cut.TabIndex = 19;
+            this.cut.Text = "Cut";
+            // 
             // crust6
             // 
             this.crust6.AutoSize = true;
             this.crust6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.crust6.Location = new System.Drawing.Point(288, 191);
+            this.crust6.Location = new System.Drawing.Point(229, 191);
             this.crust6.Name = "crust6";
             this.crust6.Size = new System.Drawing.Size(52, 18);
             this.crust6.TabIndex = 18;
@@ -2698,7 +2787,7 @@
             // 
             this.size6.AutoSize = true;
             this.size6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.size6.Location = new System.Drawing.Point(176, 191);
+            this.size6.Location = new System.Drawing.Point(128, 191);
             this.size6.Name = "size6";
             this.size6.Size = new System.Drawing.Size(41, 18);
             this.size6.TabIndex = 14;
@@ -2812,9 +2901,9 @@
             this.pizza6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pizza6.Location = new System.Drawing.Point(34, 188);
             this.pizza6.Name = "pizza6";
-            this.pizza6.Size = new System.Drawing.Size(125, 18);
+            this.pizza6.Size = new System.Drawing.Size(58, 18);
             this.pizza6.TabIndex = 5;
-            this.pizza6.Text = "Example Pizza:";
+            this.pizza6.Text = " Pizza:";
             // 
             // pizza5
             // 
@@ -3515,5 +3604,11 @@
         private Button checkoutButton;
         private Panel completePanel;
         private Label completeMessage;
+        private Label cut;
+        private Label sauce;
+        private Label cheese;
+        private Label extraCheese;
+        private Label veggies;
+        private Label meat;
     }
 }
