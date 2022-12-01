@@ -108,11 +108,11 @@
             this.smallSausage = new System.Windows.Forms.RadioButton();
             this.sausageCheck = new System.Windows.Forms.CheckBox();
             this.peppGB = new System.Windows.Forms.GroupBox();
-            this.pepCrustGB = new System.Windows.Forms.GroupBox();
+            this.crustGBpep = new System.Windows.Forms.GroupBox();
             this.stuffedPep = new System.Windows.Forms.RadioButton();
             this.thinPep = new System.Windows.Forms.RadioButton();
             this.regPep = new System.Windows.Forms.RadioButton();
-            this.pepSizeGB = new System.Windows.Forms.GroupBox();
+            this.sizeGBpep = new System.Windows.Forms.GroupBox();
             this.largePep = new System.Windows.Forms.RadioButton();
             this.mediumPep = new System.Windows.Forms.RadioButton();
             this.smallPep = new System.Windows.Forms.RadioButton();
@@ -211,6 +211,18 @@
             this.drink2 = new System.Windows.Forms.Label();
             this.drink1 = new System.Windows.Forms.Label();
             this.orderPizzasGB = new System.Windows.Forms.GroupBox();
+            this.crust6 = new System.Windows.Forms.Label();
+            this.crust5 = new System.Windows.Forms.Label();
+            this.crust4 = new System.Windows.Forms.Label();
+            this.crust3 = new System.Windows.Forms.Label();
+            this.size6 = new System.Windows.Forms.Label();
+            this.size5 = new System.Windows.Forms.Label();
+            this.size4 = new System.Windows.Forms.Label();
+            this.size3 = new System.Windows.Forms.Label();
+            this.size2 = new System.Windows.Forms.Label();
+            this.crust2 = new System.Windows.Forms.Label();
+            this.crust1 = new System.Windows.Forms.Label();
+            this.size1 = new System.Windows.Forms.Label();
             this.pizzaTotalPanel = new System.Windows.Forms.Panel();
             this.pizzaTotal = new System.Windows.Forms.Label();
             this.pizza6 = new System.Windows.Forms.Label();
@@ -254,8 +266,8 @@
             this.crustGBSausage.SuspendLayout();
             this.sizeGBSausage.SuspendLayout();
             this.peppGB.SuspendLayout();
-            this.pepCrustGB.SuspendLayout();
-            this.pepSizeGB.SuspendLayout();
+            this.crustGBpep.SuspendLayout();
+            this.sizeGBpep.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.crustGBcheese.SuspendLayout();
             this.sizeGBcheese.SuspendLayout();
@@ -869,6 +881,7 @@
             this.stuffedBBQ.TabStop = true;
             this.stuffedBBQ.Text = "Stuffed";
             this.stuffedBBQ.UseVisualStyleBackColor = true;
+            this.stuffedBBQ.CheckedChanged += new System.EventHandler(this.stuffedBBQ_CheckedChanged);
             // 
             // thinBBQ
             // 
@@ -881,6 +894,7 @@
             this.thinBBQ.TabStop = true;
             this.thinBBQ.Text = "Thin";
             this.thinBBQ.UseVisualStyleBackColor = true;
+            this.thinBBQ.CheckedChanged += new System.EventHandler(this.thinBBQ_CheckedChanged);
             // 
             // regBBQ
             // 
@@ -893,6 +907,7 @@
             this.regBBQ.TabStop = true;
             this.regBBQ.Text = "Regular";
             this.regBBQ.UseVisualStyleBackColor = true;
+            this.regBBQ.CheckedChanged += new System.EventHandler(this.regBBQ_CheckedChanged);
             // 
             // sizeGBbbq
             // 
@@ -918,6 +933,7 @@
             this.largeBBQ.TabStop = true;
             this.largeBBQ.Text = "Large";
             this.largeBBQ.UseVisualStyleBackColor = true;
+            this.largeBBQ.CheckedChanged += new System.EventHandler(this.largeBBQ_CheckedChanged);
             // 
             // mediumBBQ
             // 
@@ -930,6 +946,7 @@
             this.mediumBBQ.TabStop = true;
             this.mediumBBQ.Text = "Medium";
             this.mediumBBQ.UseVisualStyleBackColor = true;
+            this.mediumBBQ.CheckedChanged += new System.EventHandler(this.mediumBBQ_CheckedChanged);
             // 
             // smallBBQ
             // 
@@ -942,6 +959,7 @@
             this.smallBBQ.TabStop = true;
             this.smallBBQ.Text = "Small";
             this.smallBBQ.UseVisualStyleBackColor = true;
+            this.smallBBQ.CheckedChanged += new System.EventHandler(this.smallBBQ_CheckedChanged);
             // 
             // bbqCheck
             // 
@@ -953,6 +971,7 @@
             this.bbqCheck.TabIndex = 37;
             this.bbqCheck.Text = "BBQ Chk Pizza?";
             this.bbqCheck.UseVisualStyleBackColor = true;
+            this.bbqCheck.CheckedChanged += new System.EventHandler(this.bbqCheck_CheckedChanged);
             // 
             // hawaiianGB
             // 
@@ -992,6 +1011,7 @@
             this.stuffedHawaiian.TabStop = true;
             this.stuffedHawaiian.Text = "Stuffed";
             this.stuffedHawaiian.UseVisualStyleBackColor = true;
+            this.stuffedHawaiian.CheckedChanged += new System.EventHandler(this.stuffedHawaiian_CheckedChanged);
             // 
             // thinHawaiian
             // 
@@ -1004,6 +1024,7 @@
             this.thinHawaiian.TabStop = true;
             this.thinHawaiian.Text = "Thin";
             this.thinHawaiian.UseVisualStyleBackColor = true;
+            this.thinHawaiian.CheckedChanged += new System.EventHandler(this.thinHawaiian_CheckedChanged);
             // 
             // regHawaiian
             // 
@@ -1016,6 +1037,7 @@
             this.regHawaiian.TabStop = true;
             this.regHawaiian.Text = "Regular";
             this.regHawaiian.UseVisualStyleBackColor = true;
+            this.regHawaiian.CheckedChanged += new System.EventHandler(this.regHawaiian_CheckedChanged);
             // 
             // sizeGBHawaiian
             // 
@@ -1041,6 +1063,7 @@
             this.largeHawaiian.TabStop = true;
             this.largeHawaiian.Text = "Large";
             this.largeHawaiian.UseVisualStyleBackColor = true;
+            this.largeHawaiian.CheckedChanged += new System.EventHandler(this.largeHawaiian_CheckedChanged);
             // 
             // mediumHawaiian
             // 
@@ -1053,6 +1076,7 @@
             this.mediumHawaiian.TabStop = true;
             this.mediumHawaiian.Text = "Medium";
             this.mediumHawaiian.UseVisualStyleBackColor = true;
+            this.mediumHawaiian.CheckedChanged += new System.EventHandler(this.mediumHawaiian_CheckedChanged);
             // 
             // smallHawaiian
             // 
@@ -1065,6 +1089,7 @@
             this.smallHawaiian.TabStop = true;
             this.smallHawaiian.Text = "Small";
             this.smallHawaiian.UseVisualStyleBackColor = true;
+            this.smallHawaiian.CheckedChanged += new System.EventHandler(this.smallHawaiian_CheckedChanged);
             // 
             // hawaiianCheck
             // 
@@ -1076,6 +1101,7 @@
             this.hawaiianCheck.TabIndex = 37;
             this.hawaiianCheck.Text = "Hawaiian Pizza?";
             this.hawaiianCheck.UseVisualStyleBackColor = true;
+            this.hawaiianCheck.CheckedChanged += new System.EventHandler(this.hawaiianCheck_CheckedChanged);
             // 
             // sausageGB
             // 
@@ -1115,6 +1141,7 @@
             this.stuffedSausage.TabStop = true;
             this.stuffedSausage.Text = "Stuffed";
             this.stuffedSausage.UseVisualStyleBackColor = true;
+            this.stuffedSausage.CheckedChanged += new System.EventHandler(this.stuffedSausage_CheckedChanged);
             // 
             // thinSausage
             // 
@@ -1127,6 +1154,7 @@
             this.thinSausage.TabStop = true;
             this.thinSausage.Text = "Thin";
             this.thinSausage.UseVisualStyleBackColor = true;
+            this.thinSausage.CheckedChanged += new System.EventHandler(this.thinSausage_CheckedChanged);
             // 
             // regSausage
             // 
@@ -1139,6 +1167,7 @@
             this.regSausage.TabStop = true;
             this.regSausage.Text = "Regular";
             this.regSausage.UseVisualStyleBackColor = true;
+            this.regSausage.CheckedChanged += new System.EventHandler(this.regSausage_CheckedChanged);
             // 
             // sizeGBSausage
             // 
@@ -1164,6 +1193,7 @@
             this.largeSausage.TabStop = true;
             this.largeSausage.Text = "Large";
             this.largeSausage.UseVisualStyleBackColor = true;
+            this.largeSausage.CheckedChanged += new System.EventHandler(this.largeSausage_CheckedChanged);
             // 
             // mediumSausage
             // 
@@ -1176,6 +1206,7 @@
             this.mediumSausage.TabStop = true;
             this.mediumSausage.Text = "Medium";
             this.mediumSausage.UseVisualStyleBackColor = true;
+            this.mediumSausage.CheckedChanged += new System.EventHandler(this.mediumSausage_CheckedChanged);
             // 
             // smallSausage
             // 
@@ -1188,6 +1219,7 @@
             this.smallSausage.TabStop = true;
             this.smallSausage.Text = "Small";
             this.smallSausage.UseVisualStyleBackColor = true;
+            this.smallSausage.CheckedChanged += new System.EventHandler(this.smallSausage_CheckedChanged);
             // 
             // sausageCheck
             // 
@@ -1199,12 +1231,13 @@
             this.sausageCheck.TabIndex = 37;
             this.sausageCheck.Text = "Sausage Pizza?";
             this.sausageCheck.UseVisualStyleBackColor = true;
+            this.sausageCheck.CheckedChanged += new System.EventHandler(this.sausageCheck_CheckedChanged);
             // 
             // peppGB
             // 
             this.peppGB.BackColor = System.Drawing.Color.Orange;
-            this.peppGB.Controls.Add(this.pepCrustGB);
-            this.peppGB.Controls.Add(this.pepSizeGB);
+            this.peppGB.Controls.Add(this.crustGBpep);
+            this.peppGB.Controls.Add(this.sizeGBpep);
             this.peppGB.Controls.Add(this.pepCheck);
             this.peppGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.peppGB.Location = new System.Drawing.Point(289, 82);
@@ -1214,18 +1247,18 @@
             this.peppGB.TabStop = false;
             this.peppGB.Text = "Pepperoni";
             // 
-            // pepCrustGB
+            // crustGBpep
             // 
-            this.pepCrustGB.Controls.Add(this.stuffedPep);
-            this.pepCrustGB.Controls.Add(this.thinPep);
-            this.pepCrustGB.Controls.Add(this.regPep);
-            this.pepCrustGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pepCrustGB.Location = new System.Drawing.Point(18, 273);
-            this.pepCrustGB.Name = "pepCrustGB";
-            this.pepCrustGB.Size = new System.Drawing.Size(159, 205);
-            this.pepCrustGB.TabIndex = 38;
-            this.pepCrustGB.TabStop = false;
-            this.pepCrustGB.Text = "Crust";
+            this.crustGBpep.Controls.Add(this.stuffedPep);
+            this.crustGBpep.Controls.Add(this.thinPep);
+            this.crustGBpep.Controls.Add(this.regPep);
+            this.crustGBpep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crustGBpep.Location = new System.Drawing.Point(18, 273);
+            this.crustGBpep.Name = "crustGBpep";
+            this.crustGBpep.Size = new System.Drawing.Size(159, 205);
+            this.crustGBpep.TabIndex = 38;
+            this.crustGBpep.TabStop = false;
+            this.crustGBpep.Text = "Crust";
             // 
             // stuffedPep
             // 
@@ -1238,6 +1271,7 @@
             this.stuffedPep.TabStop = true;
             this.stuffedPep.Text = "Stuffed";
             this.stuffedPep.UseVisualStyleBackColor = true;
+            this.stuffedPep.CheckedChanged += new System.EventHandler(this.stuffedPep_CheckedChanged);
             // 
             // thinPep
             // 
@@ -1250,6 +1284,7 @@
             this.thinPep.TabStop = true;
             this.thinPep.Text = "Thin";
             this.thinPep.UseVisualStyleBackColor = true;
+            this.thinPep.CheckedChanged += new System.EventHandler(this.thinPep_CheckedChanged);
             // 
             // regPep
             // 
@@ -1262,19 +1297,20 @@
             this.regPep.TabStop = true;
             this.regPep.Text = "Regular";
             this.regPep.UseVisualStyleBackColor = true;
+            this.regPep.CheckedChanged += new System.EventHandler(this.regPep_CheckedChanged);
             // 
-            // pepSizeGB
+            // sizeGBpep
             // 
-            this.pepSizeGB.Controls.Add(this.largePep);
-            this.pepSizeGB.Controls.Add(this.mediumPep);
-            this.pepSizeGB.Controls.Add(this.smallPep);
-            this.pepSizeGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pepSizeGB.Location = new System.Drawing.Point(18, 68);
-            this.pepSizeGB.Name = "pepSizeGB";
-            this.pepSizeGB.Size = new System.Drawing.Size(159, 199);
-            this.pepSizeGB.TabIndex = 37;
-            this.pepSizeGB.TabStop = false;
-            this.pepSizeGB.Text = "Size";
+            this.sizeGBpep.Controls.Add(this.largePep);
+            this.sizeGBpep.Controls.Add(this.mediumPep);
+            this.sizeGBpep.Controls.Add(this.smallPep);
+            this.sizeGBpep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.sizeGBpep.Location = new System.Drawing.Point(18, 68);
+            this.sizeGBpep.Name = "sizeGBpep";
+            this.sizeGBpep.Size = new System.Drawing.Size(159, 199);
+            this.sizeGBpep.TabIndex = 37;
+            this.sizeGBpep.TabStop = false;
+            this.sizeGBpep.Text = "Size";
             // 
             // largePep
             // 
@@ -1287,6 +1323,7 @@
             this.largePep.TabStop = true;
             this.largePep.Text = "Large";
             this.largePep.UseVisualStyleBackColor = true;
+            this.largePep.CheckedChanged += new System.EventHandler(this.largePep_CheckedChanged);
             // 
             // mediumPep
             // 
@@ -1299,6 +1336,7 @@
             this.mediumPep.TabStop = true;
             this.mediumPep.Text = "Medium";
             this.mediumPep.UseVisualStyleBackColor = true;
+            this.mediumPep.CheckedChanged += new System.EventHandler(this.mediumPep_CheckedChanged);
             // 
             // smallPep
             // 
@@ -1311,6 +1349,7 @@
             this.smallPep.TabStop = true;
             this.smallPep.Text = "Small";
             this.smallPep.UseVisualStyleBackColor = true;
+            this.smallPep.CheckedChanged += new System.EventHandler(this.smallPep_CheckedChanged);
             // 
             // pepCheck
             // 
@@ -1322,6 +1361,7 @@
             this.pepCheck.TabIndex = 37;
             this.pepCheck.Text = "Pepperoni Pizza?";
             this.pepCheck.UseVisualStyleBackColor = true;
+            this.pepCheck.CheckedChanged += new System.EventHandler(this.pepCheck_CheckedChanged);
             // 
             // clearChoicesButton
             // 
@@ -1372,6 +1412,7 @@
             this.stuffedCheese.TabStop = true;
             this.stuffedCheese.Text = "Stuffed";
             this.stuffedCheese.UseVisualStyleBackColor = true;
+            this.stuffedCheese.CheckedChanged += new System.EventHandler(this.stuffedCheese_CheckedChanged);
             // 
             // thinCheese
             // 
@@ -1384,6 +1425,7 @@
             this.thinCheese.TabStop = true;
             this.thinCheese.Text = "Thin";
             this.thinCheese.UseVisualStyleBackColor = true;
+            this.thinCheese.CheckedChanged += new System.EventHandler(this.thinCheese_CheckedChanged);
             // 
             // regCheese
             // 
@@ -1396,6 +1438,7 @@
             this.regCheese.TabStop = true;
             this.regCheese.Text = "Regular";
             this.regCheese.UseVisualStyleBackColor = true;
+            this.regCheese.CheckedChanged += new System.EventHandler(this.regCheese_CheckedChanged);
             // 
             // sizeGBcheese
             // 
@@ -1421,6 +1464,7 @@
             this.largeCheese.TabStop = true;
             this.largeCheese.Text = "Large";
             this.largeCheese.UseVisualStyleBackColor = true;
+            this.largeCheese.CheckedChanged += new System.EventHandler(this.largeCheese_CheckedChanged);
             // 
             // mediumCheese
             // 
@@ -1433,6 +1477,7 @@
             this.mediumCheese.TabStop = true;
             this.mediumCheese.Text = "Medium";
             this.mediumCheese.UseVisualStyleBackColor = true;
+            this.mediumCheese.CheckedChanged += new System.EventHandler(this.mediumCheese_CheckedChanged);
             // 
             // smallCheese
             // 
@@ -1445,6 +1490,7 @@
             this.smallCheese.TabStop = true;
             this.smallCheese.Text = "Small";
             this.smallCheese.UseVisualStyleBackColor = true;
+            this.smallCheese.CheckedChanged += new System.EventHandler(this.smallCheese_CheckedChanged);
             // 
             // cheeseCheck
             // 
@@ -1456,6 +1502,7 @@
             this.cheeseCheck.TabIndex = 37;
             this.cheeseCheck.Text = "Cheese Pizza?";
             this.cheeseCheck.UseVisualStyleBackColor = true;
+            this.cheeseCheck.CheckedChanged += new System.EventHandler(this.cheeseCheck_CheckedChanged);
             // 
             // stPizzaLabel
             // 
@@ -2426,6 +2473,18 @@
             // orderPizzasGB
             // 
             this.orderPizzasGB.BackColor = System.Drawing.Color.Orange;
+            this.orderPizzasGB.Controls.Add(this.crust6);
+            this.orderPizzasGB.Controls.Add(this.crust5);
+            this.orderPizzasGB.Controls.Add(this.crust4);
+            this.orderPizzasGB.Controls.Add(this.crust3);
+            this.orderPizzasGB.Controls.Add(this.size6);
+            this.orderPizzasGB.Controls.Add(this.size5);
+            this.orderPizzasGB.Controls.Add(this.size4);
+            this.orderPizzasGB.Controls.Add(this.size3);
+            this.orderPizzasGB.Controls.Add(this.size2);
+            this.orderPizzasGB.Controls.Add(this.crust2);
+            this.orderPizzasGB.Controls.Add(this.crust1);
+            this.orderPizzasGB.Controls.Add(this.size1);
             this.orderPizzasGB.Controls.Add(this.pizzaTotalPanel);
             this.orderPizzasGB.Controls.Add(this.pizza6);
             this.orderPizzasGB.Controls.Add(this.pizza5);
@@ -2441,11 +2500,131 @@
             this.orderPizzasGB.TabStop = false;
             this.orderPizzasGB.Text = "Pizzas";
             // 
+            // crust6
+            // 
+            this.crust6.AutoSize = true;
+            this.crust6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crust6.Location = new System.Drawing.Point(288, 191);
+            this.crust6.Name = "crust6";
+            this.crust6.Size = new System.Drawing.Size(52, 18);
+            this.crust6.TabIndex = 18;
+            this.crust6.Text = "Crust";
+            // 
+            // crust5
+            // 
+            this.crust5.AutoSize = true;
+            this.crust5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crust5.Location = new System.Drawing.Point(347, 158);
+            this.crust5.Name = "crust5";
+            this.crust5.Size = new System.Drawing.Size(52, 18);
+            this.crust5.TabIndex = 17;
+            this.crust5.Text = "Crust";
+            // 
+            // crust4
+            // 
+            this.crust4.AutoSize = true;
+            this.crust4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crust4.Location = new System.Drawing.Point(288, 128);
+            this.crust4.Name = "crust4";
+            this.crust4.Size = new System.Drawing.Size(52, 18);
+            this.crust4.TabIndex = 16;
+            this.crust4.Text = "Crust";
+            // 
+            // crust3
+            // 
+            this.crust3.AutoSize = true;
+            this.crust3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crust3.Location = new System.Drawing.Point(288, 98);
+            this.crust3.Name = "crust3";
+            this.crust3.Size = new System.Drawing.Size(52, 18);
+            this.crust3.TabIndex = 15;
+            this.crust3.Text = "Crust";
+            // 
+            // size6
+            // 
+            this.size6.AutoSize = true;
+            this.size6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.size6.Location = new System.Drawing.Point(176, 191);
+            this.size6.Name = "size6";
+            this.size6.Size = new System.Drawing.Size(41, 18);
+            this.size6.TabIndex = 14;
+            this.size6.Text = "Size";
+            // 
+            // size5
+            // 
+            this.size5.AutoSize = true;
+            this.size5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.size5.Location = new System.Drawing.Point(240, 158);
+            this.size5.Name = "size5";
+            this.size5.Size = new System.Drawing.Size(41, 18);
+            this.size5.TabIndex = 13;
+            this.size5.Text = "Size";
+            // 
+            // size4
+            // 
+            this.size4.AutoSize = true;
+            this.size4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.size4.Location = new System.Drawing.Point(176, 128);
+            this.size4.Name = "size4";
+            this.size4.Size = new System.Drawing.Size(41, 18);
+            this.size4.TabIndex = 12;
+            this.size4.Text = "Size";
+            // 
+            // size3
+            // 
+            this.size3.AutoSize = true;
+            this.size3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.size3.Location = new System.Drawing.Point(176, 98);
+            this.size3.Name = "size3";
+            this.size3.Size = new System.Drawing.Size(41, 18);
+            this.size3.TabIndex = 11;
+            this.size3.Text = "Size";
+            // 
+            // size2
+            // 
+            this.size2.AutoSize = true;
+            this.size2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.size2.Location = new System.Drawing.Point(176, 69);
+            this.size2.Name = "size2";
+            this.size2.Size = new System.Drawing.Size(41, 18);
+            this.size2.TabIndex = 10;
+            this.size2.Text = "Size";
+            // 
+            // crust2
+            // 
+            this.crust2.AutoSize = true;
+            this.crust2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crust2.Location = new System.Drawing.Point(288, 69);
+            this.crust2.Name = "crust2";
+            this.crust2.Size = new System.Drawing.Size(52, 18);
+            this.crust2.TabIndex = 9;
+            this.crust2.Text = "Crust";
+            // 
+            // crust1
+            // 
+            this.crust1.AutoSize = true;
+            this.crust1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crust1.Location = new System.Drawing.Point(288, 41);
+            this.crust1.Name = "crust1";
+            this.crust1.Size = new System.Drawing.Size(52, 18);
+            this.crust1.TabIndex = 8;
+            this.crust1.Text = "Crust";
+            // 
+            // size1
+            // 
+            this.size1.AutoSize = true;
+            this.size1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.size1.Location = new System.Drawing.Point(176, 41);
+            this.size1.Name = "size1";
+            this.size1.Size = new System.Drawing.Size(41, 18);
+            this.size1.TabIndex = 7;
+            this.size1.Text = "Size";
+            // 
             // pizzaTotalPanel
             // 
             this.pizzaTotalPanel.BackColor = System.Drawing.Color.Chartreuse;
             this.pizzaTotalPanel.Controls.Add(this.pizzaTotal);
-            this.pizzaTotalPanel.Location = new System.Drawing.Point(982, 191);
+            this.pizzaTotalPanel.Location = new System.Drawing.Point(982, 22);
             this.pizzaTotalPanel.Name = "pizzaTotalPanel";
             this.pizzaTotalPanel.Size = new System.Drawing.Size(143, 37);
             this.pizzaTotalPanel.TabIndex = 6;
@@ -2778,10 +2957,10 @@
             this.sizeGBSausage.PerformLayout();
             this.peppGB.ResumeLayout(false);
             this.peppGB.PerformLayout();
-            this.pepCrustGB.ResumeLayout(false);
-            this.pepCrustGB.PerformLayout();
-            this.pepSizeGB.ResumeLayout(false);
-            this.pepSizeGB.PerformLayout();
+            this.crustGBpep.ResumeLayout(false);
+            this.crustGBpep.PerformLayout();
+            this.sizeGBpep.ResumeLayout(false);
+            this.sizeGBpep.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.crustGBcheese.ResumeLayout(false);
@@ -2943,11 +3122,11 @@
         private RadioButton smallSausage;
         private CheckBox sausageCheck;
         private GroupBox peppGB;
-        private GroupBox pepCrustGB;
+        private GroupBox crustGBpep;
         private RadioButton stuffedPep;
         private RadioButton thinPep;
         private RadioButton regPep;
-        private GroupBox pepSizeGB;
+        private GroupBox sizeGBpep;
         private RadioButton largePep;
         private RadioButton mediumPep;
         private RadioButton smallPep;
@@ -3064,5 +3243,17 @@
         private Label matchingError;
         private Panel successfullLoginPanel;
         private Label label3;
+        private Label crust6;
+        private Label crust5;
+        private Label crust4;
+        private Label crust3;
+        private Label size6;
+        private Label size5;
+        private Label size4;
+        private Label size3;
+        private Label size2;
+        private Label crust2;
+        private Label crust1;
+        private Label size1;
     }
 }
