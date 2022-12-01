@@ -9,10 +9,10 @@ namespace Sprint2UC
             InitializeComponent();
             //loginTab.Enabled = false;
             //standardTab.Enabled = false;
-            byoTab.Enabled = false;
-            beveragesTab.Enabled = false;
+            //byoTab.Enabled = false;
+            //beveragesTab.Enabled = false;
             //orderTab.Enabled = false;
-            checkoutTab.Enabled = false;
+            //checkoutTab.Enabled = false;
 
             //register tab
             matchError.Text = "";
@@ -53,6 +53,60 @@ namespace Sprint2UC
             crust4.Text = "";
             crust5.Text = "";
             crust6.Text = "";
+
+            pizza1.Text = "";
+            pizza2.Text = "";
+            pizza3.Text = "";
+            pizza4.Text = "";
+            pizza5.Text = "";
+            pizza6.Text = "";
+
+            drink1.Text = "";
+            drink2.Text = "";
+            drink3.Text = "";
+            drink4.Text = "";
+            drink5.Text = "";
+
+            dsize1.Text = "";
+            dsize2.Text = "";
+            dsize3.Text = "";
+            dsize4.Text = "";
+            dsize5.Text = "";
+
+            qt1.Text = "";
+            qt2.Text = "";
+            qt3.Text = "";
+            qt4.Text = "";
+            qt5.Text = "";
+
+            pizzaTotal.Text = "";
+            drinkTotal.Text = "";
+            orderTotal.Text = "";
+
+            cokeSmallRB.Enabled = false;
+            cokeMediumRB.Enabled = false;
+            cokeLargeRB.Enabled = false;
+            cokeNumerator.Enabled = false;
+
+            spriteSmallRB.Enabled = false;
+            spriteMediumRB.Enabled = false;
+            spriteLargeRB.Enabled = false;
+            spriteNumerator.Enabled = false;
+
+            powerSmallRB.Enabled = false;
+            powerMediumRB.Enabled = false;
+            powerLargeRB.Enabled = false;
+            powerNumerator.Enabled = false;
+
+            dpSmallRB.Enabled = false;
+            dpMediumRB.Enabled = false;
+            dpLargeRB.Enabled = false;
+            dpNumerator.Enabled = false;
+
+            teaSmallRB.Enabled = false;
+            teaMediumRB.Enabled = false;
+            teaLargeRB.Enabled = false;
+            teaNumerator.Enabled = false;
 
         }
 
@@ -710,6 +764,376 @@ namespace Sprint2UC
             {
                 crust5.Text = "";
             }
+        }
+
+        //BEVERAGES START
+
+        //COKE BEVERAGES
+        private void cokeCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cokeCheck.Checked)
+            {
+                drink1.Text = "Coke";
+
+                cokeSmallRB.Enabled = true;
+                cokeMediumRB.Enabled = true;
+                cokeLargeRB.Enabled = true;
+                cokeNumerator.Enabled = true;
+
+            }
+            if (!cokeCheck.Checked)
+            {
+                cokeSmallRB.Enabled = false;
+                cokeMediumRB.Enabled = false;
+                cokeLargeRB.Enabled = false;
+
+                cokeSmallRB.Checked = false;
+                cokeMediumRB.Checked = false;
+                cokeLargeRB.Checked = false;
+
+                cokeNumerator.Enabled = false;
+                cokeNumerator.Value = 0;
+
+
+
+                drink1.Text = "";
+                qt1.Text = "";
+            }
+        }
+
+        private void cokeSmallRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cokeSmallRB.Checked)
+            {
+                dsize1.Text = "Small";
+            }
+            else
+            {
+                dsize1.Text = "";
+            }
+        }
+
+        private void cokeMediumRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cokeMediumRB.Checked)
+            {
+                dsize1.Text = "Medium";
+            }
+            else
+            {
+                dsize1.Text = "";
+            }
+        }
+
+        private void cokeLargeRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cokeLargeRB.Checked)
+            {
+                dsize1.Text = "Large";
+            }
+            else
+            {
+                dsize1.Text = "";
+            }
+        }
+
+        private void cokeNumerator_ValueChanged(object sender, EventArgs e)
+        {
+            qt1.Text = Convert.ToString("x" + cokeNumerator.Value);
+        }
+
+        //SPRITE BEVERAGES
+        private void spriteCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (spriteCheck.Checked)
+            {
+                drink2.Text = "Sprite";
+
+                spriteSmallRB.Enabled = true;
+                spriteMediumRB.Enabled = true;
+                spriteLargeRB.Enabled = true;
+                spriteNumerator.Enabled = true;
+
+            }
+            if (!spriteCheck.Checked)
+            {
+                spriteSmallRB.Enabled = false;
+                spriteMediumRB.Enabled = false;
+                spriteLargeRB.Enabled = false;
+
+                spriteSmallRB.Checked = false;
+                spriteMediumRB.Checked = false;
+                spriteLargeRB.Checked = false;
+
+                spriteNumerator.Enabled = false;
+                spriteNumerator.Value = 0;
+
+                drink2.Text = "";
+                qt2.Text = "";
+            }
+        }
+
+        private void spriteSmallRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (spriteSmallRB.Checked)
+            {
+                dsize2.Text = "Small";
+            }
+            else
+            {
+                dsize2.Text = "";
+            }
+        }
+
+        private void spriteMediumRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (spriteMediumRB.Checked)
+            {
+                dsize2.Text = "Medium";
+            }
+            else
+            {
+                dsize2.Text = "";
+            }
+        }
+
+        private void spriteLargeRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (spriteLargeRB.Checked)
+            {
+                dsize2.Text = "Large";
+            }
+            else
+            {
+                dsize2.Text = "";
+            }
+        }
+
+        private void spriteNumerator_ValueChanged(object sender, EventArgs e)
+        {
+            qt2.Text = Convert.ToString("x" + spriteNumerator.Value);
+        }
+
+        //POWERADE
+        private void powerCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (powerCheck.Checked)
+            {
+                drink3.Text = "Powerade";
+
+                powerSmallRB.Enabled = true;
+                powerMediumRB.Enabled = true;
+                powerLargeRB.Enabled = true;
+                powerNumerator.Enabled = true;
+
+            }
+            if (!powerCheck.Checked)
+            {
+                powerSmallRB.Enabled = false;
+                powerMediumRB.Enabled = false;
+                powerLargeRB.Enabled = false;
+
+                powerSmallRB.Checked = false;
+                powerMediumRB.Checked = false;
+                powerLargeRB.Checked = false;
+
+                powerNumerator.Enabled = false;
+                powerNumerator.Value = 0;
+
+
+
+                drink3.Text = "";
+                qt3.Text = "";
+            }
+        }
+
+        private void powerSmallRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (powerSmallRB.Checked)
+            {
+                dsize3.Text = "Small";
+            }
+            else
+            {
+                dsize3.Text = "";
+            }
+        }
+
+        private void powerMediumRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (powerMediumRB.Checked)
+            {
+                dsize3.Text = "Medium";
+            }
+            else
+            {
+                dsize3.Text = "";
+            }
+        }
+
+        private void powerLargeRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (powerLargeRB.Checked)
+            {
+                dsize3.Text = "Large";
+            }
+            else
+            {
+                dsize3.Text = "";
+            }
+        }
+
+        private void powerNumerator_ValueChanged(object sender, EventArgs e)
+        {
+            qt3.Text = Convert.ToString("x" + powerNumerator.Value);
+        }
+
+        //DR PEPPER BEVERAGES
+        private void dpCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (dpCheck.Checked)
+            {
+                drink4.Text = "Dr Pepper";
+
+                dpSmallRB.Enabled = true;
+                dpMediumRB.Enabled = true;
+                dpLargeRB.Enabled = true;
+                dpNumerator.Enabled = true;
+
+            }
+            if (!dpCheck.Checked)
+            {
+                dpSmallRB.Enabled = false;
+                dpMediumRB.Enabled = false;
+                dpLargeRB.Enabled = false;
+
+                dpSmallRB.Checked = false;
+                dpMediumRB.Checked = false;
+                dpLargeRB.Checked = false;
+
+                dpNumerator.Enabled = false;
+                dpNumerator.Value = 0;
+
+
+
+                drink4.Text = "";
+                qt4.Text = "";
+            }
+        }
+
+        private void dpSmallRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (dpSmallRB.Checked)
+            {
+                dsize4.Text = "Small";
+            }
+            else
+            {
+                dsize4.Text = "";
+            }
+        }
+
+        private void dpMediumRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (dpMediumRB.Checked)
+            {
+                dsize4.Text = "Medium";
+            }
+            else
+            {
+                dsize4.Text = "";
+            }
+        }
+
+        private void dpLargeRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (dpLargeRB.Checked)
+            {
+                dsize4.Text = "Large";
+            }
+            else
+            {
+                dsize4.Text = "";
+            }
+        }
+
+        private void dpNumerator_ValueChanged(object sender, EventArgs e)
+        {
+            qt4.Text = Convert.ToString("x" + dpNumerator.Value);
+        }
+
+        //SWEET TEA BEVERAGES
+        private void teaCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (teaCheck.Checked)
+            {
+                drink5.Text = "Sweet Tea";
+
+                teaSmallRB.Enabled = true;
+                teaMediumRB.Enabled = true;
+                teaLargeRB.Enabled = true;
+                teaNumerator.Enabled = true;
+
+            }
+            if (!teaCheck.Checked)
+            {
+                teaSmallRB.Enabled = false;
+                teaMediumRB.Enabled = false;
+                teaLargeRB.Enabled = false;
+
+                teaSmallRB.Checked = false;
+                teaMediumRB.Checked = false;
+                teaLargeRB.Checked = false;
+
+                teaNumerator.Enabled = false;
+                teaNumerator.Value = 0;
+
+
+
+                drink5.Text = "";
+                qt5.Text = "";
+            }
+        }
+
+        private void teaSmallRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (teaSmallRB.Checked)
+            {
+                dsize5.Text = "Small";
+            }
+            else
+            {
+                dsize5.Text = "";
+            }
+        }
+
+        private void teaMediumRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (teaMediumRB.Checked)
+            {
+                dsize5.Text = "Medium";
+            }
+            else
+            {
+                dsize5.Text = "";
+            }
+        }
+
+        private void teaLargeRB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (teaLargeRB.Checked)
+            {
+                dsize5.Text = "Large";
+            }
+            else
+            {
+                dsize5.Text = "";
+            }
+        }
+
+        private void teaNumerator_ValueChanged(object sender, EventArgs e)
+        {
+            qt5.Text = Convert.ToString("x" + teaNumerator.Value);
         }
     }
 }

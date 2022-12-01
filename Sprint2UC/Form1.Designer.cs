@@ -203,6 +203,16 @@
             this.orderTotal = new System.Windows.Forms.Label();
             this.orderTotalLabel = new System.Windows.Forms.Label();
             this.orderDrinksGB = new System.Windows.Forms.GroupBox();
+            this.qt5 = new System.Windows.Forms.Label();
+            this.qt3 = new System.Windows.Forms.Label();
+            this.qt4 = new System.Windows.Forms.Label();
+            this.qt2 = new System.Windows.Forms.Label();
+            this.qt1 = new System.Windows.Forms.Label();
+            this.dsize5 = new System.Windows.Forms.Label();
+            this.dsize4 = new System.Windows.Forms.Label();
+            this.dsize3 = new System.Windows.Forms.Label();
+            this.dsize2 = new System.Windows.Forms.Label();
+            this.dsize1 = new System.Windows.Forms.Label();
             this.drinkTotalPanel = new System.Windows.Forms.Panel();
             this.drinkTotal = new System.Windows.Forms.Label();
             this.drink5 = new System.Windows.Forms.Label();
@@ -2004,6 +2014,7 @@
             this.teaLargeRB.TabStop = true;
             this.teaLargeRB.Text = "Large";
             this.teaLargeRB.UseVisualStyleBackColor = false;
+            this.teaLargeRB.CheckedChanged += new System.EventHandler(this.teaLargeRB_CheckedChanged);
             // 
             // teaMediumRB
             // 
@@ -2016,6 +2027,7 @@
             this.teaMediumRB.TabStop = true;
             this.teaMediumRB.Text = "Medium";
             this.teaMediumRB.UseVisualStyleBackColor = false;
+            this.teaMediumRB.CheckedChanged += new System.EventHandler(this.teaMediumRB_CheckedChanged);
             // 
             // teaSmallRB
             // 
@@ -2028,6 +2040,7 @@
             this.teaSmallRB.TabStop = true;
             this.teaSmallRB.Text = "Small";
             this.teaSmallRB.UseVisualStyleBackColor = false;
+            this.teaSmallRB.CheckedChanged += new System.EventHandler(this.teaSmallRB_CheckedChanged);
             // 
             // teaNumerator
             // 
@@ -2035,6 +2048,7 @@
             this.teaNumerator.Name = "teaNumerator";
             this.teaNumerator.Size = new System.Drawing.Size(38, 35);
             this.teaNumerator.TabIndex = 1;
+            this.teaNumerator.ValueChanged += new System.EventHandler(this.teaNumerator_ValueChanged);
             // 
             // teaCheck
             // 
@@ -2044,6 +2058,7 @@
             this.teaCheck.Size = new System.Drawing.Size(15, 14);
             this.teaCheck.TabIndex = 0;
             this.teaCheck.UseVisualStyleBackColor = true;
+            this.teaCheck.CheckedChanged += new System.EventHandler(this.teaCheck_CheckedChanged);
             // 
             // dpBox
             // 
@@ -2072,6 +2087,7 @@
             this.dpLargeRB.TabStop = true;
             this.dpLargeRB.Text = "Large";
             this.dpLargeRB.UseVisualStyleBackColor = false;
+            this.dpLargeRB.CheckedChanged += new System.EventHandler(this.dpLargeRB_CheckedChanged);
             // 
             // dpMediumRB
             // 
@@ -2084,6 +2100,7 @@
             this.dpMediumRB.TabStop = true;
             this.dpMediumRB.Text = "Medium";
             this.dpMediumRB.UseVisualStyleBackColor = false;
+            this.dpMediumRB.CheckedChanged += new System.EventHandler(this.dpMediumRB_CheckedChanged);
             // 
             // dpSmallRB
             // 
@@ -2096,6 +2113,7 @@
             this.dpSmallRB.TabStop = true;
             this.dpSmallRB.Text = "Small";
             this.dpSmallRB.UseVisualStyleBackColor = false;
+            this.dpSmallRB.CheckedChanged += new System.EventHandler(this.dpSmallRB_CheckedChanged);
             // 
             // dpNumerator
             // 
@@ -2103,6 +2121,7 @@
             this.dpNumerator.Name = "dpNumerator";
             this.dpNumerator.Size = new System.Drawing.Size(38, 35);
             this.dpNumerator.TabIndex = 1;
+            this.dpNumerator.ValueChanged += new System.EventHandler(this.dpNumerator_ValueChanged);
             // 
             // dpCheck
             // 
@@ -2112,6 +2131,7 @@
             this.dpCheck.Size = new System.Drawing.Size(15, 14);
             this.dpCheck.TabIndex = 0;
             this.dpCheck.UseVisualStyleBackColor = true;
+            this.dpCheck.CheckedChanged += new System.EventHandler(this.dpCheck_CheckedChanged);
             // 
             // powerBox
             // 
@@ -2140,6 +2160,7 @@
             this.powerLargeRB.TabStop = true;
             this.powerLargeRB.Text = "Large";
             this.powerLargeRB.UseVisualStyleBackColor = false;
+            this.powerLargeRB.CheckedChanged += new System.EventHandler(this.powerLargeRB_CheckedChanged);
             // 
             // powerMediumRB
             // 
@@ -2152,6 +2173,7 @@
             this.powerMediumRB.TabStop = true;
             this.powerMediumRB.Text = "Medium";
             this.powerMediumRB.UseVisualStyleBackColor = false;
+            this.powerMediumRB.CheckedChanged += new System.EventHandler(this.powerMediumRB_CheckedChanged);
             // 
             // powerSmallRB
             // 
@@ -2164,6 +2186,7 @@
             this.powerSmallRB.TabStop = true;
             this.powerSmallRB.Text = "Small";
             this.powerSmallRB.UseVisualStyleBackColor = false;
+            this.powerSmallRB.CheckedChanged += new System.EventHandler(this.powerSmallRB_CheckedChanged);
             // 
             // powerNumerator
             // 
@@ -2171,6 +2194,7 @@
             this.powerNumerator.Name = "powerNumerator";
             this.powerNumerator.Size = new System.Drawing.Size(38, 35);
             this.powerNumerator.TabIndex = 1;
+            this.powerNumerator.ValueChanged += new System.EventHandler(this.powerNumerator_ValueChanged);
             // 
             // powerCheck
             // 
@@ -2180,6 +2204,7 @@
             this.powerCheck.Size = new System.Drawing.Size(15, 14);
             this.powerCheck.TabIndex = 0;
             this.powerCheck.UseVisualStyleBackColor = true;
+            this.powerCheck.CheckedChanged += new System.EventHandler(this.powerCheck_CheckedChanged);
             // 
             // spriteBox
             // 
@@ -2208,6 +2233,7 @@
             this.spriteLargeRB.TabStop = true;
             this.spriteLargeRB.Text = "Large";
             this.spriteLargeRB.UseVisualStyleBackColor = false;
+            this.spriteLargeRB.CheckedChanged += new System.EventHandler(this.spriteLargeRB_CheckedChanged);
             // 
             // spriteMediumRB
             // 
@@ -2220,6 +2246,7 @@
             this.spriteMediumRB.TabStop = true;
             this.spriteMediumRB.Text = "Medium";
             this.spriteMediumRB.UseVisualStyleBackColor = false;
+            this.spriteMediumRB.CheckedChanged += new System.EventHandler(this.spriteMediumRB_CheckedChanged);
             // 
             // spriteSmallRB
             // 
@@ -2232,6 +2259,7 @@
             this.spriteSmallRB.TabStop = true;
             this.spriteSmallRB.Text = "Small";
             this.spriteSmallRB.UseVisualStyleBackColor = false;
+            this.spriteSmallRB.CheckedChanged += new System.EventHandler(this.spriteSmallRB_CheckedChanged);
             // 
             // spriteNumerator
             // 
@@ -2239,6 +2267,7 @@
             this.spriteNumerator.Name = "spriteNumerator";
             this.spriteNumerator.Size = new System.Drawing.Size(38, 35);
             this.spriteNumerator.TabIndex = 1;
+            this.spriteNumerator.ValueChanged += new System.EventHandler(this.spriteNumerator_ValueChanged);
             // 
             // spriteCheck
             // 
@@ -2248,6 +2277,7 @@
             this.spriteCheck.Size = new System.Drawing.Size(15, 14);
             this.spriteCheck.TabIndex = 0;
             this.spriteCheck.UseVisualStyleBackColor = true;
+            this.spriteCheck.CheckedChanged += new System.EventHandler(this.spriteCheck_CheckedChanged);
             // 
             // cokeBox
             // 
@@ -2277,6 +2307,7 @@
             this.cokeLargeRB.TabStop = true;
             this.cokeLargeRB.Text = "Large";
             this.cokeLargeRB.UseVisualStyleBackColor = false;
+            this.cokeLargeRB.CheckedChanged += new System.EventHandler(this.cokeLargeRB_CheckedChanged);
             // 
             // cokeMediumRB
             // 
@@ -2289,6 +2320,7 @@
             this.cokeMediumRB.TabStop = true;
             this.cokeMediumRB.Text = "Medium";
             this.cokeMediumRB.UseVisualStyleBackColor = false;
+            this.cokeMediumRB.CheckedChanged += new System.EventHandler(this.cokeMediumRB_CheckedChanged);
             // 
             // cokeSmallRB
             // 
@@ -2301,6 +2333,7 @@
             this.cokeSmallRB.TabStop = true;
             this.cokeSmallRB.Text = "Small";
             this.cokeSmallRB.UseVisualStyleBackColor = false;
+            this.cokeSmallRB.CheckedChanged += new System.EventHandler(this.cokeSmallRB_CheckedChanged);
             // 
             // cokeNumerator
             // 
@@ -2308,6 +2341,7 @@
             this.cokeNumerator.Name = "cokeNumerator";
             this.cokeNumerator.Size = new System.Drawing.Size(38, 35);
             this.cokeNumerator.TabIndex = 10;
+            this.cokeNumerator.ValueChanged += new System.EventHandler(this.cokeNumerator_ValueChanged);
             // 
             // cokeCheck
             // 
@@ -2317,6 +2351,7 @@
             this.cokeCheck.Size = new System.Drawing.Size(15, 14);
             this.cokeCheck.TabIndex = 9;
             this.cokeCheck.UseVisualStyleBackColor = true;
+            this.cokeCheck.CheckedChanged += new System.EventHandler(this.cokeCheck_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -2386,6 +2421,16 @@
             // orderDrinksGB
             // 
             this.orderDrinksGB.BackColor = System.Drawing.Color.Orange;
+            this.orderDrinksGB.Controls.Add(this.qt5);
+            this.orderDrinksGB.Controls.Add(this.qt3);
+            this.orderDrinksGB.Controls.Add(this.qt4);
+            this.orderDrinksGB.Controls.Add(this.qt2);
+            this.orderDrinksGB.Controls.Add(this.qt1);
+            this.orderDrinksGB.Controls.Add(this.dsize5);
+            this.orderDrinksGB.Controls.Add(this.dsize4);
+            this.orderDrinksGB.Controls.Add(this.dsize3);
+            this.orderDrinksGB.Controls.Add(this.dsize2);
+            this.orderDrinksGB.Controls.Add(this.dsize1);
             this.orderDrinksGB.Controls.Add(this.drinkTotalPanel);
             this.orderDrinksGB.Controls.Add(this.drink5);
             this.orderDrinksGB.Controls.Add(this.drink4);
@@ -2400,6 +2445,106 @@
             this.orderDrinksGB.TabStop = false;
             this.orderDrinksGB.Text = "Drinks";
             this.orderDrinksGB.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // qt5
+            // 
+            this.qt5.AutoSize = true;
+            this.qt5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.qt5.Location = new System.Drawing.Point(253, 150);
+            this.qt5.Name = "qt5";
+            this.qt5.Size = new System.Drawing.Size(76, 18);
+            this.qt5.TabIndex = 24;
+            this.qt5.Text = "Quantity";
+            // 
+            // qt3
+            // 
+            this.qt3.AutoSize = true;
+            this.qt3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.qt3.Location = new System.Drawing.Point(253, 93);
+            this.qt3.Name = "qt3";
+            this.qt3.Size = new System.Drawing.Size(76, 18);
+            this.qt3.TabIndex = 23;
+            this.qt3.Text = "Quantity";
+            // 
+            // qt4
+            // 
+            this.qt4.AutoSize = true;
+            this.qt4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.qt4.Location = new System.Drawing.Point(253, 122);
+            this.qt4.Name = "qt4";
+            this.qt4.Size = new System.Drawing.Size(76, 18);
+            this.qt4.TabIndex = 22;
+            this.qt4.Text = "Quantity";
+            // 
+            // qt2
+            // 
+            this.qt2.AutoSize = true;
+            this.qt2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.qt2.Location = new System.Drawing.Point(253, 68);
+            this.qt2.Name = "qt2";
+            this.qt2.Size = new System.Drawing.Size(76, 18);
+            this.qt2.TabIndex = 21;
+            this.qt2.Text = "Quantity";
+            // 
+            // qt1
+            // 
+            this.qt1.AutoSize = true;
+            this.qt1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.qt1.Location = new System.Drawing.Point(253, 41);
+            this.qt1.Name = "qt1";
+            this.qt1.Size = new System.Drawing.Size(76, 18);
+            this.qt1.TabIndex = 20;
+            this.qt1.Text = "Quantity";
+            // 
+            // dsize5
+            // 
+            this.dsize5.AutoSize = true;
+            this.dsize5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dsize5.Location = new System.Drawing.Point(176, 150);
+            this.dsize5.Name = "dsize5";
+            this.dsize5.Size = new System.Drawing.Size(41, 18);
+            this.dsize5.TabIndex = 19;
+            this.dsize5.Text = "Size";
+            // 
+            // dsize4
+            // 
+            this.dsize4.AutoSize = true;
+            this.dsize4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dsize4.Location = new System.Drawing.Point(176, 122);
+            this.dsize4.Name = "dsize4";
+            this.dsize4.Size = new System.Drawing.Size(41, 18);
+            this.dsize4.TabIndex = 18;
+            this.dsize4.Text = "Size";
+            // 
+            // dsize3
+            // 
+            this.dsize3.AutoSize = true;
+            this.dsize3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dsize3.Location = new System.Drawing.Point(176, 95);
+            this.dsize3.Name = "dsize3";
+            this.dsize3.Size = new System.Drawing.Size(41, 18);
+            this.dsize3.TabIndex = 17;
+            this.dsize3.Text = "Size";
+            // 
+            // dsize2
+            // 
+            this.dsize2.AutoSize = true;
+            this.dsize2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dsize2.Location = new System.Drawing.Point(176, 68);
+            this.dsize2.Name = "dsize2";
+            this.dsize2.Size = new System.Drawing.Size(41, 18);
+            this.dsize2.TabIndex = 16;
+            this.dsize2.Text = "Size";
+            // 
+            // dsize1
+            // 
+            this.dsize1.AutoSize = true;
+            this.dsize1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dsize1.Location = new System.Drawing.Point(176, 41);
+            this.dsize1.Name = "dsize1";
+            this.dsize1.Size = new System.Drawing.Size(41, 18);
+            this.dsize1.TabIndex = 15;
+            this.dsize1.Text = "Size";
             // 
             // drinkTotalPanel
             // 
@@ -3255,5 +3400,15 @@
         private Label crust2;
         private Label crust1;
         private Label size1;
+        private Label qt5;
+        private Label qt3;
+        private Label qt4;
+        private Label qt2;
+        private Label qt1;
+        private Label dsize5;
+        private Label dsize4;
+        private Label dsize3;
+        private Label dsize2;
+        private Label dsize1;
     }
 }
