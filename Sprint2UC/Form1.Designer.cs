@@ -244,7 +244,14 @@
             this.pizza1 = new System.Windows.Forms.Label();
             this.yourOrderLabel = new System.Windows.Forms.Label();
             this.checkoutTab = new System.Windows.Forms.TabPage();
+            this.completePanel = new System.Windows.Forms.Panel();
+            this.completeMessage = new System.Windows.Forms.Label();
+            this.checkoutButton = new System.Windows.Forms.Button();
             this.topGB = new System.Windows.Forms.GroupBox();
+            this.routingNumInput = new System.Windows.Forms.TextBox();
+            this.accountNumInput = new System.Windows.Forms.TextBox();
+            this.routingNum = new System.Windows.Forms.Label();
+            this.accountNum = new System.Windows.Forms.Label();
             this.checkoutTotalPanel = new System.Windows.Forms.Panel();
             this.checkoutTotal = new System.Windows.Forms.Label();
             this.check = new System.Windows.Forms.RadioButton();
@@ -310,6 +317,7 @@
             this.orderPizzasGB.SuspendLayout();
             this.pizzaTotalPanel.SuspendLayout();
             this.checkoutTab.SuspendLayout();
+            this.completePanel.SuspendLayout();
             this.topGB.SuspendLayout();
             this.checkoutTotalPanel.SuspendLayout();
             this.orderOptionGB.SuspendLayout();
@@ -2873,6 +2881,8 @@
             // checkoutTab
             // 
             this.checkoutTab.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.checkoutTab.Controls.Add(this.completePanel);
+            this.checkoutTab.Controls.Add(this.checkoutButton);
             this.checkoutTab.Controls.Add(this.topGB);
             this.checkoutTab.Controls.Add(this.orderOptionGB);
             this.checkoutTab.Controls.Add(this.checkoutLabel);
@@ -2883,9 +2893,43 @@
             this.checkoutTab.TabIndex = 7;
             this.checkoutTab.Text = "Checkout";
             // 
+            // completePanel
+            // 
+            this.completePanel.BackColor = System.Drawing.Color.Yellow;
+            this.completePanel.Controls.Add(this.completeMessage);
+            this.completePanel.Location = new System.Drawing.Point(181, 193);
+            this.completePanel.Name = "completePanel";
+            this.completePanel.Size = new System.Drawing.Size(954, 240);
+            this.completePanel.TabIndex = 19;
+            // 
+            // completeMessage
+            // 
+            this.completeMessage.AutoSize = true;
+            this.completeMessage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.completeMessage.Location = new System.Drawing.Point(127, 109);
+            this.completeMessage.Name = "completeMessage";
+            this.completeMessage.Size = new System.Drawing.Size(257, 28);
+            this.completeMessage.TabIndex = 0;
+            this.completeMessage.Text = "ORDER COMPLETED";
+            // 
+            // checkoutButton
+            // 
+            this.checkoutButton.BackColor = System.Drawing.Color.YellowGreen;
+            this.checkoutButton.Location = new System.Drawing.Point(483, 529);
+            this.checkoutButton.Name = "checkoutButton";
+            this.checkoutButton.Size = new System.Drawing.Size(364, 95);
+            this.checkoutButton.TabIndex = 7;
+            this.checkoutButton.Text = "Complete Order";
+            this.checkoutButton.UseVisualStyleBackColor = false;
+            this.checkoutButton.Click += new System.EventHandler(this.checkoutButton_Click);
+            // 
             // topGB
             // 
             this.topGB.BackColor = System.Drawing.Color.Orange;
+            this.topGB.Controls.Add(this.routingNumInput);
+            this.topGB.Controls.Add(this.accountNumInput);
+            this.topGB.Controls.Add(this.routingNum);
+            this.topGB.Controls.Add(this.accountNum);
             this.topGB.Controls.Add(this.checkoutTotalPanel);
             this.topGB.Controls.Add(this.check);
             this.topGB.Controls.Add(this.cash);
@@ -2897,6 +2941,40 @@
             this.topGB.TabIndex = 6;
             this.topGB.TabStop = false;
             this.topGB.Text = "Type of Payment";
+            // 
+            // routingNumInput
+            // 
+            this.routingNumInput.Location = new System.Drawing.Point(184, 255);
+            this.routingNumInput.Name = "routingNumInput";
+            this.routingNumInput.Size = new System.Drawing.Size(239, 35);
+            this.routingNumInput.TabIndex = 18;
+            // 
+            // accountNumInput
+            // 
+            this.accountNumInput.Location = new System.Drawing.Point(184, 217);
+            this.accountNumInput.Name = "accountNumInput";
+            this.accountNumInput.Size = new System.Drawing.Size(239, 35);
+            this.accountNumInput.TabIndex = 17;
+            // 
+            // routingNum
+            // 
+            this.routingNum.AutoSize = true;
+            this.routingNum.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.routingNum.Location = new System.Drawing.Point(84, 255);
+            this.routingNum.Name = "routingNum";
+            this.routingNum.Size = new System.Drawing.Size(88, 18);
+            this.routingNum.TabIndex = 16;
+            this.routingNum.Text = "Routing #:";
+            // 
+            // accountNum
+            // 
+            this.accountNum.AutoSize = true;
+            this.accountNum.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.accountNum.Location = new System.Drawing.Point(84, 228);
+            this.accountNum.Name = "accountNum";
+            this.accountNum.Size = new System.Drawing.Size(94, 18);
+            this.accountNum.TabIndex = 15;
+            this.accountNum.Text = "Account #:";
             // 
             // checkoutTotalPanel
             // 
@@ -2927,6 +3005,7 @@
             this.check.TabStop = true;
             this.check.Text = "Check";
             this.check.UseVisualStyleBackColor = true;
+            this.check.CheckedChanged += new System.EventHandler(this.check_CheckedChanged);
             // 
             // cash
             // 
@@ -2974,6 +3053,7 @@
             this.takeout.TabStop = true;
             this.takeout.Text = "Takeout";
             this.takeout.UseVisualStyleBackColor = true;
+            this.takeout.CheckedChanged += new System.EventHandler(this.takeout_CheckedChanged);
             // 
             // delivery
             // 
@@ -2986,6 +3066,7 @@
             this.delivery.TabStop = true;
             this.delivery.Text = "Delivery";
             this.delivery.UseVisualStyleBackColor = true;
+            this.delivery.CheckedChanged += new System.EventHandler(this.delivery_CheckedChanged);
             // 
             // checkoutLabel
             // 
@@ -3176,6 +3257,8 @@
             this.pizzaTotalPanel.PerformLayout();
             this.checkoutTab.ResumeLayout(false);
             this.checkoutTab.PerformLayout();
+            this.completePanel.ResumeLayout(false);
+            this.completePanel.PerformLayout();
             this.topGB.ResumeLayout(false);
             this.topGB.PerformLayout();
             this.checkoutTotalPanel.ResumeLayout(false);
@@ -3425,5 +3508,12 @@
         private Label dsize2;
         private Label dsize1;
         private Label dollaSign;
+        private TextBox routingNumInput;
+        private TextBox accountNumInput;
+        private Label routingNum;
+        private Label accountNum;
+        private Button checkoutButton;
+        private Panel completePanel;
+        private Label completeMessage;
     }
 }

@@ -10,11 +10,11 @@ namespace Sprint2UC
         {
             InitializeComponent();
             //loginTab.Enabled = false;
-            //standardTab.Enabled = false;
-            //byoTab.Enabled = false;
-            //beveragesTab.Enabled = false;
-            //orderTab.Enabled = false;
-            //checkoutTab.Enabled = false;
+            standardTab.Enabled = false;
+            byoTab.Enabled = false;
+            beveragesTab.Enabled = false;
+            orderTab.Enabled = false;
+            checkoutTab.Enabled = false;
 
             //register tab
             matchError.Text = "";
@@ -110,7 +110,16 @@ namespace Sprint2UC
             teaLargeRB.Enabled = false;
             teaNumerator.Enabled = false;
 
-            
+            //CHECKOUT TAB
+            accountNum.Visible = false;
+            routingNum.Visible = false;
+            accountNumInput.Visible = false;
+            routingNumInput.Visible = false;
+
+            completePanel.Visible = false;
+
+            checkoutTotal.Text = "";
+            checkoutButton.Enabled = false;
 
         }
 
@@ -292,6 +301,7 @@ namespace Sprint2UC
                 price += 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 sizeGBcheese.Enabled = true;
                 crustGBcheese.Enabled=true;
@@ -302,6 +312,7 @@ namespace Sprint2UC
                 price -= 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 pizza1.Text = "";
                 sizeGBcheese.Enabled = false;
@@ -398,6 +409,7 @@ namespace Sprint2UC
                 price += 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 sizeGBpep.Enabled = true;
                 crustGBpep.Enabled = true;
@@ -408,6 +420,7 @@ namespace Sprint2UC
                 price -= 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 pizza2.Text = "";
                 sizeGBpep.Enabled = false;
@@ -503,6 +516,7 @@ namespace Sprint2UC
                 price += 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 sizeGBSausage.Enabled = true;
                 crustGBSausage.Enabled = true;
@@ -513,6 +527,7 @@ namespace Sprint2UC
                 price -= 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 pizza3.Text = "";
                 sizeGBSausage.Enabled = false;
@@ -608,6 +623,7 @@ namespace Sprint2UC
                 price += 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 sizeGBHawaiian.Enabled = true;
                 crustGBHawaiian.Enabled = true;
@@ -618,6 +634,7 @@ namespace Sprint2UC
                 price -= 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 pizza4.Text = "";
                 sizeGBHawaiian.Enabled = false;
@@ -713,6 +730,7 @@ namespace Sprint2UC
                 price += 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 sizeGBbbq.Enabled = true;
                 crustGBbbq.Enabled = true;
@@ -723,6 +741,7 @@ namespace Sprint2UC
                 price -= 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 pizza5.Text = "";
                 sizeGBbbq.Enabled = false;
@@ -820,6 +839,7 @@ namespace Sprint2UC
                 drinkPrice += 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 drink1.Text = "Coke";
 
@@ -834,6 +854,7 @@ namespace Sprint2UC
                 drinkPrice -= 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 cokeSmallRB.Enabled = false;
                 cokeMediumRB.Enabled = false;
@@ -902,6 +923,7 @@ namespace Sprint2UC
                 drinkPrice += 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 drink2.Text = "Sprite";
 
@@ -916,6 +938,7 @@ namespace Sprint2UC
                 drinkPrice -= 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 spriteSmallRB.Enabled = false;
                 spriteMediumRB.Enabled = false;
@@ -982,6 +1005,7 @@ namespace Sprint2UC
                 drinkPrice += 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 drink3.Text = "Powerade";
 
@@ -996,6 +1020,7 @@ namespace Sprint2UC
                 drinkPrice -= 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 powerSmallRB.Enabled = false;
                 powerMediumRB.Enabled = false;
@@ -1064,6 +1089,7 @@ namespace Sprint2UC
                 drinkPrice += 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 drink4.Text = "Dr Pepper";
 
@@ -1078,6 +1104,7 @@ namespace Sprint2UC
                 drinkPrice -= 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 dpSmallRB.Enabled = false;
                 dpMediumRB.Enabled = false;
@@ -1146,6 +1173,7 @@ namespace Sprint2UC
                 drinkPrice += 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 drink5.Text = "Sweet Tea";
 
@@ -1160,6 +1188,7 @@ namespace Sprint2UC
                 drinkPrice -= 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
                 orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
 
                 teaSmallRB.Enabled = false;
                 teaMediumRB.Enabled = false;
@@ -1228,6 +1257,65 @@ namespace Sprint2UC
         private void dollaSign_Click(object sender, EventArgs e)
         {
 
+        }
+
+        //CHECKOUT TAB CODE
+
+        private void check_CheckedChanged(object sender, EventArgs e)
+        {
+            if (check.Checked)
+            {
+                accountNum.Visible = true;
+                routingNum.Visible = true;
+                accountNumInput.Visible = true;
+                routingNumInput.Visible = true;
+            }
+            if (!check.Checked)
+            {
+                accountNum.Visible = false;
+                routingNum.Visible = false;
+                accountNumInput.Visible = false;
+                routingNumInput.Visible = false;
+            }
+        }
+
+        private void delivery_CheckedChanged(object sender, EventArgs e)
+        {
+            if (delivery.Checked)
+            {
+                checkoutButton.Enabled = true;
+            }
+        }
+
+        private void takeout_CheckedChanged(object sender, EventArgs e)
+        {
+            if (takeout.Checked)
+            {
+                checkoutButton.Enabled = true;
+            }
+        }
+
+        private void checkoutButton_Click(object sender, EventArgs e)
+        {
+            if (creditCard.Checked || cash.Checked || check.Checked)
+            {
+                standardTab.Enabled = false;
+                byoTab.Enabled = false;
+                beveragesTab.Enabled = false;
+                orderTab.Enabled = false;
+                checkoutTab.Enabled = false;
+
+                completePanel.Visible = true;
+                if (delivery.Checked)
+                {
+                    completeMessage.Text = "You completed your order! Expected Delivery Time: 35 minutes";
+                }
+                else
+                {
+                    completeMessage.Text = "You completed your order! It will be ready in the store";
+                }
+               
+            }
         }
     }
 }
