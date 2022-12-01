@@ -33,16 +33,18 @@
             this.loginTab = new System.Windows.Forms.TabPage();
             this.loginCompletionLabel = new System.Windows.Forms.Label();
             this.loginLabel = new System.Windows.Forms.Label();
-            this.signUpButton = new System.Windows.Forms.Button();
-            this.questionText = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
             this.passwordText = new System.Windows.Forms.Label();
             this.usernameText = new System.Windows.Forms.Label();
             this.passwordBox = new System.Windows.Forms.TextBox();
             this.usernameBox = new System.Windows.Forms.TextBox();
             this.registerTab = new System.Windows.Forms.TabPage();
+            this.successPanel = new System.Windows.Forms.Panel();
+            this.usernameError = new System.Windows.Forms.Label();
+            this.eMatchError = new System.Windows.Forms.Label();
+            this.matchError = new System.Windows.Forms.Label();
             this.cancelSignUp = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.signUpButton = new System.Windows.Forms.Button();
             this.cvvInput = new System.Windows.Forms.TextBox();
             this.cvvLabel = new System.Windows.Forms.Label();
             this.expDateInput = new System.Windows.Forms.TextBox();
@@ -233,9 +235,11 @@
             this.helpTip2 = new System.Windows.Forms.Label();
             this.helpTip1 = new System.Windows.Forms.Label();
             this.helpLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.loginTab.SuspendLayout();
             this.registerTab.SuspendLayout();
+            this.successPanel.SuspendLayout();
             this.standardTab.SuspendLayout();
             this.bbqGB.SuspendLayout();
             this.crustGBbbq.SuspendLayout();
@@ -319,8 +323,6 @@
             this.loginTab.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.loginTab.Controls.Add(this.loginCompletionLabel);
             this.loginTab.Controls.Add(this.loginLabel);
-            this.loginTab.Controls.Add(this.signUpButton);
-            this.loginTab.Controls.Add(this.questionText);
             this.loginTab.Controls.Add(this.loginButton);
             this.loginTab.Controls.Add(this.passwordText);
             this.loginTab.Controls.Add(this.usernameText);
@@ -356,27 +358,6 @@
             this.loginLabel.Size = new System.Drawing.Size(175, 53);
             this.loginLabel.TabIndex = 33;
             this.loginLabel.Text = "Sign-In";
-            // 
-            // signUpButton
-            // 
-            this.signUpButton.BackColor = System.Drawing.Color.Khaki;
-            this.signUpButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.signUpButton.Location = new System.Drawing.Point(720, 510);
-            this.signUpButton.Name = "signUpButton";
-            this.signUpButton.Size = new System.Drawing.Size(82, 30);
-            this.signUpButton.TabIndex = 14;
-            this.signUpButton.Text = "Sign Up";
-            this.signUpButton.UseVisualStyleBackColor = false;
-            // 
-            // questionText
-            // 
-            this.questionText.AutoSize = true;
-            this.questionText.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.questionText.Location = new System.Drawing.Point(535, 516);
-            this.questionText.Name = "questionText";
-            this.questionText.Size = new System.Drawing.Size(179, 17);
-            this.questionText.TabIndex = 13;
-            this.questionText.Text = "Don\'t have an account?";
             // 
             // loginButton
             // 
@@ -432,8 +413,12 @@
             // registerTab
             // 
             this.registerTab.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.registerTab.Controls.Add(this.successPanel);
+            this.registerTab.Controls.Add(this.usernameError);
+            this.registerTab.Controls.Add(this.eMatchError);
+            this.registerTab.Controls.Add(this.matchError);
             this.registerTab.Controls.Add(this.cancelSignUp);
-            this.registerTab.Controls.Add(this.button3);
+            this.registerTab.Controls.Add(this.signUpButton);
             this.registerTab.Controls.Add(this.cvvInput);
             this.registerTab.Controls.Add(this.cvvLabel);
             this.registerTab.Controls.Add(this.expDateInput);
@@ -469,6 +454,45 @@
             this.registerTab.TabIndex = 1;
             this.registerTab.Text = "Register";
             // 
+            // successPanel
+            // 
+            this.successPanel.BackColor = System.Drawing.Color.Yellow;
+            this.successPanel.Controls.Add(this.label2);
+            this.successPanel.Location = new System.Drawing.Point(262, 272);
+            this.successPanel.Name = "successPanel";
+            this.successPanel.Size = new System.Drawing.Size(756, 149);
+            this.successPanel.TabIndex = 66;
+            // 
+            // usernameError
+            // 
+            this.usernameError.AutoSize = true;
+            this.usernameError.ForeColor = System.Drawing.Color.Red;
+            this.usernameError.Location = new System.Drawing.Point(422, 172);
+            this.usernameError.Name = "usernameError";
+            this.usernameError.Size = new System.Drawing.Size(64, 32);
+            this.usernameError.TabIndex = 65;
+            this.usernameError.Text = "Error";
+            // 
+            // eMatchError
+            // 
+            this.eMatchError.AutoSize = true;
+            this.eMatchError.ForeColor = System.Drawing.Color.Red;
+            this.eMatchError.Location = new System.Drawing.Point(852, 351);
+            this.eMatchError.Name = "eMatchError";
+            this.eMatchError.Size = new System.Drawing.Size(64, 32);
+            this.eMatchError.TabIndex = 64;
+            this.eMatchError.Text = "Error";
+            // 
+            // matchError
+            // 
+            this.matchError.AutoSize = true;
+            this.matchError.ForeColor = System.Drawing.Color.Red;
+            this.matchError.Location = new System.Drawing.Point(46, 371);
+            this.matchError.Name = "matchError";
+            this.matchError.Size = new System.Drawing.Size(64, 32);
+            this.matchError.TabIndex = 63;
+            this.matchError.Text = "Error";
+            // 
             // cancelSignUp
             // 
             this.cancelSignUp.BackColor = System.Drawing.Color.Red;
@@ -480,16 +504,17 @@
             this.cancelSignUp.Text = "Cancel Registration";
             this.cancelSignUp.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // signUpButton
             // 
-            this.button3.BackColor = System.Drawing.Color.YellowGreen;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(982, 473);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(257, 88);
-            this.button3.TabIndex = 60;
-            this.button3.Text = "Sign Up";
-            this.button3.UseVisualStyleBackColor = false;
+            this.signUpButton.BackColor = System.Drawing.Color.YellowGreen;
+            this.signUpButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.signUpButton.Location = new System.Drawing.Point(982, 473);
+            this.signUpButton.Name = "signUpButton";
+            this.signUpButton.Size = new System.Drawing.Size(257, 88);
+            this.signUpButton.TabIndex = 60;
+            this.signUpButton.Text = "Sign Up";
+            this.signUpButton.UseVisualStyleBackColor = false;
+            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
             // 
             // cvvInput
             // 
@@ -2680,6 +2705,16 @@
             this.helpLabel.TabIndex = 5;
             this.helpLabel.Text = "Help";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(123, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(531, 28);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Account Created! Please Return to Login Tab";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2695,6 +2730,8 @@
             this.loginTab.PerformLayout();
             this.registerTab.ResumeLayout(false);
             this.registerTab.PerformLayout();
+            this.successPanel.ResumeLayout(false);
+            this.successPanel.PerformLayout();
             this.standardTab.ResumeLayout(false);
             this.standardTab.PerformLayout();
             this.bbqGB.ResumeLayout(false);
@@ -2797,15 +2834,13 @@
         private TabControl tabControl;
         private TabPage loginTab;
         private TabPage registerTab;
-        private Button signUpButton;
-        private Label questionText;
         private Button loginButton;
         private Label passwordText;
         private Label usernameText;
         private TextBox passwordBox;
         private TextBox usernameBox;
         private Button cancelSignUp;
-        private Button button3;
+        private Button signUpButton;
         private TextBox cvvInput;
         private Label cvvLabel;
         private TextBox expDateInput;
@@ -2998,5 +3033,10 @@
         private Label helpTip1;
         private Label helpLabel;
         private Label loginCompletionLabel;
+        private Label matchError;
+        private Label eMatchError;
+        private Label usernameError;
+        private Panel successPanel;
+        private Label label2;
     }
 }
