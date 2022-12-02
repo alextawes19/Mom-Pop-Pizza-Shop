@@ -274,6 +274,11 @@
             this.helpTip2 = new System.Windows.Forms.Label();
             this.helpTip1 = new System.Windows.Forms.Label();
             this.helpLabel = new System.Windows.Forms.Label();
+            this.xlCheese = new System.Windows.Forms.RadioButton();
+            this.xlPep = new System.Windows.Forms.RadioButton();
+            this.xlSausage = new System.Windows.Forms.RadioButton();
+            this.xlHawaiian = new System.Windows.Forms.RadioButton();
+            this.xlBBQ = new System.Windows.Forms.RadioButton();
             this.tabControl.SuspendLayout();
             this.loginTab.SuspendLayout();
             this.successfullLoginPanel.SuspendLayout();
@@ -936,6 +941,7 @@
             // 
             // sizeGBbbq
             // 
+            this.sizeGBbbq.Controls.Add(this.xlBBQ);
             this.sizeGBbbq.Controls.Add(this.largeBBQ);
             this.sizeGBbbq.Controls.Add(this.mediumBBQ);
             this.sizeGBbbq.Controls.Add(this.smallBBQ);
@@ -951,7 +957,7 @@
             // 
             this.largeBBQ.AutoSize = true;
             this.largeBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.largeBBQ.Location = new System.Drawing.Point(8, 134);
+            this.largeBBQ.Location = new System.Drawing.Point(8, 95);
             this.largeBBQ.Name = "largeBBQ";
             this.largeBBQ.Size = new System.Drawing.Size(81, 26);
             this.largeBBQ.TabIndex = 39;
@@ -964,7 +970,7 @@
             // 
             this.mediumBBQ.AutoSize = true;
             this.mediumBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mediumBBQ.Location = new System.Drawing.Point(8, 82);
+            this.mediumBBQ.Location = new System.Drawing.Point(8, 63);
             this.mediumBBQ.Name = "mediumBBQ";
             this.mediumBBQ.Size = new System.Drawing.Size(100, 26);
             this.mediumBBQ.TabIndex = 38;
@@ -1066,6 +1072,7 @@
             // 
             // sizeGBHawaiian
             // 
+            this.sizeGBHawaiian.Controls.Add(this.xlHawaiian);
             this.sizeGBHawaiian.Controls.Add(this.largeHawaiian);
             this.sizeGBHawaiian.Controls.Add(this.mediumHawaiian);
             this.sizeGBHawaiian.Controls.Add(this.smallHawaiian);
@@ -1081,7 +1088,7 @@
             // 
             this.largeHawaiian.AutoSize = true;
             this.largeHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.largeHawaiian.Location = new System.Drawing.Point(8, 134);
+            this.largeHawaiian.Location = new System.Drawing.Point(8, 95);
             this.largeHawaiian.Name = "largeHawaiian";
             this.largeHawaiian.Size = new System.Drawing.Size(81, 26);
             this.largeHawaiian.TabIndex = 39;
@@ -1094,7 +1101,7 @@
             // 
             this.mediumHawaiian.AutoSize = true;
             this.mediumHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mediumHawaiian.Location = new System.Drawing.Point(8, 82);
+            this.mediumHawaiian.Location = new System.Drawing.Point(8, 63);
             this.mediumHawaiian.Name = "mediumHawaiian";
             this.mediumHawaiian.Size = new System.Drawing.Size(100, 26);
             this.mediumHawaiian.TabIndex = 38;
@@ -1196,6 +1203,7 @@
             // 
             // sizeGBSausage
             // 
+            this.sizeGBSausage.Controls.Add(this.xlSausage);
             this.sizeGBSausage.Controls.Add(this.largeSausage);
             this.sizeGBSausage.Controls.Add(this.mediumSausage);
             this.sizeGBSausage.Controls.Add(this.smallSausage);
@@ -1211,7 +1219,7 @@
             // 
             this.largeSausage.AutoSize = true;
             this.largeSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.largeSausage.Location = new System.Drawing.Point(8, 134);
+            this.largeSausage.Location = new System.Drawing.Point(8, 95);
             this.largeSausage.Name = "largeSausage";
             this.largeSausage.Size = new System.Drawing.Size(81, 26);
             this.largeSausage.TabIndex = 39;
@@ -1224,7 +1232,7 @@
             // 
             this.mediumSausage.AutoSize = true;
             this.mediumSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mediumSausage.Location = new System.Drawing.Point(8, 82);
+            this.mediumSausage.Location = new System.Drawing.Point(8, 63);
             this.mediumSausage.Name = "mediumSausage";
             this.mediumSausage.Size = new System.Drawing.Size(100, 26);
             this.mediumSausage.TabIndex = 38;
@@ -1326,6 +1334,7 @@
             // 
             // sizeGBpep
             // 
+            this.sizeGBpep.Controls.Add(this.xlPep);
             this.sizeGBpep.Controls.Add(this.largePep);
             this.sizeGBpep.Controls.Add(this.mediumPep);
             this.sizeGBpep.Controls.Add(this.smallPep);
@@ -1341,7 +1350,7 @@
             // 
             this.largePep.AutoSize = true;
             this.largePep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.largePep.Location = new System.Drawing.Point(8, 134);
+            this.largePep.Location = new System.Drawing.Point(6, 95);
             this.largePep.Name = "largePep";
             this.largePep.Size = new System.Drawing.Size(81, 26);
             this.largePep.TabIndex = 39;
@@ -1354,7 +1363,7 @@
             // 
             this.mediumPep.AutoSize = true;
             this.mediumPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mediumPep.Location = new System.Drawing.Point(8, 82);
+            this.mediumPep.Location = new System.Drawing.Point(6, 63);
             this.mediumPep.Name = "mediumPep";
             this.mediumPep.Size = new System.Drawing.Size(100, 26);
             this.mediumPep.TabIndex = 38;
@@ -1467,6 +1476,7 @@
             // 
             // sizeGBcheese
             // 
+            this.sizeGBcheese.Controls.Add(this.xlCheese);
             this.sizeGBcheese.Controls.Add(this.largeCheese);
             this.sizeGBcheese.Controls.Add(this.mediumCheese);
             this.sizeGBcheese.Controls.Add(this.smallCheese);
@@ -1482,7 +1492,7 @@
             // 
             this.largeCheese.AutoSize = true;
             this.largeCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.largeCheese.Location = new System.Drawing.Point(8, 134);
+            this.largeCheese.Location = new System.Drawing.Point(6, 95);
             this.largeCheese.Name = "largeCheese";
             this.largeCheese.Size = new System.Drawing.Size(81, 26);
             this.largeCheese.TabIndex = 39;
@@ -1495,7 +1505,7 @@
             // 
             this.mediumCheese.AutoSize = true;
             this.mediumCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mediumCheese.Location = new System.Drawing.Point(8, 82);
+            this.mediumCheese.Location = new System.Drawing.Point(6, 63);
             this.mediumCheese.Name = "mediumCheese";
             this.mediumCheese.Size = new System.Drawing.Size(100, 26);
             this.mediumCheese.TabIndex = 38;
@@ -2899,7 +2909,7 @@
             // 
             this.pizza6.AutoSize = true;
             this.pizza6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pizza6.Location = new System.Drawing.Point(34, 188);
+            this.pizza6.Location = new System.Drawing.Point(34, 191);
             this.pizza6.Name = "pizza6";
             this.pizza6.Size = new System.Drawing.Size(58, 18);
             this.pizza6.TabIndex = 5;
@@ -3244,6 +3254,71 @@
             this.helpLabel.Size = new System.Drawing.Size(140, 53);
             this.helpLabel.TabIndex = 5;
             this.helpLabel.Text = "Help";
+            // 
+            // xlCheese
+            // 
+            this.xlCheese.AutoSize = true;
+            this.xlCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xlCheese.Location = new System.Drawing.Point(6, 127);
+            this.xlCheese.Name = "xlCheese";
+            this.xlCheese.Size = new System.Drawing.Size(135, 26);
+            this.xlCheese.TabIndex = 40;
+            this.xlCheese.TabStop = true;
+            this.xlCheese.Text = "Extra Large";
+            this.xlCheese.UseVisualStyleBackColor = true;
+            this.xlCheese.CheckedChanged += new System.EventHandler(this.xlCheese_CheckedChanged);
+            // 
+            // xlPep
+            // 
+            this.xlPep.AutoSize = true;
+            this.xlPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xlPep.Location = new System.Drawing.Point(6, 127);
+            this.xlPep.Name = "xlPep";
+            this.xlPep.Size = new System.Drawing.Size(135, 26);
+            this.xlPep.TabIndex = 40;
+            this.xlPep.TabStop = true;
+            this.xlPep.Text = "Extra Large";
+            this.xlPep.UseVisualStyleBackColor = true;
+            this.xlPep.CheckedChanged += new System.EventHandler(this.xlPep_CheckedChanged);
+            // 
+            // xlSausage
+            // 
+            this.xlSausage.AutoSize = true;
+            this.xlSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xlSausage.Location = new System.Drawing.Point(8, 127);
+            this.xlSausage.Name = "xlSausage";
+            this.xlSausage.Size = new System.Drawing.Size(135, 26);
+            this.xlSausage.TabIndex = 40;
+            this.xlSausage.TabStop = true;
+            this.xlSausage.Text = "Extra Large";
+            this.xlSausage.UseVisualStyleBackColor = true;
+            this.xlSausage.CheckedChanged += new System.EventHandler(this.xlSausage_CheckedChanged);
+            // 
+            // xlHawaiian
+            // 
+            this.xlHawaiian.AutoSize = true;
+            this.xlHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xlHawaiian.Location = new System.Drawing.Point(8, 127);
+            this.xlHawaiian.Name = "xlHawaiian";
+            this.xlHawaiian.Size = new System.Drawing.Size(135, 26);
+            this.xlHawaiian.TabIndex = 41;
+            this.xlHawaiian.TabStop = true;
+            this.xlHawaiian.Text = "Extra Large";
+            this.xlHawaiian.UseVisualStyleBackColor = true;
+            this.xlHawaiian.CheckedChanged += new System.EventHandler(this.xlHawaiian_CheckedChanged);
+            // 
+            // xlBBQ
+            // 
+            this.xlBBQ.AutoSize = true;
+            this.xlBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xlBBQ.Location = new System.Drawing.Point(8, 127);
+            this.xlBBQ.Name = "xlBBQ";
+            this.xlBBQ.Size = new System.Drawing.Size(135, 26);
+            this.xlBBQ.TabIndex = 41;
+            this.xlBBQ.TabStop = true;
+            this.xlBBQ.Text = "Extra Large";
+            this.xlBBQ.UseVisualStyleBackColor = true;
+            this.xlBBQ.CheckedChanged += new System.EventHandler(this.xlBBQ_CheckedChanged);
             // 
             // Form1
             // 
@@ -3610,5 +3685,10 @@
         private Label extraCheese;
         private Label veggies;
         private Label meat;
+        private RadioButton xlBBQ;
+        private RadioButton xlHawaiian;
+        private RadioButton xlSausage;
+        private RadioButton xlPep;
+        private RadioButton xlCheese;
     }
 }
