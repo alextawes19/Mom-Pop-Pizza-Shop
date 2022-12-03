@@ -83,6 +83,7 @@
             this.thinBBQ = new System.Windows.Forms.RadioButton();
             this.regBBQ = new System.Windows.Forms.RadioButton();
             this.sizeGBbbq = new System.Windows.Forms.GroupBox();
+            this.xlBBQ = new System.Windows.Forms.RadioButton();
             this.largeBBQ = new System.Windows.Forms.RadioButton();
             this.mediumBBQ = new System.Windows.Forms.RadioButton();
             this.smallBBQ = new System.Windows.Forms.RadioButton();
@@ -93,6 +94,7 @@
             this.thinHawaiian = new System.Windows.Forms.RadioButton();
             this.regHawaiian = new System.Windows.Forms.RadioButton();
             this.sizeGBHawaiian = new System.Windows.Forms.GroupBox();
+            this.xlHawaiian = new System.Windows.Forms.RadioButton();
             this.largeHawaiian = new System.Windows.Forms.RadioButton();
             this.mediumHawaiian = new System.Windows.Forms.RadioButton();
             this.smallHawaiian = new System.Windows.Forms.RadioButton();
@@ -103,6 +105,7 @@
             this.thinSausage = new System.Windows.Forms.RadioButton();
             this.regSausage = new System.Windows.Forms.RadioButton();
             this.sizeGBSausage = new System.Windows.Forms.GroupBox();
+            this.xlSausage = new System.Windows.Forms.RadioButton();
             this.largeSausage = new System.Windows.Forms.RadioButton();
             this.mediumSausage = new System.Windows.Forms.RadioButton();
             this.smallSausage = new System.Windows.Forms.RadioButton();
@@ -113,17 +116,18 @@
             this.thinPep = new System.Windows.Forms.RadioButton();
             this.regPep = new System.Windows.Forms.RadioButton();
             this.sizeGBpep = new System.Windows.Forms.GroupBox();
+            this.xlPep = new System.Windows.Forms.RadioButton();
             this.largePep = new System.Windows.Forms.RadioButton();
             this.mediumPep = new System.Windows.Forms.RadioButton();
             this.smallPep = new System.Windows.Forms.RadioButton();
             this.pepCheck = new System.Windows.Forms.CheckBox();
-            this.clearChoicesButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.crustGBcheese = new System.Windows.Forms.GroupBox();
             this.stuffedCheese = new System.Windows.Forms.RadioButton();
             this.thinCheese = new System.Windows.Forms.RadioButton();
             this.regCheese = new System.Windows.Forms.RadioButton();
             this.sizeGBcheese = new System.Windows.Forms.GroupBox();
+            this.xlCheese = new System.Windows.Forms.RadioButton();
             this.largeCheese = new System.Windows.Forms.RadioButton();
             this.mediumCheese = new System.Windows.Forms.RadioButton();
             this.smallCheese = new System.Windows.Forms.RadioButton();
@@ -160,6 +164,7 @@
             this.byoThinCrust = new System.Windows.Forms.RadioButton();
             this.byoRegularCrust = new System.Windows.Forms.RadioButton();
             this.sizeGB = new System.Windows.Forms.GroupBox();
+            this.byoExtraLarge = new System.Windows.Forms.RadioButton();
             this.byoLarge = new System.Windows.Forms.RadioButton();
             this.byoMedium = new System.Windows.Forms.RadioButton();
             this.byoSmall = new System.Windows.Forms.RadioButton();
@@ -269,16 +274,12 @@
             this.checkoutLabel = new System.Windows.Forms.Label();
             this.helpTab = new System.Windows.Forms.TabPage();
             this.helpGB = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.helpTip4 = new System.Windows.Forms.Label();
             this.helpTip3 = new System.Windows.Forms.Label();
             this.helpTip2 = new System.Windows.Forms.Label();
             this.helpTip1 = new System.Windows.Forms.Label();
             this.helpLabel = new System.Windows.Forms.Label();
-            this.xlCheese = new System.Windows.Forms.RadioButton();
-            this.xlPep = new System.Windows.Forms.RadioButton();
-            this.xlSausage = new System.Windows.Forms.RadioButton();
-            this.xlHawaiian = new System.Windows.Forms.RadioButton();
-            this.xlBBQ = new System.Windows.Forms.RadioButton();
             this.tabControl.SuspendLayout();
             this.loginTab.SuspendLayout();
             this.successfullLoginPanel.SuspendLayout();
@@ -863,7 +864,6 @@
             this.standardTab.Controls.Add(this.hawaiianGB);
             this.standardTab.Controls.Add(this.sausageGB);
             this.standardTab.Controls.Add(this.peppGB);
-            this.standardTab.Controls.Add(this.clearChoicesButton);
             this.standardTab.Controls.Add(this.groupBox1);
             this.standardTab.Controls.Add(this.stPizzaLabel);
             this.standardTab.Location = new System.Drawing.Point(4, 41);
@@ -952,6 +952,19 @@
             this.sizeGBbbq.TabIndex = 37;
             this.sizeGBbbq.TabStop = false;
             this.sizeGBbbq.Text = "Size";
+            // 
+            // xlBBQ
+            // 
+            this.xlBBQ.AutoSize = true;
+            this.xlBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xlBBQ.Location = new System.Drawing.Point(8, 127);
+            this.xlBBQ.Name = "xlBBQ";
+            this.xlBBQ.Size = new System.Drawing.Size(135, 26);
+            this.xlBBQ.TabIndex = 41;
+            this.xlBBQ.TabStop = true;
+            this.xlBBQ.Text = "Extra Large";
+            this.xlBBQ.UseVisualStyleBackColor = true;
+            this.xlBBQ.CheckedChanged += new System.EventHandler(this.xlBBQ_CheckedChanged);
             // 
             // largeBBQ
             // 
@@ -1084,6 +1097,19 @@
             this.sizeGBHawaiian.TabStop = false;
             this.sizeGBHawaiian.Text = "Size";
             // 
+            // xlHawaiian
+            // 
+            this.xlHawaiian.AutoSize = true;
+            this.xlHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xlHawaiian.Location = new System.Drawing.Point(8, 127);
+            this.xlHawaiian.Name = "xlHawaiian";
+            this.xlHawaiian.Size = new System.Drawing.Size(135, 26);
+            this.xlHawaiian.TabIndex = 41;
+            this.xlHawaiian.TabStop = true;
+            this.xlHawaiian.Text = "Extra Large";
+            this.xlHawaiian.UseVisualStyleBackColor = true;
+            this.xlHawaiian.CheckedChanged += new System.EventHandler(this.xlHawaiian_CheckedChanged);
+            // 
             // largeHawaiian
             // 
             this.largeHawaiian.AutoSize = true;
@@ -1214,6 +1240,19 @@
             this.sizeGBSausage.TabIndex = 37;
             this.sizeGBSausage.TabStop = false;
             this.sizeGBSausage.Text = "Size";
+            // 
+            // xlSausage
+            // 
+            this.xlSausage.AutoSize = true;
+            this.xlSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xlSausage.Location = new System.Drawing.Point(8, 127);
+            this.xlSausage.Name = "xlSausage";
+            this.xlSausage.Size = new System.Drawing.Size(135, 26);
+            this.xlSausage.TabIndex = 40;
+            this.xlSausage.TabStop = true;
+            this.xlSausage.Text = "Extra Large";
+            this.xlSausage.UseVisualStyleBackColor = true;
+            this.xlSausage.CheckedChanged += new System.EventHandler(this.xlSausage_CheckedChanged);
             // 
             // largeSausage
             // 
@@ -1346,6 +1385,19 @@
             this.sizeGBpep.TabStop = false;
             this.sizeGBpep.Text = "Size";
             // 
+            // xlPep
+            // 
+            this.xlPep.AutoSize = true;
+            this.xlPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xlPep.Location = new System.Drawing.Point(6, 127);
+            this.xlPep.Name = "xlPep";
+            this.xlPep.Size = new System.Drawing.Size(135, 26);
+            this.xlPep.TabIndex = 40;
+            this.xlPep.TabStop = true;
+            this.xlPep.Text = "Extra Large";
+            this.xlPep.UseVisualStyleBackColor = true;
+            this.xlPep.CheckedChanged += new System.EventHandler(this.xlPep_CheckedChanged);
+            // 
             // largePep
             // 
             this.largePep.AutoSize = true;
@@ -1396,17 +1448,6 @@
             this.pepCheck.Text = "Pepperoni Pizza?";
             this.pepCheck.UseVisualStyleBackColor = true;
             this.pepCheck.CheckedChanged += new System.EventHandler(this.pepCheck_CheckedChanged);
-            // 
-            // clearChoicesButton
-            // 
-            this.clearChoicesButton.BackColor = System.Drawing.Color.Red;
-            this.clearChoicesButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.clearChoicesButton.Location = new System.Drawing.Point(595, 604);
-            this.clearChoicesButton.Name = "clearChoicesButton";
-            this.clearChoicesButton.Size = new System.Drawing.Size(189, 39);
-            this.clearChoicesButton.TabIndex = 36;
-            this.clearChoicesButton.Text = "Clear Choices";
-            this.clearChoicesButton.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -1487,6 +1528,19 @@
             this.sizeGBcheese.TabIndex = 37;
             this.sizeGBcheese.TabStop = false;
             this.sizeGBcheese.Text = "Size";
+            // 
+            // xlCheese
+            // 
+            this.xlCheese.AutoSize = true;
+            this.xlCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.xlCheese.Location = new System.Drawing.Point(6, 127);
+            this.xlCheese.Name = "xlCheese";
+            this.xlCheese.Size = new System.Drawing.Size(135, 26);
+            this.xlCheese.TabIndex = 40;
+            this.xlCheese.TabStop = true;
+            this.xlCheese.Text = "Extra Large";
+            this.xlCheese.UseVisualStyleBackColor = true;
+            this.xlCheese.CheckedChanged += new System.EventHandler(this.xlCheese_CheckedChanged);
             // 
             // largeCheese
             // 
@@ -1582,6 +1636,7 @@
             this.byoClearButton.TabIndex = 38;
             this.byoClearButton.Text = "Clear Choices";
             this.byoClearButton.UseVisualStyleBackColor = false;
+            this.byoClearButton.Click += new System.EventHandler(this.byoClearButton_Click);
             // 
             // groupBox9
             // 
@@ -1607,6 +1662,7 @@
             this.byoMushrooms.TabIndex = 5;
             this.byoMushrooms.Text = "Mushrooms";
             this.byoMushrooms.UseVisualStyleBackColor = true;
+            this.byoMushrooms.CheckedChanged += new System.EventHandler(this.byoMushrooms_CheckedChanged);
             // 
             // byoOnions
             // 
@@ -1618,6 +1674,7 @@
             this.byoOnions.TabIndex = 4;
             this.byoOnions.Text = "Onions";
             this.byoOnions.UseVisualStyleBackColor = true;
+            this.byoOnions.CheckedChanged += new System.EventHandler(this.byoOnions_CheckedChanged);
             // 
             // byoPeppers
             // 
@@ -1629,6 +1686,7 @@
             this.byoPeppers.TabIndex = 3;
             this.byoPeppers.Text = "Peppers";
             this.byoPeppers.UseVisualStyleBackColor = true;
+            this.byoPeppers.CheckedChanged += new System.EventHandler(this.byoPeppers_CheckedChanged);
             // 
             // byoMeatGB
             // 
@@ -1654,6 +1712,7 @@
             this.byoSausage.TabIndex = 5;
             this.byoSausage.Text = "Sausage";
             this.byoSausage.UseVisualStyleBackColor = true;
+            this.byoSausage.CheckedChanged += new System.EventHandler(this.byoSausage_CheckedChanged);
             // 
             // byoChk
             // 
@@ -1665,6 +1724,7 @@
             this.byoChk.TabIndex = 4;
             this.byoChk.Text = "Chicken";
             this.byoChk.UseVisualStyleBackColor = true;
+            this.byoChk.CheckedChanged += new System.EventHandler(this.byoChk_CheckedChanged);
             // 
             // byoPep
             // 
@@ -1676,6 +1736,7 @@
             this.byoPep.TabIndex = 3;
             this.byoPep.Text = "Pepperoni";
             this.byoPep.UseVisualStyleBackColor = false;
+            this.byoPep.CheckedChanged += new System.EventHandler(this.byoPep_CheckedChanged);
             // 
             // byoExtraCheeseGB
             // 
@@ -1701,6 +1762,7 @@
             this.byoTripleBlend.TabIndex = 2;
             this.byoTripleBlend.Text = "Triple Blend";
             this.byoTripleBlend.UseVisualStyleBackColor = true;
+            this.byoTripleBlend.CheckedChanged += new System.EventHandler(this.byoTripleBlend_CheckedChanged);
             // 
             // byoParmesan
             // 
@@ -1712,6 +1774,7 @@
             this.byoParmesan.TabIndex = 1;
             this.byoParmesan.Text = "Parmesan";
             this.byoParmesan.UseVisualStyleBackColor = true;
+            this.byoParmesan.CheckedChanged += new System.EventHandler(this.byoParmesan_CheckedChanged);
             // 
             // byoExtra
             // 
@@ -1723,6 +1786,7 @@
             this.byoExtra.TabIndex = 0;
             this.byoExtra.Text = "Extra";
             this.byoExtra.UseVisualStyleBackColor = true;
+            this.byoExtra.CheckedChanged += new System.EventHandler(this.byoExtra_CheckedChanged);
             // 
             // byoCheeseGB
             // 
@@ -1939,16 +2003,30 @@
             // sizeGB
             // 
             this.sizeGB.BackColor = System.Drawing.Color.Orange;
+            this.sizeGB.Controls.Add(this.byoExtraLarge);
             this.sizeGB.Controls.Add(this.byoLarge);
             this.sizeGB.Controls.Add(this.byoMedium);
             this.sizeGB.Controls.Add(this.byoSmall);
             this.sizeGB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.sizeGB.Location = new System.Drawing.Point(66, 90);
             this.sizeGB.Name = "sizeGB";
-            this.sizeGB.Size = new System.Drawing.Size(200, 181);
+            this.sizeGB.Size = new System.Drawing.Size(200, 228);
             this.sizeGB.TabIndex = 36;
             this.sizeGB.TabStop = false;
             this.sizeGB.Text = "Size";
+            // 
+            // byoExtraLarge
+            // 
+            this.byoExtraLarge.AutoSize = true;
+            this.byoExtraLarge.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.byoExtraLarge.Location = new System.Drawing.Point(36, 177);
+            this.byoExtraLarge.Name = "byoExtraLarge";
+            this.byoExtraLarge.Size = new System.Drawing.Size(142, 27);
+            this.byoExtraLarge.TabIndex = 3;
+            this.byoExtraLarge.TabStop = true;
+            this.byoExtraLarge.Text = "Extra Large";
+            this.byoExtraLarge.UseVisualStyleBackColor = true;
+            this.byoExtraLarge.CheckedChanged += new System.EventHandler(this.byoExtraLarge_CheckedChanged);
             // 
             // byoLarge
             // 
@@ -2695,7 +2773,7 @@
             // 
             this.veggies.AutoSize = true;
             this.veggies.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.veggies.Location = new System.Drawing.Point(1036, 191);
+            this.veggies.Location = new System.Drawing.Point(982, 191);
             this.veggies.Name = "veggies";
             this.veggies.Size = new System.Drawing.Size(72, 18);
             this.veggies.TabIndex = 24;
@@ -2705,7 +2783,7 @@
             // 
             this.meat.AutoSize = true;
             this.meat.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.meat.Location = new System.Drawing.Point(898, 191);
+            this.meat.Location = new System.Drawing.Point(845, 191);
             this.meat.Name = "meat";
             this.meat.Size = new System.Drawing.Size(47, 18);
             this.meat.TabIndex = 23;
@@ -2716,7 +2794,7 @@
             // 
             this.extraCheese.AutoSize = true;
             this.extraCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.extraCheese.Location = new System.Drawing.Point(789, 191);
+            this.extraCheese.Location = new System.Drawing.Point(689, 191);
             this.extraCheese.Name = "extraCheese";
             this.extraCheese.Size = new System.Drawing.Size(79, 18);
             this.extraCheese.TabIndex = 22;
@@ -2726,7 +2804,7 @@
             // 
             this.cheese.AutoSize = true;
             this.cheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cheese.Location = new System.Drawing.Point(654, 191);
+            this.cheese.Location = new System.Drawing.Point(559, 191);
             this.cheese.Name = "cheese";
             this.cheese.Size = new System.Drawing.Size(69, 18);
             this.cheese.TabIndex = 21;
@@ -2736,7 +2814,7 @@
             // 
             this.sauce.AutoSize = true;
             this.sauce.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.sauce.Location = new System.Drawing.Point(485, 191);
+            this.sauce.Location = new System.Drawing.Point(445, 191);
             this.sauce.Name = "sauce";
             this.sauce.Size = new System.Drawing.Size(59, 18);
             this.sauce.TabIndex = 20;
@@ -3194,6 +3272,7 @@
             // helpGB
             // 
             this.helpGB.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.helpGB.Controls.Add(this.label4);
             this.helpGB.Controls.Add(this.helpTip4);
             this.helpGB.Controls.Add(this.helpTip3);
             this.helpGB.Controls.Add(this.helpTip2);
@@ -3206,10 +3285,19 @@
             this.helpGB.TabStop = false;
             this.helpGB.Text = "We are sorry you are having troubles...";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(101, 344);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(640, 28);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "-You may only add 4 toppings to a build your own pizza";
+            // 
             // helpTip4
             // 
             this.helpTip4.AutoSize = true;
-            this.helpTip4.Location = new System.Drawing.Point(83, 344);
+            this.helpTip4.Location = new System.Drawing.Point(85, 275);
             this.helpTip4.Name = "helpTip4";
             this.helpTip4.Size = new System.Drawing.Size(656, 28);
             this.helpTip4.TabIndex = 3;
@@ -3219,7 +3307,7 @@
             // 
             this.helpTip3.AutoSize = true;
             this.helpTip3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.helpTip3.Location = new System.Drawing.Point(49, 257);
+            this.helpTip3.Location = new System.Drawing.Point(49, 212);
             this.helpTip3.Name = "helpTip3";
             this.helpTip3.Size = new System.Drawing.Size(713, 24);
             this.helpTip3.TabIndex = 2;
@@ -3228,7 +3316,7 @@
             // helpTip2
             // 
             this.helpTip2.AutoSize = true;
-            this.helpTip2.Location = new System.Drawing.Point(152, 160);
+            this.helpTip2.Location = new System.Drawing.Point(152, 138);
             this.helpTip2.Name = "helpTip2";
             this.helpTip2.Size = new System.Drawing.Size(527, 28);
             this.helpTip2.TabIndex = 1;
@@ -3254,71 +3342,6 @@
             this.helpLabel.Size = new System.Drawing.Size(140, 53);
             this.helpLabel.TabIndex = 5;
             this.helpLabel.Text = "Help";
-            // 
-            // xlCheese
-            // 
-            this.xlCheese.AutoSize = true;
-            this.xlCheese.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.xlCheese.Location = new System.Drawing.Point(6, 127);
-            this.xlCheese.Name = "xlCheese";
-            this.xlCheese.Size = new System.Drawing.Size(135, 26);
-            this.xlCheese.TabIndex = 40;
-            this.xlCheese.TabStop = true;
-            this.xlCheese.Text = "Extra Large";
-            this.xlCheese.UseVisualStyleBackColor = true;
-            this.xlCheese.CheckedChanged += new System.EventHandler(this.xlCheese_CheckedChanged);
-            // 
-            // xlPep
-            // 
-            this.xlPep.AutoSize = true;
-            this.xlPep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.xlPep.Location = new System.Drawing.Point(6, 127);
-            this.xlPep.Name = "xlPep";
-            this.xlPep.Size = new System.Drawing.Size(135, 26);
-            this.xlPep.TabIndex = 40;
-            this.xlPep.TabStop = true;
-            this.xlPep.Text = "Extra Large";
-            this.xlPep.UseVisualStyleBackColor = true;
-            this.xlPep.CheckedChanged += new System.EventHandler(this.xlPep_CheckedChanged);
-            // 
-            // xlSausage
-            // 
-            this.xlSausage.AutoSize = true;
-            this.xlSausage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.xlSausage.Location = new System.Drawing.Point(8, 127);
-            this.xlSausage.Name = "xlSausage";
-            this.xlSausage.Size = new System.Drawing.Size(135, 26);
-            this.xlSausage.TabIndex = 40;
-            this.xlSausage.TabStop = true;
-            this.xlSausage.Text = "Extra Large";
-            this.xlSausage.UseVisualStyleBackColor = true;
-            this.xlSausage.CheckedChanged += new System.EventHandler(this.xlSausage_CheckedChanged);
-            // 
-            // xlHawaiian
-            // 
-            this.xlHawaiian.AutoSize = true;
-            this.xlHawaiian.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.xlHawaiian.Location = new System.Drawing.Point(8, 127);
-            this.xlHawaiian.Name = "xlHawaiian";
-            this.xlHawaiian.Size = new System.Drawing.Size(135, 26);
-            this.xlHawaiian.TabIndex = 41;
-            this.xlHawaiian.TabStop = true;
-            this.xlHawaiian.Text = "Extra Large";
-            this.xlHawaiian.UseVisualStyleBackColor = true;
-            this.xlHawaiian.CheckedChanged += new System.EventHandler(this.xlHawaiian_CheckedChanged);
-            // 
-            // xlBBQ
-            // 
-            this.xlBBQ.AutoSize = true;
-            this.xlBBQ.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.xlBBQ.Location = new System.Drawing.Point(8, 127);
-            this.xlBBQ.Name = "xlBBQ";
-            this.xlBBQ.Size = new System.Drawing.Size(135, 26);
-            this.xlBBQ.TabIndex = 41;
-            this.xlBBQ.TabStop = true;
-            this.xlBBQ.Text = "Extra Large";
-            this.xlBBQ.UseVisualStyleBackColor = true;
-            this.xlBBQ.CheckedChanged += new System.EventHandler(this.xlBBQ_CheckedChanged);
             // 
             // Form1
             // 
@@ -3487,7 +3510,6 @@
         private Label loginLabel;
         private GroupBox groupBox1;
         private Label stPizzaLabel;
-        private Button clearChoicesButton;
         private GroupBox crustGBcheese;
         private RadioButton stuffedCheese;
         private RadioButton thinCheese;
@@ -3690,5 +3712,7 @@
         private RadioButton xlSausage;
         private RadioButton xlPep;
         private RadioButton xlCheese;
+        private Label label4;
+        private RadioButton byoExtraLarge;
     }
 }
