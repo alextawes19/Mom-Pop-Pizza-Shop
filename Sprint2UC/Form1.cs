@@ -203,54 +203,7 @@ namespace Sprint2UC
                 matchingError.Text = "Your username or password is incorrect!";
             }
 
-            /*
-            StreamReader usernameRead = new StreamReader("D:\\usernames.txt");
-            StreamReader passwordRead = new StreamReader("D:\\passwords.txt");
-            string username = usernameBox.Text;
-            string password = passwordBox.Text;
-
-            bool userMatches = false;
-            bool passwordMatches = false;
-
-            using (usernameRead)
-            {
-                string contents = usernameRead.ReadToEnd();
-                if (contents.Contains(username))
-                {
-                    userMatches = true;
-                }
-            }
-
-            using (passwordRead)
-            {
-                string contents = passwordRead.ReadToEnd();
-                if (contents.Contains(password))
-                {
-                    passwordMatches = true;
-                }
-            }
-
-            if ((userMatches==true) && (passwordMatches==true))
-            {
-                loginTab.Enabled = false;
-                matchingError.Text = "";
-                successfullLoginPanel.Visible = true;
-
-                standardTab.Enabled = true;
-                byoTab.Enabled = true;
-                beveragesTab.Enabled = true;
-                orderTab.Enabled = true;
-                checkoutTab.Enabled = true;
-            }
-            else
-            {
-                matchingError.Text = "Your username or password is incorrect!";
-            }
-
-
-            usernameRead.Close();
-            passwordRead.Close();
-            */
+            
         }
 
         private void usernameInput_TextChanged(object sender, EventArgs e)
@@ -329,42 +282,39 @@ namespace Sprint2UC
                     registerTab.Enabled = false;
                     successPanel.Visible = true;
 
-                    using (FileStream fs = File.Create(path))
+
+                    if (!File.Exists(path))
                     {
-                        // Add some text to file    
-                        Byte[] usernameWrite = new UTF8Encoding(true).GetBytes(username);
-                        fs.Write(usernameWrite, 0, usernameWrite.Length);
+                        using (FileStream fs = File.Create(path))
+                        {
+                            Byte[] usernameWrite = new UTF8Encoding(true).GetBytes(username);
+                            fs.Write(usernameWrite, 0, usernameWrite.Length);
+
+                        }
+
+                        using (FileStream fs = File.Create(path2))
+                        {
+
+                            Byte[] passwordWrite = new UTF8Encoding(true).GetBytes(password);
+                            fs.Write(passwordWrite, 0, passwordWrite.Length);
+
+                        }
+                    }
+                    else
+                    {
+                        StreamWriter usernameRead = new StreamWriter(path, true);
+                        StreamWriter passwordRead = new StreamWriter(path2, true);
+
+                        usernameRead.WriteLine(username);
+                        passwordRead.WriteLine(password);
+
+                        usernameRead.Close();
+                        passwordRead.Close();
 
                     }
-
-                    using (FileStream fs = File.Create(path2))
-                    {
-                        // Add some text to file    
-                        Byte[] passwordWrite = new UTF8Encoding(true).GetBytes(password);
-                        fs.Write(passwordWrite, 0, passwordWrite.Length);
-
-                    }
+                   
                 }
 
-      
-
-                /*
-                StreamWriter usernamesWrite = new StreamWriter("D:\\usernames.txt");
-                StreamWriter passwordsWrite = new StreamWriter("D:\\passwords.txt");
-
-
-                if ((password == conPassword) && (email == conEmail))
-                {
-                    registerTab.Enabled = false;
-                    successPanel.Visible = true;
-                    usernamesWrite.WriteLine(username);
-                    passwordsWrite.WriteLine(password);
-
-                }
-
-                usernamesWrite.Close();
-                passwordsWrite.Close();
-                */
 
             }
             catch
@@ -385,7 +335,7 @@ namespace Sprint2UC
             if (cheeseCheck.Checked)
             {
                 price += 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -400,7 +350,7 @@ namespace Sprint2UC
             if (!cheeseCheck.Checked)
             {
                 price -= 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -502,7 +452,7 @@ namespace Sprint2UC
             if (pepCheck.Checked)
             {
                 price += 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -517,7 +467,7 @@ namespace Sprint2UC
             if (!pepCheck.Checked)
             {
                 price -= 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -618,7 +568,7 @@ namespace Sprint2UC
             if (sausageCheck.Checked)
             {
                 price += 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -633,7 +583,7 @@ namespace Sprint2UC
             if (!sausageCheck.Checked)
             {
                 price -= 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -734,7 +684,7 @@ namespace Sprint2UC
             if (hawaiianCheck.Checked)
             {
                 price += 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -749,7 +699,7 @@ namespace Sprint2UC
             if (!hawaiianCheck.Checked)
             {
                 price -= 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -850,7 +800,7 @@ namespace Sprint2UC
             if (bbqCheck.Checked)
             {
                 price += 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -865,7 +815,7 @@ namespace Sprint2UC
             if (!bbqCheck.Checked)
             {
                 price -= 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -1496,7 +1446,7 @@ namespace Sprint2UC
             if (byoSmall.Checked)
             {
                 price += 7.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2))); 
                 if (price < 0)
@@ -1510,7 +1460,7 @@ namespace Sprint2UC
             if (!byoSmall.Checked)
             {
                 price -= 7.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -1528,7 +1478,7 @@ namespace Sprint2UC
             if (byoMedium.Checked)
             {
                 price += 8.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -1542,7 +1492,7 @@ namespace Sprint2UC
             if (!byoMedium.Checked)
             {
                 price -= 8.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -1560,7 +1510,7 @@ namespace Sprint2UC
             if (byoLarge.Checked)
             {
                 price += 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -1574,7 +1524,7 @@ namespace Sprint2UC
             if (!byoLarge.Checked)
             {
                 price -= 9.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -1759,7 +1709,7 @@ namespace Sprint2UC
             if (byoExtraLarge.Checked)
             {
                 price += 10.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
@@ -1773,7 +1723,7 @@ namespace Sprint2UC
             if (!byoExtraLarge.Checked)
             {
                 price -= 10.99;
-                pizzaTotal.Text = Convert.ToString(price);
+                pizzaTotal.Text = Convert.ToString(Math.Round(price, 2));
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
                 checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
