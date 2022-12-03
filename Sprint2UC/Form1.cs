@@ -1,5 +1,6 @@
 using System.IO;
 using System.Text;
+using static System.Windows.Forms.Design.AxImporter;
 
 namespace Sprint2UC
 {
@@ -7,6 +8,10 @@ namespace Sprint2UC
     {
         double price = 0.0;
         double drinkPrice = 0.0;
+        int byoToppings = 0;
+        string exCheeseSelect = "";
+        string meatSelect = "";
+        string vegSelect = "";
         string path = @"C:\Temp\usernames.txt";
         string path2 = @"C:\Temp\passwords.txt";
         public Form1()
@@ -382,7 +387,7 @@ namespace Sprint2UC
                 price += 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
-                checkoutTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
                 {
                     pizzaTotal.Text = "0";
@@ -397,7 +402,7 @@ namespace Sprint2UC
                 price -= 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
-                checkoutTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
                 {
                     pizzaTotal.Text = "0";
@@ -499,7 +504,7 @@ namespace Sprint2UC
                 price += 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
-                checkoutTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
                 {
                     pizzaTotal.Text = "0";
@@ -514,7 +519,7 @@ namespace Sprint2UC
                 price -= 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
-                checkoutTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
                 {
                     pizzaTotal.Text = "0";
@@ -615,7 +620,7 @@ namespace Sprint2UC
                 price += 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
-                checkoutTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
                 {
                     pizzaTotal.Text = "0";
@@ -630,7 +635,7 @@ namespace Sprint2UC
                 price -= 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
-                checkoutTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
                 {
                     pizzaTotal.Text = "0";
@@ -731,7 +736,7 @@ namespace Sprint2UC
                 price += 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
-                checkoutTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
                 {
                     pizzaTotal.Text = "0";
@@ -746,7 +751,7 @@ namespace Sprint2UC
                 price -= 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
-                checkoutTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
                 {
                     pizzaTotal.Text = "0";
@@ -847,7 +852,7 @@ namespace Sprint2UC
                 price += 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
-                checkoutTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
                 {
                     pizzaTotal.Text = "0";
@@ -862,7 +867,7 @@ namespace Sprint2UC
                 price -= 9.99;
                 pizzaTotal.Text = Convert.ToString(price);
                 orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
-                checkoutTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (price < 0)
                 {
                     pizzaTotal.Text = "0";
@@ -964,8 +969,8 @@ namespace Sprint2UC
             {
                 drinkPrice += 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
-                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
-                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (drinkPrice < 0)
                 {
                     drinkTotal.Text = "0";
@@ -983,8 +988,8 @@ namespace Sprint2UC
             {
                 drinkPrice -= 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
-                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
-                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (drinkPrice < 0)
                 {
                     drinkTotal.Text = "0";
@@ -1056,8 +1061,8 @@ namespace Sprint2UC
             {
                 drinkPrice += 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
-                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
-                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (drinkPrice < 0)
                 {
                     drinkTotal.Text = "0";
@@ -1075,8 +1080,8 @@ namespace Sprint2UC
             {
                 drinkPrice -= 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
-                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
-                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (drinkPrice < 0)
                 {
                     drinkTotal.Text = "0";
@@ -1146,8 +1151,8 @@ namespace Sprint2UC
             {
                 drinkPrice += 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
-                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
-                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (drinkPrice < 0)
                 {
                     drinkTotal.Text = "0";
@@ -1165,8 +1170,8 @@ namespace Sprint2UC
             {
                 drinkPrice -= 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
-                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
-                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (drinkPrice < 0)
                 {
                     drinkTotal.Text = "0";
@@ -1238,8 +1243,8 @@ namespace Sprint2UC
             {
                 drinkPrice += 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
-                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
-                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (drinkPrice < 0)
                 {
                     drinkTotal.Text = "0";
@@ -1257,8 +1262,8 @@ namespace Sprint2UC
             {
                 drinkPrice -= 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
-                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
-                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (drinkPrice < 0)
                 {
                     drinkTotal.Text = "0";
@@ -1330,8 +1335,8 @@ namespace Sprint2UC
             {
                 drinkPrice += 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
-                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
-                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (drinkPrice < 0)
                 {
                     drinkTotal.Text = "0";
@@ -1349,8 +1354,8 @@ namespace Sprint2UC
             {
                 drinkPrice -= 2.49;
                 drinkTotal.Text = Convert.ToString("$" + drinkPrice);
-                orderTotal.Text = Convert.ToString("$" + (price + drinkPrice));
-                checkoutTotal.Text = Convert.ToString("$" + (price + drinkPrice));
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
                 if (drinkPrice < 0)
                 {
                     drinkTotal.Text = "0";
@@ -1490,11 +1495,29 @@ namespace Sprint2UC
         {
             if (byoSmall.Checked)
             {
+                price += 7.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2))); 
+                if (price < 0)
+                {
+                    pizzaTotal.Text = "0";
+                }
+
                 pizza6.Text = "Custom";
                 size6.Text = "Small";
             }
             if (!byoSmall.Checked)
             {
+                price -= 7.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
+                if (price < 0)
+                {
+                    pizzaTotal.Text = "0";
+                }
+
                 pizza6.Text = "";
                 size6.Text = "";
             }
@@ -1504,11 +1527,29 @@ namespace Sprint2UC
         {
             if (byoMedium.Checked)
             {
+                price += 8.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
+                if (price < 0)
+                {
+                    pizzaTotal.Text = "0";
+                }
+
                 pizza6.Text = "Custom";
                 size6.Text = "Medium";
             }
             if (!byoMedium.Checked)
             {
+                price -= 8.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
+                if (price < 0)
+                {
+                    pizzaTotal.Text = "0";
+                }
+
                 pizza6.Text = "";
                 size6.Text = "";
             }
@@ -1518,11 +1559,29 @@ namespace Sprint2UC
         {
             if (byoLarge.Checked)
             {
+                price += 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
+                if (price < 0)
+                {
+                    pizzaTotal.Text = "0";
+                }
+
                 pizza6.Text = "Custom";
                 size6.Text = "Large";
             }
             if (!byoLarge.Checked)
             {
+                price -= 9.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
+                if (price < 0)
+                {
+                    pizzaTotal.Text = "0";
+                }
+
                 pizza6.Text = "";
                 size6.Text = "";
             }
@@ -1693,6 +1752,269 @@ namespace Sprint2UC
             {
                 size5.Text = "";
             }
+        }
+
+        private void byoExtraLarge_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoExtraLarge.Checked)
+            {
+                price += 10.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
+                if (price < 0)
+                {
+                    pizzaTotal.Text = "0";
+                }
+
+                pizza6.Text = "Custom";
+                size6.Text = "XL";
+            }
+            if (!byoExtraLarge.Checked)
+            {
+                price -= 10.99;
+                pizzaTotal.Text = Convert.ToString(price);
+                orderTotal.Text = Convert.ToString("$" + (Math.Round((price + drinkPrice), 2)));
+                checkoutTotal.Text = Convert.ToString("$" + (Math.Round(((price + drinkPrice) * 1.04), 2)));
+                if (price < 0)
+                {
+                    pizzaTotal.Text = "0";
+                }
+
+                pizza6.Text = "";
+                size6.Text = "";
+            }
+        }
+
+        private void byoExtra_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoExtra.Checked)
+            {
+                byoToppings += 1;
+                if (byoToppings > 4)
+                {
+                    byoToppings += 1;
+                    byoExtra.Checked = false;
+                }
+                exCheeseSelect += "Extra ";
+                extraCheese.Text = exCheeseSelect;
+            }
+            if (!byoExtra.Checked)
+            {
+                byoToppings -= 1;
+                exCheeseSelect = extraCheese.Text;
+                exCheeseSelect = exCheeseSelect.Replace("Extra ", ""); 
+                extraCheese.Text = exCheeseSelect;
+            }
+        }
+
+        private void byoParmesan_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoParmesan.Checked)
+            {
+                byoToppings += 1;
+                if (byoToppings > 4)
+                {
+                    byoToppings += 1;
+                    byoParmesan.Checked = false;
+                }
+                exCheeseSelect += "Parmesan ";
+                extraCheese.Text = exCheeseSelect;
+            }
+            if (!byoParmesan.Checked)
+            {
+                byoToppings -= 1;
+                exCheeseSelect = extraCheese.Text;
+                exCheeseSelect = exCheeseSelect.Replace("Parmesan ", "");
+                extraCheese.Text = exCheeseSelect;
+            }
+        }
+
+        private void byoTripleBlend_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoTripleBlend.Checked)
+            {
+                byoToppings += 1;
+                if (byoToppings > 4)
+                {
+                    byoToppings += 1;
+                    byoTripleBlend.Checked = false;
+                }
+                exCheeseSelect += "Triple Blend ";
+                extraCheese.Text = exCheeseSelect;
+            }
+            if (!byoTripleBlend.Checked)
+            {
+                byoToppings -= 1;
+                exCheeseSelect = extraCheese.Text;
+                exCheeseSelect = exCheeseSelect.Replace("Triple Blend ", "");
+                extraCheese.Text = exCheeseSelect;
+            }
+        }
+
+        private void byoPep_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoPep.Checked)
+            {
+                byoToppings += 1;
+                if (byoToppings > 4)
+                {
+                    byoToppings += 1;
+                    byoPep.Checked = false;
+                }
+                meatSelect += "Pepperoni ";
+                meat.Text = meatSelect;
+            }
+            if (!byoPep.Checked)
+            {
+                byoToppings -= 1;
+                meatSelect = meat.Text;
+                meatSelect = meatSelect.Replace("Pepperoni ", "");
+                meat.Text = meatSelect;
+            }
+        }
+
+        private void byoChk_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoChk.Checked)
+            {
+                byoToppings += 1;
+                if (byoToppings > 4)
+                {
+                    byoToppings += 1;
+                    byoChk.Checked = false;
+                }
+                meatSelect += "Chicken ";
+                meat.Text = meatSelect;
+            }
+            if (!byoChk.Checked)
+            {
+                byoToppings -= 1;
+                meatSelect = meat.Text;
+                meatSelect = meatSelect.Replace("Chicken ", "");
+                meat.Text = meatSelect;
+            }
+        }
+
+        private void byoSausage_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoSausage.Checked)
+            {
+                byoToppings += 1;
+                if (byoToppings > 4)
+                {
+                    byoToppings += 1;
+                    byoSausage.Checked = false;
+                }
+                meatSelect += "Sausage ";
+                meat.Text = meatSelect;
+            }
+            if (!byoSausage.Checked)
+            {
+                byoToppings -= 1;
+                meatSelect = meat.Text;
+                meatSelect = meatSelect.Replace("Sausage ", "");
+                meat.Text = meatSelect;
+            }
+        }
+
+        private void byoPeppers_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoPeppers.Checked)
+            {
+                byoToppings += 1;
+                if (byoToppings > 4)
+                {
+                    byoToppings += 1;
+                    byoPeppers.Checked = false;
+                }
+                vegSelect += "Peppers ";
+                veggies.Text = vegSelect;
+            }
+            if (!byoPeppers.Checked)
+            {
+                byoToppings -= 1;
+                vegSelect = veggies.Text;
+                vegSelect = vegSelect.Replace("Peppers ", "");
+                veggies.Text = vegSelect;
+            }
+        }
+
+        private void byoOnions_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoOnions.Checked)
+            {
+                byoToppings += 1;
+                if (byoToppings > 4)
+                {
+                    byoToppings += 1;
+                    byoOnions.Checked = false;
+                }
+                vegSelect += "Onions ";
+                veggies.Text = vegSelect;
+            }
+            if (!byoOnions.Checked)
+            {
+                byoToppings -= 1;
+                vegSelect = veggies.Text;
+                vegSelect = vegSelect.Replace("Onions ", "");
+                veggies.Text = vegSelect;
+            }
+        }
+
+        private void byoMushrooms_CheckedChanged(object sender, EventArgs e)
+        {
+            if (byoMushrooms.Checked)
+            {
+                byoToppings += 1;
+                if (byoToppings > 4)
+                {
+                    byoToppings += 1;
+                    byoMushrooms.Checked = false;
+                }
+                vegSelect += "Mushrooms ";
+                veggies.Text = vegSelect;
+            }
+            if (!byoMushrooms.Checked)
+            {
+                byoToppings -= 1;
+                vegSelect = veggies.Text;
+                vegSelect = vegSelect.Replace("Mushrooms ", "");
+                veggies.Text = vegSelect;
+            }
+        }
+
+        private void byoClearButton_Click(object sender, EventArgs e)
+        {
+            byoSmall.Checked = false;
+            byoMedium.Checked = false;
+            byoLarge.Checked = false;
+            byoExtraLarge.Checked = false;
+            byoRegularCrust.Checked = false;
+            byoThinCrust.Checked = false;
+            byoStuffedCrust.Checked = false;
+            byoNormalCut.Checked = false;
+            byoCleanCut.Checked = false;
+            byoSquareCut.Checked = false;
+            byoOriginalSauce.Checked = false;
+            byoBBQSauce.Checked = false;
+            byoRanchSauce.Checked = false;
+            byoNormalCheese.Checked = false;
+            byoLightCheese.Checked = false;
+            byoNoCheese.Checked = false;
+            byoExtra.Checked = false;
+            byoParmesan.Checked = false;
+            byoTripleBlend.Checked = false;
+            byoPep.Checked = false;
+            byoChk.Checked = false;
+            byoSausage.Checked = false;
+            byoPeppers.Checked = false;
+            byoOnions.Checked = false;
+            byoMushrooms.Checked = false;
+            crust6.Text = "";
+            cut.Text = "";
+            sauce.Text = "";
+            cheese.Text = "";
         }
     }
 }
