@@ -1,4 +1,4 @@
-# Mom and Pop's Pizza Shop 
+# Mom and Pop's Pizza Shop :pizza:
 A mock pizza shop application made within Visual Studio with Microsoft Windows Forms.
 
 ## Login Tab
